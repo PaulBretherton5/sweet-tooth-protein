@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Tooth Protein</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f7f3f8;
+        color: #222;
+    }
+
+    header {
+        background: #6b2d5c;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    header p {
+        margin: 8px 0 0;
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: 700px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .question {
+        font-size: 22px;
+        font-weight: bold;
+        margin: 25px 0 15px;
+        text-align: center;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    button {
+        border: none;
+        border-radius: 14px;
+        padding: 18px 10px;
+        font-size: 16px;
+        font-weight: bold;
+        background: white;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        cursor: pointer;
+    }
+
+    button:hover {
+        transform: translateY(-2px);
+    }
+
+    .recipe {
+        background: white;
+        border-radius: 18px;
+        padding: 20px;
+        margin-top: 25px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .recipe h2 {
+        margin-top: 0;
+        color: #6b2d5c;
+    }
+
+    .recipe ul {
+        padding-left: 20px;
+    }
+
+    .tag {
+        display: inline-block;
+        background: #ead7e5;
+        color: #6b2d5c;
+        padding: 6px 10px;
+        border-radius: 20px;
+        margin: 4px;
+        font-size: 13px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🍫 Sweet Tooth Protein</h1>
+    <p>High-protein desserts for when the sweet tooth hits.</p>
+</header>
+
+<div class="container">
+
+    <div class="question">
+        What are you in the mood for?
+    </div>
+
+    <div class="buttons">
+        <button onclick="showRecipe('chocolate')">🍫 Chocolate</button>
+        <button onclick="showRecipe('cake')">🍰 Cake</button>
+        <button onclick="showRecipe('quick')">⚡ Quick</button>
+        <button onclick="showRecipe('frozen')">🍦 Frozen</button>
+    </div>
+
+    <div class="question">
+        How much can you be arsed? 😂
+    </div>
+
+    <div class="buttons">
+        <button onclick="showRecipe('easy')">😂 Can't be arsed</button>
+        <button onclick="showRecipe('15')">🏃 15 minutes</button>
+        <button onclick="showRecipe('proper')">👨‍🍳 I'm cooking</button>
+        <button onclick="showRecipe('surprise')">🎲 Surprise me</button>
+    </div>
+
+    <div id="recipeArea"></div>
+
+</div>
+
+<script>
+
+const recipes = {
+
+    chocolate: {
+        title: "🍫 Mega Quick Protein Brownie",
+        ingredients: [
+            "1 egg",
+            "100g Greek yoghurt",
+            "20g cocoa powder",
+            "1 scoop (30g) whey protein",
+            "20g sugar-free maple syrup"
+        ],
+        method: "Mix everything together and microwave for 2 minutes. Enjoy!"
+    },
+
+    cake: {
+        title: "🫐 4 Ingredient Blueberry Cake",
+        ingredients: [
+            "4 bananas",
+            "400g zero-fat Greek yoghurt",
+            "4 eggs",
+            "150g blueberries"
+        ],
+        method: "Blend the bananas, yoghurt and eggs. Pour into a lined cake tin, gently mix in the blueberries and bake at 180°C for 45 minutes. Allow to cool before slicing."
+    },
+
+    quick: {
+        title: "🍋 Lemon Cheesecake Crunch",
+        ingredients: [
+            "200g cottage cheese",
+            "Zest of ½ lemon",
+            "Juice of 1 lemon",
+            "1 tsp vanilla extract",
+            "1 scoop vanilla whey",
+            "2 digestive biscuits"
+        ],
+        method: "Blend everything except the biscuits until smooth. Transfer to a bowl, crush the biscuits over the top and enjoy."
+    },
+
+    frozen: {
+        title: "🍓 Easy Protein Sorbet",
+        ingredients: [
+            "400g frozen fruit",
+            "1 scoop clear whey protein",
+            "150ml water"
+        ],
+        method: "Blend everything until smooth and freeze until firm."
+    },
+
+    easy: {
+        title: "🍫 Mega Quick Protein Brownie",
+        ingredients: [
+            "1 egg",
+            "100g Greek yoghurt",
+            "20g cocoa powder",
+            "1 scoop whey protein",
+            "20g sugar-free maple syrup"
+        ],
+        method: "Mix everything together and microwave for 2 minutes."
+    },
+
+    "15": {
+        title: "🍌 Quick Protein Ice Cream",
+        ingredients: [
+            "2 frozen bananas",
+            "200g cottage cheese",
+            "1 scoop protein powder",
+            "Splash of milk"
+        ],
+        method: "Blend all ingredients in a food processor until smooth and creamy. Serve immediately."
+    },
+
+    proper: {
+        title: "🍫 Protein Chocolate Soufflé",
+        ingredients: [
+            "5 large egg whites",
+            "1 large egg",
+            "1 scoop chocolate whey",
+            "1 tbsp cocoa powder",
+            "1 tsp coconut oil",
+            "2 tbsp almond milk",
+            "Pinch of salt"
+        ],
+        method: "Whisk egg whites to soft peaks. Gently fold in the remaining ingredients. Place into soufflé dishes and bake at 190°C for 12–15 minutes."
+    }
+
+};
+
+function showRecipe(type) {
+
+    let recipe;
+
+    if (type === "surprise") {
+
+        const keys = Object.keys(recipes);
+        const randomKey = keys[Math.floor(Math.random() * keys.length)];
+        recipe = recipes[randomKey];
+
+    } else {
+
+        recipe = recipes[type];
+
+    }
+
+    if (!recipe) return;
+
+    let ingredientsHTML = "";
+
+    recipe.ingredients.forEach(item => {
+        ingredientsHTML += `<li>${item}</li>`;
+    });
+
+    document.getElementById("recipeArea").innerHTML = `
+        <div class="recipe">
+            <h2>${recipe.title}</h2>
+
+            <h3>Ingredients</h3>
+
+            <ul>
+                ${ingredientsHTML}
+            </ul>
+
+            <h3>Method</h3>
+
+            <p>${recipe.method}</p>
+        </div>
+    `;
+}
+
+</script>
+
+</body>
+</html>
