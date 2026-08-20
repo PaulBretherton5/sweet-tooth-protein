@@ -695,6 +695,96 @@ const recipes = [
 
   technicalNote:
     "Let the base cool before adding the topping. Warm brownie and yoghurt make an impressive mess, but not an impressive Snickers bar."
+},
+
+{
+  id: "quick-as-oreo-dessert",
+  name: "Quick-As... Oreo Dessert",
+  tagline: "The sweet-tooth emergency service.",
+  categories: [
+    "I Can't Be Arsed",
+    "Quick Fixes",
+    "No Bake",
+    "Chocolate Fix"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 1,
+  time: 3,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "200g zero-fat Greek yoghurt",
+    "1 scoop (30g) vanilla whey protein",
+    "1 Oreo, broken into pieces",
+    "A few additional Oreo crumbs for topping"
+  ],
+
+  method: [
+    "Add the Greek yoghurt and vanilla whey protein to a bowl.",
+    "Whisk or mix thoroughly until completely smooth.",
+    "Break one Oreo into pieces and mix through.",
+    "Transfer to a serving bowl.",
+    "Finish with a few additional Oreo crumbs and serve immediately."
+  ],
+
+  technicalNote:
+    "Three minutes is barely cooking. That is very much the point."
+},
+
+{
+  id: "huge-brownie-brick",
+  name: "Huge Brownie Brick",
+  tagline: "Subtlety was never part of the specification.",
+  categories: [
+    "Chocolate Fix",
+    "Cakes & Bites",
+    "Proper Indulgence"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 6,
+  time: 55,
+  difficulty: "Medium",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "300g zero-fat Greek yoghurt",
+    "60ml almond milk",
+    "40g melted butter",
+    "1 egg",
+    "50g oat flour",
+    "70g sugar substitute",
+    "2 scoops (60g) vanilla whey protein",
+    "1 crushed Oreo",
+    "100g zero-fat Greek yoghurt for frosting",
+    "40g sugar substitute for frosting",
+    "1 scoop (30g) whey protein for frosting",
+    "Crushed Oreo for topping"
+  ],
+
+  method: [
+    "Preheat the oven to 180°C.",
+    "Mix the Greek yoghurt, almond milk, melted butter and egg together in one bowl.",
+    "In a separate bowl, combine the oat flour, sugar substitute and whey protein.",
+    "Combine the wet and dry mixtures.",
+    "Fold through the crushed Oreo.",
+    "Pour into a lined baking dish.",
+    "Bake for approximately 40 minutes.",
+    "Allow to cool completely.",
+    "Mix the Greek yoghurt, sugar substitute and whey protein for the frosting.",
+    "Spread the frosting over the cooled brownie.",
+    "Finish with crushed Oreo.",
+    "Cut into 6 portions."
+  ],
+
+  technicalNote:
+    "Cool it completely before frosting. Otherwise the frosting becomes less 'frosting' and more 'protein yoghurt landslide'."
 }
 
 ];
