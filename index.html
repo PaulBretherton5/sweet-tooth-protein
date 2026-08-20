@@ -6,436 +6,418 @@
 <title>Sweet Tooth Protein</title>
 
 <style>
-  :root {
-    --black: #070707;
-    --panel: #111111;
-    --panel-2: #181818;
-    --line: #2b2b2b;
-    --text: #f4f4f4;
-    --muted: #9d9d9d;
-    --acid: #d9ff00;
-  }
+:root{
+  --bg:#050505;
+  --panel:#0d0d0d;
+  --panel2:#151515;
+  --line:#2a2a2a;
+  --text:#f3f3f3;
+  --muted:#8d8d8d;
+  --acid:#dfff00;
+}
 
-  * {
-    box-sizing: border-box;
-  }
+*{box-sizing:border-box}
 
-  body {
-    margin: 0;
-    background:
-      linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px),
-      var(--black);
-    background-size: 28px 28px;
-    color: var(--text);
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0.01em;
-    padding-bottom: 86px;
-  }
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:
+    linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px),
+    var(--bg);
+  background-size:24px 24px;
+  color:var(--text);
+  padding-bottom:78px;
+}
 
-  .topbar {
-    border-bottom: 1px solid var(--line);
-    background: rgba(7,7,7,0.96);
-    padding: 18px 18px 15px;
-  }
+.top{
+  border-bottom:1px solid var(--line);
+  background:#070707;
+  padding:22px 18px 18px;
+}
 
-  .brand {
-    max-width: 760px;
-    margin: 0 auto;
-  }
+.inner{
+  max-width:760px;
+  margin:auto;
+}
 
-  .brand-kicker {
-    color: var(--acid);
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.24em;
-    text-transform: uppercase;
-    margin-bottom: 7px;
-  }
+.system{
+  color:var(--acid);
+  font-size:10px;
+  letter-spacing:.24em;
+  font-weight:800;
+  margin-bottom:8px;
+}
 
-  .brand-title {
-    margin: 0;
-    font-size: 34px;
-    line-height: 0.95;
-    font-weight: 900;
-    letter-spacing: -0.05em;
-    text-transform: uppercase;
-  }
+.logo{
+  margin:0;
+  font-size:36px;
+  line-height:.9;
+  letter-spacing:-.06em;
+  text-transform:uppercase;
+  font-weight:900;
+}
 
-  .brand-title span {
-    color: var(--acid);
-  }
+.logo span{
+  color:var(--acid);
+}
 
-  .brand-sub {
-    margin: 10px 0 0;
-    color: var(--muted);
-    font-size: 14px;
-  }
+.sub{
+  margin:11px 0 0;
+  color:var(--muted);
+  font-size:13px;
+}
 
-  .wrap {
-    max-width: 760px;
-    margin: auto;
-    padding: 18px;
-  }
+.wrap{
+  max-width:760px;
+  margin:auto;
+  padding:18px;
+}
 
-  .hero {
-    position: relative;
-    background: var(--panel);
-    border: 1px solid var(--line);
-    border-left: 5px solid var(--acid);
-    padding: 22px 20px;
-    margin-bottom: 22px;
-  }
+.hero{
+  position:relative;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-left:5px solid var(--acid);
+  padding:22px;
+  overflow:hidden;
+}
 
-  .hero:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 46px;
-    height: 46px;
-    background:
-      linear-gradient(135deg, transparent 49%, var(--acid) 50%);
-    opacity: 0.92;
-  }
+.hero:after{
+  content:"";
+  position:absolute;
+  right:-22px;
+  top:-22px;
+  width:80px;
+  height:80px;
+  border:14px solid var(--acid);
+  transform:rotate(45deg);
+  opacity:.18;
+}
 
-  .hero-label {
-    color: var(--acid);
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-  }
+.hero-code{
+  color:var(--acid);
+  font-size:10px;
+  letter-spacing:.22em;
+  font-weight:800;
+}
 
-  .hero h2 {
-    margin: 8px 0 8px;
-    font-size: 27px;
-    line-height: 1;
-    text-transform: uppercase;
-    letter-spacing: -0.03em;
-  }
+.hero h2{
+  margin:8px 0 8px;
+  font-size:27px;
+  text-transform:uppercase;
+  letter-spacing:-.04em;
+}
 
-  .hero p {
-    margin: 0;
-    color: var(--muted);
-    line-height: 1.5;
-    max-width: 560px;
-  }
+.hero p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.5;
+  max-width:560px;
+}
 
-  .section-head {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 26px 0 12px;
-  }
+.section{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:26px 0 12px;
+}
 
-  .section-head:before {
-    content: "";
-    display: block;
-    width: 28px;
-    height: 3px;
-    background: var(--acid);
-  }
+.section-line{
+  width:34px;
+  height:3px;
+  background:var(--acid);
+}
 
-  .section-head h2 {
-    margin: 0;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-  }
+.section h3{
+  margin:0;
+  font-size:13px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
 
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
 
-  .cat {
-    position: relative;
-    background: var(--panel);
-    border: 1px solid var(--line);
-    min-height: 122px;
-    padding: 18px 16px 16px;
-    color: var(--text);
-    text-align: left;
-    cursor: pointer;
-    overflow: hidden;
-  }
+.mode{
+  position:relative;
+  background:var(--panel);
+  border:1px solid var(--line);
+  color:var(--text);
+  min-height:128px;
+  padding:16px;
+  text-align:left;
+  cursor:pointer;
+  overflow:hidden;
+}
 
-  .cat:hover {
-    border-color: var(--acid);
-  }
+.mode:hover{
+  border-color:var(--acid);
+}
 
-  .cat:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: transparent;
-  }
+.mode:before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  height:4px;
+  width:100%;
+  background:transparent;
+}
 
-  .cat:hover:before,
-  .cat.primary:before {
-    background: var(--acid);
-  }
+.mode:hover:before,
+.mode.active:before{
+  background:var(--acid);
+}
 
-  .cat-code {
-    color: var(--acid);
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: 0.16em;
-    margin-bottom: 16px;
-  }
+.mode-number{
+  color:var(--acid);
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.18em;
+  margin-bottom:18px;
+}
 
-  .cat h3 {
-    margin: 0 0 7px;
-    font-size: 17px;
-    line-height: 1.05;
-    text-transform: uppercase;
-    letter-spacing: -0.02em;
-  }
+.mode-title{
+  margin:0 0 7px;
+  font-size:16px;
+  text-transform:uppercase;
+  line-height:1.05;
+  letter-spacing:-.02em;
+}
 
-  .cat p {
-    margin: 0;
-    color: var(--muted);
-    font-size: 12px;
-    line-height: 1.4;
-  }
+.mode-copy{
+  margin:0;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.45;
+}
 
-  .cat .slash {
-    position: absolute;
-    right: 10px;
-    bottom: -12px;
-    color: var(--acid);
-    font-size: 62px;
-    font-weight: 900;
-    opacity: 0.08;
-    transform: rotate(-10deg);
-  }
+.corner{
+  position:absolute;
+  right:0;
+  bottom:0;
+  width:0;
+  height:0;
+  border-left:24px solid transparent;
+  border-bottom:24px solid var(--acid);
+  opacity:.18;
+}
 
-  .search-box {
-    width: 100%;
-    background: var(--panel);
-    color: var(--text);
-    border: 1px solid var(--line);
-    border-left: 4px solid var(--acid);
-    padding: 15px 14px;
-    font-size: 15px;
-    outline: none;
-    border-radius: 0;
-  }
+.search{
+  width:100%;
+  background:var(--panel);
+  color:var(--text);
+  border:1px solid var(--line);
+  border-left:4px solid var(--acid);
+  border-radius:0;
+  padding:15px;
+  font-size:15px;
+  outline:none;
+}
 
-  .search-box:focus {
-    border-color: var(--acid);
-  }
+.search:focus{
+  border-color:var(--acid);
+}
 
-  .result {
-    margin-top: 16px;
-    background: var(--panel);
-    border: 1px solid var(--line);
-    border-top: 3px solid var(--acid);
-    padding: 18px;
-  }
+.result{
+  margin-top:16px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-top:4px solid var(--acid);
+  padding:18px;
+}
 
-  .result h3 {
-    margin: 0 0 8px;
-    font-size: 22px;
-    text-transform: uppercase;
-    letter-spacing: -0.03em;
-  }
+.result h3{
+  margin:0 0 10px;
+  font-size:22px;
+  text-transform:uppercase;
+  letter-spacing:-.03em;
+}
 
-  .meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-    margin: 12px 0 18px;
-  }
+.meta{
+  display:flex;
+  gap:7px;
+  flex-wrap:wrap;
+  margin-bottom:18px;
+}
 
-  .pill {
-    border: 1px solid #3a3a3a;
-    color: var(--acid);
-    padding: 6px 9px;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
-    background: var(--panel-2);
-  }
+.tag{
+  background:var(--panel2);
+  border:1px solid #333;
+  color:var(--acid);
+  padding:6px 9px;
+  font-size:10px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
 
-  .result h4 {
-    color: var(--acid);
-    margin: 18px 0 8px;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-  }
+.result h4{
+  color:var(--acid);
+  font-size:11px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  margin:18px 0 8px;
+}
 
-  .result ul {
-    padding-left: 20px;
-  }
+.result ul{
+  padding-left:20px;
+}
 
-  .result li,
-  .result p {
-    color: #d4d4d4;
-    line-height: 1.55;
-  }
+.result li,
+.result p{
+  color:#d0d0d0;
+  line-height:1.55;
+}
 
-  .tip {
-    margin-top: 18px;
-    padding: 13px 14px;
-    background: #0c0c0c;
-    border-left: 3px solid var(--acid);
-    color: #cfcfcf;
-    font-size: 14px;
-    line-height: 1.5;
-  }
+.tip{
+  margin-top:18px;
+  padding:12px 14px;
+  background:#090909;
+  border-left:3px solid var(--acid);
+  color:#cfcfcf;
+  font-size:13px;
+  line-height:1.5;
+}
 
-  .nav {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background: #080808;
-    border-top: 1px solid var(--line);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 10px 6px 12px;
-  }
+.nav{
+  position:fixed;
+  left:0;
+  bottom:0;
+  width:100%;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  background:#070707;
+  border-top:1px solid var(--line);
+  padding:10px 6px 12px;
+}
 
-  .nav-item {
-    text-align: center;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
-    color: #747474;
-  }
+.nav-item{
+  text-align:center;
+  color:#666;
+  font-size:10px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
 
-  .nav-mark {
-    display: block;
-    width: 18px;
-    height: 3px;
-    background: #333;
-    margin: 0 auto 7px;
-  }
+.nav-item span{
+  display:block;
+  width:18px;
+  height:3px;
+  background:#333;
+  margin:0 auto 7px;
+}
 
-  .nav-item.active {
-    color: var(--text);
-  }
+.nav-item.active{
+  color:#fff;
+}
 
-  .nav-item.active .nav-mark {
-    background: var(--acid);
-  }
+.nav-item.active span{
+  background:var(--acid);
+}
 
-  @media (max-width: 520px) {
-    .brand-title {
-      font-size: 31px;
-    }
-
-    .hero h2 {
-      font-size: 24px;
-    }
-
-    .cat {
-      min-height: 128px;
-    }
-
-    .cat h3 {
-      font-size: 15px;
-    }
-  }
+@media(max-width:520px){
+  .logo{font-size:32px}
+  .hero h2{font-size:24px}
+  .mode-title{font-size:15px}
+}
 </style>
 </head>
 
 <body>
 
-<header class="topbar">
-  <div class="brand">
-    <div class="brand-kicker">Dessert without the drama</div>
-    <h1 class="brand-title">Sweet Tooth <span>Protein</span></h1>
-    <p class="brand-sub">Simple recipes. Useful nutrition. The occasional bad decision.</p>
+<header class="top">
+  <div class="inner">
+    <div class="system">HIGH PROTEIN DESSERT SYSTEM</div>
+    <h1 class="logo">Sweet Tooth <span>Protein</span></h1>
+    <p class="sub">Simple recipes. Useful nutrition. No nonsense.</p>
   </div>
 </header>
 
 <main class="wrap">
 
   <section class="hero">
-    <div class="hero-label">Craving detected</div>
-    <h2>What are we making?</h2>
-    <p>Pick the situation. We'll do the filtering so you don't have to scroll through fifty desserts while hungry.</p>
+    <div class="hero-code">CRAVING STATUS // ACTIVE</div>
+    <h2>Select your mode</h2>
+    <p>Tell us what kind of effort, time or dessert you have in mind. We'll narrow the options down.</p>
   </section>
 
-  <div class="section-head">
-    <h2>Choose your situation</h2>
+  <div class="section">
+    <div class="section-line"></div>
+    <h3>Craving Modes</h3>
   </div>
 
   <div class="grid">
 
-    <button class="cat primary" data-type="cant">
-      <div class="cat-code">01 / EASY MODE</div>
-      <h3>I Can't Be Arsed</h3>
-      <p>Low effort. Few ingredients. Dessert still happens.</p>
-      <span class="slash">//</span>
+    <button class="mode active" data-type="cant">
+      <div class="mode-number">01 // MINIMUM EFFORT</div>
+      <h3 class="mode-title">I Can't Be Arsed</h3>
+      <p class="mode-copy">Few ingredients. Minimal washing up. Still dessert.</p>
+      <div class="corner"></div>
     </button>
 
-    <button class="cat" data-type="quick">
-      <div class="cat-code">02 / SPEED</div>
-      <h3>15 Minutes or Less</h3>
-      <p>The craving has submitted a formal complaint.</p>
-      <span class="slash">//</span>
+    <button class="mode" data-type="quick">
+      <div class="mode-number">02 // FAST RESPONSE</div>
+      <h3 class="mode-title">15 Minutes or Less</h3>
+      <p class="mode-copy">For cravings with absolutely no patience.</p>
+      <div class="corner"></div>
     </button>
 
-    <button class="cat" data-type="chocolate">
-      <div class="cat-code">03 / CHOCOLATE</div>
-      <h3>Give Me Chocolate</h3>
-      <p>No explanation required.</p>
-      <span class="slash">//</span>
+    <button class="mode" data-type="chocolate">
+      <div class="mode-number">03 // CHOCOLATE</div>
+      <h3 class="mode-title">Give Me Chocolate</h3>
+      <p class="mode-copy">No explanation required.</p>
+      <div class="corner"></div>
     </button>
 
-    <button class="cat" data-type="cold">
-      <div class="cat-code">04 / FROZEN</div>
-      <h3>Something Cold</h3>
-      <p>Ice cream, sorbet and freezer-based happiness.</p>
-      <span class="slash">//</span>
+    <button class="mode" data-type="cold">
+      <div class="mode-number">04 // COLD SYSTEM</div>
+      <h3 class="mode-title">Something Cold</h3>
+      <p class="mode-copy">Ice cream, sorbet and frozen desserts.</p>
+      <div class="corner"></div>
     </button>
 
-    <button class="cat" data-type="chef">
-      <div class="cat-code">05 / ADVANCED</div>
-      <h3>For Real Chefs</h3>
-      <p>You have time, patience and apparently standards.</p>
-      <span class="slash">//</span>
+    <button class="mode" data-type="chef">
+      <div class="mode-number">05 // ADVANCED</div>
+      <h3 class="mode-title">For Real Chefs</h3>
+      <p class="mode-copy">You have time, patience and standards.</p>
+      <div class="corner"></div>
     </button>
 
-    <button class="cat" data-type="trust">
-      <div class="cat-code">06 / QUESTIONABLE</div>
-      <h3>Trust the Process</h3>
-      <p>Some ingredients sound ridiculous. That's part of the fun.</p>
-      <span class="slash">//</span>
+    <button class="mode" data-type="trust">
+      <div class="mode-number">06 // EXPERIMENTAL</div>
+      <h3 class="mode-title">Trust the Process</h3>
+      <p class="mode-copy">The ingredient list may raise questions. Continue anyway.</p>
+      <div class="corner"></div>
     </button>
 
-    <button class="cat" data-type="surprise">
-      <div class="cat-code">07 / RANDOM</div>
-      <h3>Surprise Me</h3>
-      <p>You've made enough decisions today.</p>
-      <span class="slash">//</span>
+    <button class="mode" data-type="surprise">
+      <div class="mode-number">07 // RANDOM SELECT</div>
+      <h3 class="mode-title">Surprise Me</h3>
+      <p class="mode-copy">You've made enough decisions today.</p>
+      <div class="corner"></div>
     </button>
 
-    <button class="cat" data-type="browse">
-      <div class="cat-code">08 / ALL RECIPES</div>
-      <h3>Browse Everything</h3>
-      <p>Have a nosey. Judge nothing.</p>
-      <span class="slash">//</span>
+    <button class="mode" data-type="browse">
+      <div class="mode-number">08 // FULL DATABASE</div>
+      <h3 class="mode-title">Browse Everything</h3>
+      <p class="mode-copy">All recipes. No filtering. Have a nosey.</p>
+      <div class="corner"></div>
     </button>
 
   </div>
 
-  <div class="section-head">
-    <h2>Search</h2>
+  <div class="section">
+    <div class="section-line"></div>
+    <h3>Search Database</h3>
   </div>
 
   <input
-    class="search-box"
     id="searchInput"
+    class="search"
     type="text"
     placeholder="Chocolate, lemon, banana, mousse..."
   >
@@ -445,49 +427,38 @@
 </main>
 
 <nav class="nav">
-  <div class="nav-item active">
-    <span class="nav-mark"></span>
-    Home
-  </div>
-  <div class="nav-item">
-    <span class="nav-mark"></span>
-    Recipes
-  </div>
-  <div class="nav-item">
-    <span class="nav-mark"></span>
-    Saved
-  </div>
-  <div class="nav-item">
-    <span class="nav-mark"></span>
-    Search
-  </div>
+  <div class="nav-item active"><span></span>Home</div>
+  <div class="nav-item"><span></span>Recipes</div>
+  <div class="nav-item"><span></span>Saved</div>
+  <div class="nav-item"><span></span>Search</div>
 </nav>
 
 <script>
 const recipes = [
   {
-    category: "cant",
-    title: "Mega Quick Protein Brownie",
-    time: "2 mins",
-    effort: "Very easy",
-    tags: ["chocolate", "brownie", "quick"],
-    ingredients: [
+    category:"cant",
+    title:"Mega Quick Protein Brownie",
+    time:"2 mins",
+    effort:"Very easy",
+    tags:["chocolate","brownie","quick"],
+    ingredients:[
       "1 egg",
       "100g Greek yoghurt",
       "20g cocoa powder",
       "1 scoop whey protein",
       "20g sugar-free maple syrup"
     ],
-    method: "Mix everything together until smooth, then microwave for 2 minutes.",
-    tip: "Let it cool for a minute. Burning your mouth is not an extra cooking step."
+    method:"Mix everything together until smooth, then microwave for 2 minutes.",
+    tip:"Let it cool briefly. Molten brownie is delicious. Third-degree mouth burns are less useful."
   },
+
   {
-    category: "quick",
-    title: "Lemon Cheesecake Crunch",
-    time: "5 mins",
-    effort: "Very easy",
-    tags: ["lemon", "cheesecake", "quick"],
-    ingredients: [
+    category:"quick",
+    title:"Lemon Cheesecake Crunch",
+    time:"5 mins",
+    effort:"Very easy",
+    tags:["lemon","cheesecake","quick"],
+    ingredients:[
       "200g cottage cheese",
       "Zest of 1/2 lemon",
       "Juice of 1 lemon",
@@ -495,46 +466,49 @@ const recipes = [
       "1 scoop vanilla whey",
       "2 digestive biscuits"
     ],
-    method: "Blend everything except the biscuits until smooth. Tip into a bowl and crush the biscuits over the top.",
-    tip: "This is one of those recipes that looks like you tried harder than you actually did."
+    method:"Blend everything except the biscuits until smooth. Transfer to a bowl and crush the biscuits over the top.",
+    tip:"A good example of a dessert that looks like considerably more effort than it actually was."
   },
+
   {
-    category: "chocolate",
-    title: "High Protein Chocolate Mousse",
-    time: "5 mins + chill",
-    effort: "Easy",
-    tags: ["chocolate", "mousse", "protein"],
-    ingredients: [
+    category:"chocolate",
+    title:"High Protein Chocolate Mousse",
+    time:"5 mins + chill",
+    effort:"Easy",
+    tags:["chocolate","mousse","protein"],
+    ingredients:[
       "400g cottage cheese",
       "60g cocoa powder",
       "60g maple syrup or honey",
       "3 scoops chocolate whey"
     ],
-    method: "Blend everything until completely smooth, then refrigerate for 1 hour.",
-    tip: "Blend it properly. A gritty mousse is a punishment nobody asked for."
+    method:"Blend everything until completely smooth, then refrigerate for 1 hour.",
+    tip:"Blend it properly. Texture matters more than people think."
   },
+
   {
-    category: "cold",
-    title: "Quick Protein Ice Cream",
-    time: "5 mins",
-    effort: "Very easy",
-    tags: ["banana", "ice cream", "cold"],
-    ingredients: [
+    category:"cold",
+    title:"Quick Protein Ice Cream",
+    time:"5 mins",
+    effort:"Very easy",
+    tags:["banana","ice cream","cold"],
+    ingredients:[
       "2 frozen bananas",
       "200g cottage cheese",
       "1 scoop protein powder",
       "Splash of milk"
     ],
-    method: "Blend everything in a food processor until smooth and creamy. Serve immediately.",
-    tip: "Freeze the ingredients first. It gives a much smoother texture."
+    method:"Blend everything in a food processor until smooth and creamy. Serve immediately.",
+    tip:"Freeze the ingredients first rather than blending then freezing. You get a smoother result."
   },
+
   {
-    category: "chef",
-    title: "Protein Chocolate Soufflé",
-    time: "15 mins",
-    effort: "For real chefs",
-    tags: ["souffle", "chocolate", "chef"],
-    ingredients: [
+    category:"chef",
+    title:"Protein Chocolate Soufflé",
+    time:"15 mins",
+    effort:"For real chefs",
+    tags:["souffle","chocolate","chef"],
+    ingredients:[
       "5 large egg whites",
       "1 whole egg",
       "1 scoop chocolate whey protein",
@@ -543,16 +517,17 @@ const recipes = [
       "2 tbsp almond milk",
       "Pinch of salt"
     ],
-    method: "Whisk the egg whites to soft peaks. Gently fold through the remaining ingredients. Fill ramekins and bake at 190°C for 12-15 minutes.",
-    tip: "Fold gently. You spent time creating that air. Don't murder it now."
+    method:"Whisk the egg whites to soft peaks. Gently fold through the remaining ingredients. Fill ramekins and bake at 190°C for 12-15 minutes.",
+    tip:"Fold gently. You spent time putting air into those egg whites. Don't immediately beat it back out."
   },
+
   {
-    category: "trust",
-    title: "Boiled Egg Chocolate Mousse",
-    time: "5 mins + chill",
-    effort: "Easy",
-    tags: ["chocolate", "egg", "mousse"],
-    ingredients: [
+    category:"trust",
+    title:"Boiled Egg Chocolate Mousse",
+    time:"5 mins + chill",
+    effort:"Easy",
+    tags:["chocolate","egg","mousse"],
+    ingredients:[
       "4 hard-boiled eggs",
       "30g cocoa powder",
       "120ml milk",
@@ -560,26 +535,24 @@ const recipes = [
       "Pinch of salt",
       "1 tsp vanilla extract"
     ],
-    method: "Blitz everything in a food processor until smooth, then chill until set.",
-    tip: "Yes. Boiled eggs. Keep going."
+    method:"Blitz everything in a food processor until completely smooth, then chill until set.",
+    tip:"Yes, boiled eggs. The title was not a typo."
   }
 ];
 
-const recipeArea = document.getElementById("recipeArea");
-const searchInput = document.getElementById("searchInput");
+const recipeArea=document.getElementById("recipeArea");
+const searchInput=document.getElementById("searchInput");
 
-function renderRecipe(recipe) {
-  const ingredients = recipe.ingredients
-    .map(item => `<li>${item}</li>`)
-    .join("");
+function renderRecipe(recipe){
+  const ingredients=recipe.ingredients.map(item=>`<li>${item}</li>`).join("");
 
-  recipeArea.innerHTML = `
+  recipeArea.innerHTML=`
     <section class="result">
       <h3>${recipe.title}</h3>
 
       <div class="meta">
-        <span class="pill">${recipe.time}</span>
-        <span class="pill">${recipe.effort}</span>
+        <span class="tag">${recipe.time}</span>
+        <span class="tag">${recipe.effort}</span>
       </div>
 
       <h4>Ingredients</h4>
@@ -589,26 +562,26 @@ function renderRecipe(recipe) {
       <p>${recipe.method}</p>
 
       <div class="tip">
-        <strong>Chef's tip:</strong> ${recipe.tip}
+        <strong>Technical note:</strong> ${recipe.tip}
       </div>
     </section>
   `;
 }
 
-function showRecipe(type) {
-  if (type === "surprise") {
-    const random = recipes[Math.floor(Math.random() * recipes.length)];
+function showRecipe(type){
+  if(type==="surprise"){
+    const random=recipes[Math.floor(Math.random()*recipes.length)];
     renderRecipe(random);
     return;
   }
 
-  if (type === "browse") {
-    recipeArea.innerHTML = recipes.map(recipe => `
+  if(type==="browse"){
+    recipeArea.innerHTML=recipes.map(recipe=>`
       <section class="result">
         <h3>${recipe.title}</h3>
         <div class="meta">
-          <span class="pill">${recipe.time}</span>
-          <span class="pill">${recipe.effort}</span>
+          <span class="tag">${recipe.time}</span>
+          <span class="tag">${recipe.effort}</span>
         </div>
         <p>${recipe.method}</p>
       </section>
@@ -616,49 +589,48 @@ function showRecipe(type) {
     return;
   }
 
-  const match = recipes.find(recipe => recipe.category === type);
-
-  if (match) {
-    renderRecipe(match);
-  }
+  const match=recipes.find(recipe=>recipe.category===type);
+  if(match) renderRecipe(match);
 }
 
-document.querySelectorAll(".cat").forEach(button => {
-  button.addEventListener("click", () => {
+document.querySelectorAll(".mode").forEach(button=>{
+  button.addEventListener("click",()=>{
+    document.querySelectorAll(".mode").forEach(b=>b.classList.remove("active"));
+    button.classList.add("active");
     showRecipe(button.dataset.type);
   });
 });
 
-searchInput.addEventListener("input", () => {
-  const query = searchInput.value.toLowerCase().trim();
+searchInput.addEventListener("input",()=>{
+  const query=searchInput.value.toLowerCase().trim();
 
-  if (!query) {
-    recipeArea.innerHTML = "";
+  if(!query){
+    recipeArea.innerHTML="";
     return;
   }
 
-  const matches = recipes.filter(recipe =>
+  const matches=recipes.filter(recipe=>
     recipe.title.toLowerCase().includes(query) ||
-    recipe.tags.some(tag => tag.includes(query)) ||
-    recipe.ingredients.some(item => item.toLowerCase().includes(query))
+    recipe.tags.some(tag=>tag.includes(query)) ||
+    recipe.ingredients.some(item=>item.toLowerCase().includes(query))
   );
 
-  if (!matches.length) {
-    recipeArea.innerHTML = `
+  if(!matches.length){
+    recipeArea.innerHTML=`
       <section class="result">
-        <h3>No Match Yet</h3>
-        <p>Either we've not added it yet or you've just invented recipe number 51.</p>
+        <h3>No Match Found</h3>
+        <p>Either it isn't in the database yet or you've just invented recipe number 51.</p>
       </section>
     `;
     return;
   }
 
-  recipeArea.innerHTML = matches.map(recipe => `
+  recipeArea.innerHTML=matches.map(recipe=>`
     <section class="result">
       <h3>${recipe.title}</h3>
       <div class="meta">
-        <span class="pill">${recipe.time}</span>
-        <span class="pill">${recipe.effort}</span>
+        <span class="tag">${recipe.time}</span>
+        <span class="tag">${recipe.effort}</span>
       </div>
       <p>${recipe.method}</p>
     </section>
