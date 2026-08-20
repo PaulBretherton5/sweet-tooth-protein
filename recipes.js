@@ -610,10 +610,9 @@ const recipes = [
 
   technicalNote:
     "The cake needs to be completely cool before you cut it horizontally. Attempting cake surgery while it's warm rarely improves the patient."
+
 }
-
 ];
-
 
   
     
