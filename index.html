@@ -6,232 +6,342 @@
 <title>Sweet Tooth Protein</title>
 
 <style>
+  :root {
+    --black: #070707;
+    --panel: #111111;
+    --panel-2: #181818;
+    --line: #2b2b2b;
+    --text: #f4f4f4;
+    --muted: #9d9d9d;
+    --acid: #d9ff00;
+  }
+
   * {
     box-sizing: border-box;
   }
 
   body {
     margin: 0;
+    background:
+      linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px),
+      var(--black);
+    background-size: 28px 28px;
+    color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
-    background: #0b0b0b;
-    color: #ffffff;
-    padding-bottom: 90px;
+    letter-spacing: 0.01em;
+    padding-bottom: 86px;
   }
 
-  header {
-    padding: 28px 20px 18px;
-    border-bottom: 1px solid #222;
-    background: #0b0b0b;
+  .topbar {
+    border-bottom: 1px solid var(--line);
+    background: rgba(7,7,7,0.96);
+    padding: 18px 18px 15px;
   }
 
   .brand {
     max-width: 760px;
-    margin: auto;
+    margin: 0 auto;
   }
 
-  .brand h1 {
+  .brand-kicker {
+    color: var(--acid);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+  }
+
+  .brand-title {
     margin: 0;
     font-size: 34px;
-    line-height: 1;
+    line-height: 0.95;
     font-weight: 900;
-    letter-spacing: -1px;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
   }
 
-  .highlight {
-    color: #d7ff00;
+  .brand-title span {
+    color: var(--acid);
   }
 
-  .brand p {
+  .brand-sub {
     margin: 10px 0 0;
-    color: #bdbdbd;
-    font-size: 15px;
-    line-height: 1.5;
+    color: var(--muted);
+    font-size: 14px;
   }
 
-  .container {
+  .wrap {
     max-width: 760px;
     margin: auto;
     padding: 18px;
   }
 
   .hero {
-    background: linear-gradient(145deg, #171717, #111111);
-    border: 1px solid #292929;
-    border-radius: 22px;
-    padding: 24px;
+    position: relative;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-left: 5px solid var(--acid);
+    padding: 22px 20px;
     margin-bottom: 22px;
   }
 
-  .eyebrow {
-    color: #d7ff00;
-    font-weight: 900;
-    font-size: 12px;
-    letter-spacing: 1.4px;
+  .hero:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46px;
+    height: 46px;
+    background:
+      linear-gradient(135deg, transparent 49%, var(--acid) 50%);
+    opacity: 0.92;
+  }
+
+  .hero-label {
+    color: var(--acid);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
   }
 
   .hero h2 {
-    font-size: 28px;
     margin: 8px 0 8px;
+    font-size: 27px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
   }
 
   .hero p {
     margin: 0;
-    color: #c8c8c8;
+    color: var(--muted);
     line-height: 1.5;
+    max-width: 560px;
   }
 
-  .section-title {
-    font-size: 20px;
+  .section-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin: 26px 0 12px;
+  }
+
+  .section-head:before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: var(--acid);
+  }
+
+  .section-head h2 {
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
   }
 
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    gap: 10px;
   }
 
-  .card {
-    background: #171717;
-    border: 1px solid #292929;
-    border-radius: 18px;
-    padding: 16px;
-    min-height: 132px;
+  .cat {
+    position: relative;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    min-height: 122px;
+    padding: 18px 16px 16px;
+    color: var(--text);
+    text-align: left;
     cursor: pointer;
+    overflow: hidden;
   }
 
-  .card:hover {
-    border-color: #d7ff00;
+  .cat:hover {
+    border-color: var(--acid);
   }
 
-  .card-icon {
-    font-size: 26px;
-    margin-bottom: 10px;
+  .cat:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: transparent;
   }
 
-  .card h3 {
-    margin: 0 0 6px;
+  .cat:hover:before,
+  .cat.primary:before {
+    background: var(--acid);
+  }
+
+  .cat-code {
+    color: var(--acid);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    margin-bottom: 16px;
+  }
+
+  .cat h3 {
+    margin: 0 0 7px;
     font-size: 17px;
+    line-height: 1.05;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
   }
 
-  .card p {
+  .cat p {
     margin: 0;
-    font-size: 13px;
+    color: var(--muted);
+    font-size: 12px;
     line-height: 1.4;
-    color: #a9a9a9;
   }
 
-  .accent-card {
-    border: 1px solid #d7ff00;
-  }
-
-  .search-wrap {
-    margin-top: 24px;
+  .cat .slash {
+    position: absolute;
+    right: 10px;
+    bottom: -12px;
+    color: var(--acid);
+    font-size: 62px;
+    font-weight: 900;
+    opacity: 0.08;
+    transform: rotate(-10deg);
   }
 
   .search-box {
     width: 100%;
-    background: #171717;
-    color: #fff;
-    border: 1px solid #333;
-    border-radius: 14px;
-    padding: 15px;
-    font-size: 16px;
+    background: var(--panel);
+    color: var(--text);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--acid);
+    padding: 15px 14px;
+    font-size: 15px;
     outline: none;
+    border-radius: 0;
   }
 
   .search-box:focus {
-    border-color: #d7ff00;
+    border-color: var(--acid);
   }
 
-  .recipe-result {
-    background: #171717;
-    border: 1px solid #292929;
-    border-radius: 18px;
+  .result {
+    margin-top: 16px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--acid);
     padding: 18px;
-    margin-top: 18px;
   }
 
-  .recipe-result h3 {
-    margin-top: 0;
+  .result h3 {
+    margin: 0 0 8px;
     font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
   }
 
   .meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin: 10px 0 16px;
+    gap: 7px;
+    margin: 12px 0 18px;
   }
 
   .pill {
-    background: #252525;
-    color: #d7ff00;
-    border-radius: 999px;
-    padding: 7px 10px;
-    font-size: 12px;
-    font-weight: 700;
+    border: 1px solid #3a3a3a;
+    color: var(--acid);
+    padding: 6px 9px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    background: var(--panel-2);
   }
 
-  .recipe-result ul {
+  .result h4 {
+    color: var(--acid);
+    margin: 18px 0 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  .result ul {
     padding-left: 20px;
   }
 
-  .recipe-result li {
-    margin-bottom: 7px;
-    color: #dddddd;
+  .result li,
+  .result p {
+    color: #d4d4d4;
+    line-height: 1.55;
   }
 
   .tip {
-    margin-top: 16px;
-    background: #111;
-    border-left: 4px solid #d7ff00;
-    padding: 12px 14px;
-    color: #d4d4d4;
-    border-radius: 8px;
-    line-height: 1.45;
+    margin-top: 18px;
+    padding: 13px 14px;
+    background: #0c0c0c;
+    border-left: 3px solid var(--acid);
+    color: #cfcfcf;
+    font-size: 14px;
+    line-height: 1.5;
   }
 
-  .bottom-nav {
+  .nav {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background: #101010;
-    border-top: 1px solid #292929;
+    background: #080808;
+    border-top: 1px solid var(--line);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 10px 8px 12px;
+    padding: 10px 6px 12px;
   }
 
   .nav-item {
     text-align: center;
-    color: #a8a8a8;
-    font-size: 12px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #747474;
   }
 
-  .nav-item span {
+  .nav-mark {
     display: block;
-    font-size: 21px;
-    margin-bottom: 4px;
+    width: 18px;
+    height: 3px;
+    background: #333;
+    margin: 0 auto 7px;
   }
 
-  .nav-active {
-    color: #d7ff00;
+  .nav-item.active {
+    color: var(--text);
+  }
+
+  .nav-item.active .nav-mark {
+    background: var(--acid);
   }
 
   @media (max-width: 520px) {
-    .brand h1 {
-      font-size: 30px;
+    .brand-title {
+      font-size: 31px;
     }
 
     .hero h2 {
       font-size: 24px;
     }
 
-    .grid {
-      grid-template-columns: 1fr 1fr;
+    .cat {
+      min-height: 128px;
+    }
+
+    .cat h3 {
+      font-size: 15px;
     }
   }
 </style>
@@ -239,111 +349,121 @@
 
 <body>
 
-<header>
+<header class="topbar">
   <div class="brand">
-    <h1>SWEET TOOTH <span class="highlight">PROTEIN</span></h1>
-    <p>Simple desserts. Better macros. No lectures.</p>
+    <div class="brand-kicker">Dessert without the drama</div>
+    <h1 class="brand-title">Sweet Tooth <span>Protein</span></h1>
+    <p class="brand-sub">Simple recipes. Useful nutrition. The occasional bad decision.</p>
   </div>
 </header>
 
-<div class="container">
+<main class="wrap">
 
   <section class="hero">
-    <div class="eyebrow">Sweet craving emergency?</div>
-    <h2>What do you need right now?</h2>
-    <p>Pick your mood and we'll point you towards something worth eating.</p>
+    <div class="hero-label">Craving detected</div>
+    <h2>What are we making?</h2>
+    <p>Pick the situation. We'll do the filtering so you don't have to scroll through fifty desserts while hungry.</p>
   </section>
 
-  <h2 class="section-title">Choose your situation</h2>
+  <div class="section-head">
+    <h2>Choose your situation</h2>
+  </div>
 
   <div class="grid">
 
-    <div class="card accent-card" onclick="showRecipe('cant')">
-      <div class="card-icon">😂</div>
+    <button class="cat primary" data-type="cant">
+      <div class="cat-code">01 / EASY MODE</div>
       <h3>I Can't Be Arsed</h3>
-      <p>Minimum effort. Maximum chance of dessert.</p>
-    </div>
+      <p>Low effort. Few ingredients. Dessert still happens.</p>
+      <span class="slash">//</span>
+    </button>
 
-    <div class="card" onclick="showRecipe('quick')">
-      <div class="card-icon">⚡</div>
-      <h3>I Need It in 15 Mins</h3>
-      <p>Because sometimes waiting is unreasonable.</p>
-    </div>
+    <button class="cat" data-type="quick">
+      <div class="cat-code">02 / SPEED</div>
+      <h3>15 Minutes or Less</h3>
+      <p>The craving has submitted a formal complaint.</p>
+      <span class="slash">//</span>
+    </button>
 
-    <div class="card" onclick="showRecipe('chocolate')">
-      <div class="card-icon">🍫</div>
+    <button class="cat" data-type="chocolate">
+      <div class="cat-code">03 / CHOCOLATE</div>
       <h3>Give Me Chocolate</h3>
       <p>No explanation required.</p>
-    </div>
+      <span class="slash">//</span>
+    </button>
 
-    <div class="card" onclick="showRecipe('cold')">
-      <div class="card-icon">🍦</div>
+    <button class="cat" data-type="cold">
+      <div class="cat-code">04 / FROZEN</div>
       <h3>Something Cold</h3>
-      <p>Frozen, creamy and far more interesting than ice cubes.</p>
-    </div>
+      <p>Ice cream, sorbet and freezer-based happiness.</p>
+      <span class="slash">//</span>
+    </button>
 
-    <div class="card" onclick="showRecipe('chef')">
-      <div class="card-icon">👨‍🍳</div>
+    <button class="cat" data-type="chef">
+      <div class="cat-code">05 / ADVANCED</div>
       <h3>For Real Chefs</h3>
-      <p>You've got time, patience and apparently standards.</p>
-    </div>
+      <p>You have time, patience and apparently standards.</p>
+      <span class="slash">//</span>
+    </button>
 
-    <div class="card" onclick="showRecipe('trust')">
-      <div class="card-icon">🤯</div>
+    <button class="cat" data-type="trust">
+      <div class="cat-code">06 / QUESTIONABLE</div>
       <h3>Trust the Process</h3>
-      <p>The ingredients sound wrong. The dessert isn't.</p>
-    </div>
+      <p>Some ingredients sound ridiculous. That's part of the fun.</p>
+      <span class="slash">//</span>
+    </button>
 
-    <div class="card" onclick="showRecipe('surprise')">
-      <div class="card-icon">🎲</div>
+    <button class="cat" data-type="surprise">
+      <div class="cat-code">07 / RANDOM</div>
       <h3>Surprise Me</h3>
-      <p>Decision fatigue has entered the chat.</p>
-    </div>
+      <p>You've made enough decisions today.</p>
+      <span class="slash">//</span>
+    </button>
 
-    <div class="card" onclick="showRecipe('browse')">
-      <div class="card-icon">🍰</div>
-      <h3>Browse Recipes</h3>
-      <p>Sometimes you just want to have a nosey.</p>
-    </div>
+    <button class="cat" data-type="browse">
+      <div class="cat-code">08 / ALL RECIPES</div>
+      <h3>Browse Everything</h3>
+      <p>Have a nosey. Judge nothing.</p>
+      <span class="slash">//</span>
+    </button>
 
   </div>
 
-  <div class="search-wrap">
-    <h2 class="section-title">Search</h2>
-    <input
-      class="search-box"
-      id="searchInput"
-      type="text"
-      placeholder="Try chocolate, lemon, banana..."
-      oninput="searchRecipes()"
-    >
+  <div class="section-head">
+    <h2>Search</h2>
   </div>
+
+  <input
+    class="search-box"
+    id="searchInput"
+    type="text"
+    placeholder="Chocolate, lemon, banana, mousse..."
+  >
 
   <div id="recipeArea"></div>
 
-</div>
+</main>
 
-<nav class="bottom-nav">
-  <div class="nav-item nav-active">
-    <span>🏠</span>
+<nav class="nav">
+  <div class="nav-item active">
+    <span class="nav-mark"></span>
     Home
   </div>
   <div class="nav-item">
-    <span>🍰</span>
+    <span class="nav-mark"></span>
     Recipes
   </div>
   <div class="nav-item">
-    <span>❤️</span>
+    <span class="nav-mark"></span>
     Saved
   </div>
   <div class="nav-item">
-    <span>🔎</span>
+    <span class="nav-mark"></span>
     Search
   </div>
 </nav>
 
 <script>
-
 const recipes = [
   {
     category: "cant",
@@ -359,9 +479,8 @@ const recipes = [
       "20g sugar-free maple syrup"
     ],
     method: "Mix everything together until smooth, then microwave for 2 minutes.",
-    tip: "Let it cool for a minute. Your mouth will thank you."
+    tip: "Let it cool for a minute. Burning your mouth is not an extra cooking step."
   },
-
   {
     category: "quick",
     title: "Lemon Cheesecake Crunch",
@@ -379,7 +498,6 @@ const recipes = [
     method: "Blend everything except the biscuits until smooth. Tip into a bowl and crush the biscuits over the top.",
     tip: "This is one of those recipes that looks like you tried harder than you actually did."
   },
-
   {
     category: "chocolate",
     title: "High Protein Chocolate Mousse",
@@ -393,9 +511,8 @@ const recipes = [
       "3 scoops chocolate whey"
     ],
     method: "Blend everything until completely smooth, then refrigerate for 1 hour.",
-    tip: "Blend longer than you think you need to. Smooth texture makes the difference."
+    tip: "Blend it properly. A gritty mousse is a punishment nobody asked for."
   },
-
   {
     category: "cold",
     title: "Quick Protein Ice Cream",
@@ -409,9 +526,8 @@ const recipes = [
       "Splash of milk"
     ],
     method: "Blend everything in a food processor until smooth and creamy. Serve immediately.",
-    tip: "Freeze the ingredients first rather than blending then freezing. It helps prevent icy texture."
+    tip: "Freeze the ingredients first. It gives a much smoother texture."
   },
-
   {
     category: "chef",
     title: "Protein Chocolate Soufflé",
@@ -428,9 +544,8 @@ const recipes = [
       "Pinch of salt"
     ],
     method: "Whisk the egg whites to soft peaks. Gently fold through the remaining ingredients. Fill ramekins and bake at 190°C for 12-15 minutes.",
-    tip: "Do not batter the air out of the egg whites. You worked for that fluff."
+    tip: "Fold gently. You spent time creating that air. Don't murder it now."
   },
-
   {
     category: "trust",
     title: "Boiled Egg Chocolate Mousse",
@@ -446,21 +561,24 @@ const recipes = [
       "1 tsp vanilla extract"
     ],
     method: "Blitz everything in a food processor until smooth, then chill until set.",
-    tip: "Yes, boiled eggs. No, we're not joking. Trust the process."
+    tip: "Yes. Boiled eggs. Keep going."
   }
 ];
+
+const recipeArea = document.getElementById("recipeArea");
+const searchInput = document.getElementById("searchInput");
 
 function renderRecipe(recipe) {
   const ingredients = recipe.ingredients
     .map(item => `<li>${item}</li>`)
     .join("");
 
-  document.getElementById("recipeArea").innerHTML = `
-    <div class="recipe-result">
+  recipeArea.innerHTML = `
+    <section class="result">
       <h3>${recipe.title}</h3>
 
       <div class="meta">
-        <span class="pill">⏱ ${recipe.time}</span>
+        <span class="pill">${recipe.time}</span>
         <span class="pill">${recipe.effort}</span>
       </div>
 
@@ -473,7 +591,7 @@ function renderRecipe(recipe) {
       <div class="tip">
         <strong>Chef's tip:</strong> ${recipe.tip}
       </div>
-    </div>
+    </section>
   `;
 }
 
@@ -485,15 +603,15 @@ function showRecipe(type) {
   }
 
   if (type === "browse") {
-    document.getElementById("recipeArea").innerHTML = recipes.map(recipe => `
-      <div class="recipe-result">
+    recipeArea.innerHTML = recipes.map(recipe => `
+      <section class="result">
         <h3>${recipe.title}</h3>
         <div class="meta">
-          <span class="pill">⏱ ${recipe.time}</span>
+          <span class="pill">${recipe.time}</span>
           <span class="pill">${recipe.effort}</span>
         </div>
         <p>${recipe.method}</p>
-      </div>
+      </section>
     `).join("");
     return;
   }
@@ -505,44 +623,47 @@ function showRecipe(type) {
   }
 }
 
-function searchRecipes() {
-  const query = document.getElementById("searchInput").value.toLowerCase().trim();
+document.querySelectorAll(".cat").forEach(button => {
+  button.addEventListener("click", () => {
+    showRecipe(button.dataset.type);
+  });
+});
+
+searchInput.addEventListener("input", () => {
+  const query = searchInput.value.toLowerCase().trim();
 
   if (!query) {
-    document.getElementById("recipeArea").innerHTML = "";
+    recipeArea.innerHTML = "";
     return;
   }
 
-  const matches = recipes.filter(recipe => {
-    return (
-      recipe.title.toLowerCase().includes(query) ||
-      recipe.tags.some(tag => tag.includes(query)) ||
-      recipe.ingredients.some(item => item.toLowerCase().includes(query))
-    );
-  });
+  const matches = recipes.filter(recipe =>
+    recipe.title.toLowerCase().includes(query) ||
+    recipe.tags.some(tag => tag.includes(query)) ||
+    recipe.ingredients.some(item => item.toLowerCase().includes(query))
+  );
 
-  if (matches.length === 0) {
-    document.getElementById("recipeArea").innerHTML = `
-      <div class="recipe-result">
-        <h3>No match yet</h3>
-        <p>Either we've not added it yet, or you've invented a new dessert. Both are possible.</p>
-      </div>
+  if (!matches.length) {
+    recipeArea.innerHTML = `
+      <section class="result">
+        <h3>No Match Yet</h3>
+        <p>Either we've not added it yet or you've just invented recipe number 51.</p>
+      </section>
     `;
     return;
   }
 
-  document.getElementById("recipeArea").innerHTML = matches.map(recipe => `
-    <div class="recipe-result">
+  recipeArea.innerHTML = matches.map(recipe => `
+    <section class="result">
       <h3>${recipe.title}</h3>
       <div class="meta">
-        <span class="pill">⏱ ${recipe.time}</span>
+        <span class="pill">${recipe.time}</span>
         <span class="pill">${recipe.effort}</span>
       </div>
       <p>${recipe.method}</p>
-    </div>
+    </section>
   `).join("");
-}
-
+});
 </script>
 
 </body>
