@@ -611,7 +611,92 @@ const recipes = [
   technicalNote:
     "The cake needs to be completely cool before you cut it horizontally. Attempting cake surgery while it's warm rarely improves the patient."
 
+    },
+
+{
+  id: "high-protein-chocolate-mousse",
+  name: "High-Protein Chocolate Mousse",
+  tagline: "Looks indulgent. Behaves considerably better.",
+  categories: [
+    "Chocolate Fix",
+    "No Bake",
+    "Protein Monsters",
+    "Quick Fixes"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 4,
+  time: 65,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "400g cottage cheese",
+    "60g cocoa powder",
+    "60g maple syrup or honey",
+    "3 scoops (90g) chocolate whey protein"
+  ],
+
+  method: [
+    "Add the cottage cheese, cocoa powder, maple syrup or honey and whey protein to a blender.",
+    "Blend until completely smooth and creamy.",
+    "Divide between four serving glasses or pots.",
+    "Refrigerate for approximately 1 hour before serving."
+  ],
+
+  technicalNote:
+    "Blend it longer than you think. Nobody ordered chocolate mousse with surprise cottage-cheese texture."
+},
+
+{
+  id: "high-protein-snickers-bars",
+  name: "High-Protein Snickers Bars",
+  tagline: "Chocolate, peanut butter and banana. Hard to argue with.",
+  categories: [
+    "Chocolate Fix",
+    "Proper Indulgence",
+    "Cakes & Bites"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 6,
+  time: 45,
+  difficulty: "Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "1 small banana",
+    "1 egg",
+    "40g cocoa powder",
+    "1 tsp baking powder",
+    "150g zero-fat Greek yoghurt",
+    "50g smooth peanut butter",
+    "1 scoop (30g) chocolate whey protein",
+    "Melted dark chocolate for topping",
+    "Chopped peanuts",
+    "Pinch of sea salt"
+  ],
+
+  method: [
+    "Preheat the oven to 180°C.",
+    "Mash the banana until smooth.",
+    "Mix in the egg, cocoa powder and baking powder.",
+    "Transfer to a lined baking dish and bake for approximately 20 minutes.",
+    "Allow the base to cool completely.",
+    "Mix the Greek yoghurt, peanut butter and chocolate whey until smooth.",
+    "Spread over the cooled base.",
+    "Finish with melted dark chocolate, chopped peanuts and a small pinch of sea salt.",
+    "Refrigerate until firm, then cut into 6 bars."
+  ],
+
+  technicalNote:
+    "Let the base cool before adding the topping. Warm brownie and yoghurt make an impressive mess, but not an impressive Snickers bar."
 }
+
 ];
 
   
