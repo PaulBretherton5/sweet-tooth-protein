@@ -378,8 +378,9 @@ const recipes = [
     ],
 
     technicalNote:
-      "Cooling matters. Put frosting onto a hot loaf and you'll create carrot-cake soup."
-  },
+  "Cooling matters. Put frosting onto a hot loaf and you'll create carrot-cake soup."
+}
+];
 
 
   
