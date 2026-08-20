@@ -433,112 +433,9 @@ body{
   <div class="nav-item"><span></span>Search</div>
 </nav>
 
+<script src="recipes.js"></script>
 <script>
-const recipes = [
-  {
-    category:"cant",
-    title:"Mega Quick Protein Brownie",
-    time:"2 mins",
-    effort:"Very easy",
-    tags:["chocolate","brownie","quick"],
-    ingredients:[
-      "1 egg",
-      "100g Greek yoghurt",
-      "20g cocoa powder",
-      "1 scoop whey protein",
-      "20g sugar-free maple syrup"
-    ],
-    method:"Mix everything together until smooth, then microwave for 2 minutes.",
-    tip:"Let it cool briefly. Molten brownie is delicious. Third-degree mouth burns are less useful."
-  },
 
-  {
-    category:"quick",
-    title:"Lemon Cheesecake Crunch",
-    time:"5 mins",
-    effort:"Very easy",
-    tags:["lemon","cheesecake","quick"],
-    ingredients:[
-      "200g cottage cheese",
-      "Zest of 1/2 lemon",
-      "Juice of 1 lemon",
-      "1 tsp vanilla extract",
-      "1 scoop vanilla whey",
-      "2 digestive biscuits"
-    ],
-    method:"Blend everything except the biscuits until smooth. Transfer to a bowl and crush the biscuits over the top.",
-    tip:"A good example of a dessert that looks like considerably more effort than it actually was."
-  },
-
-  {
-    category:"chocolate",
-    title:"High Protein Chocolate Mousse",
-    time:"5 mins + chill",
-    effort:"Easy",
-    tags:["chocolate","mousse","protein"],
-    ingredients:[
-      "400g cottage cheese",
-      "60g cocoa powder",
-      "60g maple syrup or honey",
-      "3 scoops chocolate whey"
-    ],
-    method:"Blend everything until completely smooth, then refrigerate for 1 hour.",
-    tip:"Blend it properly. Texture matters more than people think."
-  },
-
-  {
-    category:"cold",
-    title:"Quick Protein Ice Cream",
-    time:"5 mins",
-    effort:"Very easy",
-    tags:["banana","ice cream","cold"],
-    ingredients:[
-      "2 frozen bananas",
-      "200g cottage cheese",
-      "1 scoop protein powder",
-      "Splash of milk"
-    ],
-    method:"Blend everything in a food processor until smooth and creamy. Serve immediately.",
-    tip:"Freeze the ingredients first rather than blending then freezing. You get a smoother result."
-  },
-
-  {
-    category:"chef",
-    title:"Protein Chocolate Soufflé",
-    time:"15 mins",
-    effort:"For real chefs",
-    tags:["souffle","chocolate","chef"],
-    ingredients:[
-      "5 large egg whites",
-      "1 whole egg",
-      "1 scoop chocolate whey protein",
-      "1 tbsp cocoa powder",
-      "1 tsp coconut oil",
-      "2 tbsp almond milk",
-      "Pinch of salt"
-    ],
-    method:"Whisk the egg whites to soft peaks. Gently fold through the remaining ingredients. Fill ramekins and bake at 190°C for 12-15 minutes.",
-    tip:"Fold gently. You spent time putting air into those egg whites. Don't immediately beat it back out."
-  },
-
-  {
-    category:"trust",
-    title:"Boiled Egg Chocolate Mousse",
-    time:"5 mins + chill",
-    effort:"Easy",
-    tags:["chocolate","egg","mousse"],
-    ingredients:[
-      "4 hard-boiled eggs",
-      "30g cocoa powder",
-      "120ml milk",
-      "30ml maple syrup",
-      "Pinch of salt",
-      "1 tsp vanilla extract"
-    ],
-    method:"Blitz everything in a food processor until completely smooth, then chill until set.",
-    tip:"Yes, boiled eggs. The title was not a typo."
-  }
-];
 
 const recipeArea=document.getElementById("recipeArea");
 const searchInput=document.getElementById("searchInput");
@@ -636,7 +533,8 @@ searchInput.addEventListener("input",()=>{
     </section>
   `).join("");
 });
-</script>
+<script src="recipes.js"></script>
+<script>
 
 </body>
 </html>
