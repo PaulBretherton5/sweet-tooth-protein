@@ -383,26 +383,4 @@ const recipes = [
 
 
   {
-    id: "protein-banoffee-pie",
-    name: "Protein Banoffee Pie",
-    tagline: "The ramekin has finally justified keeping it.",
-    categories: [
-      "No Bake",
-      "Proper Indulgence",
-      "Quick Fixes"
-    ],
-    calories: null,
-    protein: null,
-    carbs: null,
-    fat: null,
-    servings: 2,
-    time: 15,
-    difficulty: "Easy",
-    nutritionStatus: "pending",
-
-    ingredients: [
-      "25g Biscoff biscuits",
-      "10g melted butter",
-      "1 large banana",
-      "20g Biscoff spread",
-      "350g zero
+    
