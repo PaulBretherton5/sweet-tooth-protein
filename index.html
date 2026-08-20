@@ -440,100 +440,255 @@ body{
 const recipeArea=document.getElementById("recipeArea");
 const searchInput=document.getElementById("searchInput");
 
-function renderRecipe(recipe){
-  const ingredients=recipe.ingredients.map(item=>`<li>${item}</li>`).join("");
+function nutritionValue(value, suffix) {
+  if (value === null || value === undefined) {
+    return "CALCULATING";
+  }
 
-  recipeArea.innerHTML=`
+  return `${value}${suffix}`;
+}
+
+function renderRecipe(recipe) {
+  const ingredients = recipe.ingredients
+    .map(item => `<li>${item}</li>`)
+    .join("");
+
+  const method = recipe.method
+    .map((step, index) => `<li>${index + 1}. ${step}</li>`)
+    .join("");
+
+  const categories = recipe.categories
+    .map(category => `<span class="tag">${category}</span>`)
+    .join("");
+
+  recipeArea.innerHTML = `
     <section class="result">
-      <h3>${recipe.title}</h3>
 
       <div class="meta">
-        <span class="tag">${recipe.time}</span>
-        <span class="tag">${recipe.effort}</span>
+        ${categories}
+      </div>
+
+      <h3>${recipe.name}</h3>
+
+      <p>${recipe.tagline || ""}</p>
+
+      <div class="meta">
+        <span class="tag">${recipe.time} MIN</span>
+        <span class="tag">${recipe.difficulty}</span>
+        <span class="tag">${recipe.servings} SERVING${recipe.servings === 1 ? "" : "S"}</span>
+      </div>
+
+      <div class="meta">
+        <span class="tag">${nutritionValue(recipe.calories, " KCAL")}</span>
+        <span class="tag">${nutritionValue(recipe.protein, "G PROTEIN")}</span>
+        <span class="tag">${nutritionValue(recipe.carbs, "G CARBS")}</span>
+        <span class="tag">${nutritionValue(recipe.fat, "G FAT")}</span>
       </div>
 
       <h4>Ingredients</h4>
       <ul>${ingredients}</ul>
 
       <h4>Method</h4>
-      <p>${recipe.method}</p>
+      <ul>${method}</ul>
 
       <div class="tip">
-        <strong>Technical note:</strong> ${recipe.tip}
+        <strong>Technical note:</strong> ${recipe.technicalNote || ""}
       </div>
+
     </section>
   `;
 }
 
-function showRecipe(type){
-  if(type==="surprise"){
-    const random=recipes[Math.floor(Math.random()*recipes.length)];
+
+const categoryMap = {
+  cant: "I Can't Be Arsed",
+  quick: "Quick Fixes",
+  chocolate: "Chocolate Fix",
+  cold: "Something Cold",
+  chef: "For Real Chefs",
+  trust: "Trust the Process"
+};
+
+
+function showRecipe(type) {
+
+  if (type === "surprise") {
+    const random = recipes[Math.floor(Math.random() * recipes.length)];
     renderRecipe(random);
     return;
   }
 
-  if(type==="browse"){
-    recipeArea.innerHTML=recipes.map(recipe=>`
-      <section class="result">
-        <h3>${recipe.title}</h3>
-        <div class="meta">
-          <span class="tag">${recipe.time}</span>
-          <span class="tag">${recipe.effort}</span>
-        </div>
-        <p>${recipe.method}</p>
-      </section>
-    `).join("");
+  if (type === "browse") {
+
+    recipeArea.innerHTML = recipes.map(recipe => {
+
+      const nutrition =
+        recipe.calories !== null
+          ? `${recipe.calories} KCAL // ${recipe.protein}G PROTEIN`
+          : `NUTRITION CALCULATING`;
+
+      return `
+        <button
+          class="result"
+          type="button"
+          data-recipe-id="${recipe.id}"
+          style="width:100%; text-align:left; color:inherit;"
+        >
+          <h3>${recipe.name}</h3>
+
+          <div class="meta">
+            <span class="tag">${recipe.time} MIN</span>
+            <span class="tag">${nutrition}</span>
+          </div>
+
+          <p>${recipe.tagline || ""}</p>
+        </button>
+      `;
+    }).join("");
+
+    document.querySelectorAll("[data-recipe-id]").forEach(button => {
+      button.addEventListener("click", () => {
+        const recipe = recipes.find(item => item.id === button.dataset.recipeId);
+        if (recipe) renderRecipe(recipe);
+      });
+    });
+
     return;
   }
 
-  const match=recipes.find(recipe=>recipe.category===type);
-  if(match) renderRecipe(match);
-}
 
-document.querySelectorAll(".mode").forEach(button=>{
-  button.addEventListener("click",()=>{
-    document.querySelectorAll(".mode").forEach(b=>b.classList.remove("active"));
-    button.classList.add("active");
-    showRecipe(button.dataset.type);
-  });
-});
+  const category = categoryMap[type];
 
-searchInput.addEventListener("input",()=>{
-  const query=searchInput.value.toLowerCase().trim();
+  if (!category) return;
 
-  if(!query){
-    recipeArea.innerHTML="";
-    return;
-  }
-
-  const matches=recipes.filter(recipe=>
-    recipe.title.toLowerCase().includes(query) ||
-    recipe.tags.some(tag=>tag.includes(query)) ||
-    recipe.ingredients.some(item=>item.toLowerCase().includes(query))
+  const matches = recipes.filter(recipe =>
+    recipe.categories.includes(category)
   );
 
-  if(!matches.length){
-    recipeArea.innerHTML=`
+  if (!matches.length) {
+    recipeArea.innerHTML = `
       <section class="result">
-        <h3>No Match Found</h3>
-        <p>Either it isn't in the database yet or you've just invented recipe number 51.</p>
+        <h3>MORE RECIPES COMING</h3>
+        <p>Nothing has been assigned to this section yet.</p>
       </section>
     `;
     return;
   }
 
-  recipeArea.innerHTML=matches.map(recipe=>`
-    <section class="result">
-      <h3>${recipe.title}</h3>
-      <div class="meta">
-        <span class="tag">${recipe.time}</span>
-        <span class="tag">${recipe.effort}</span>
-      </div>
-      <p>${recipe.method}</p>
-    </section>
-  `).join("");
+  renderRecipe(matches[0]);
+}
+
+
+document.querySelectorAll(".mode").forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    document.querySelectorAll(".mode").forEach(item =>
+      item.classList.remove("active")
+    );
+
+    button.classList.add("active");
+
+    showRecipe(button.dataset.type);
+  });
+
 });
-<script src="recipes.js"></script>
+
+
+searchInput.addEventListener("input", () => {
+
+  const query = searchInput.value
+    .toLowerCase()
+    .trim();
+
+  if (!query) {
+    recipeArea.innerHTML = "";
+    return;
+  }
+
+  const matches = recipes.filter(recipe => {
+
+    const nameMatch =
+      recipe.name.toLowerCase().includes(query);
+
+    const ingredientMatch =
+      recipe.ingredients.some(item =>
+        item.toLowerCase().includes(query)
+      );
+
+    const categoryMatch =
+      recipe.categories.some(category =>
+        category.toLowerCase().includes(query)
+      );
+
+    const taglineMatch =
+      (recipe.tagline || "")
+        .toLowerCase()
+        .includes(query);
+
+    return (
+      nameMatch ||
+      ingredientMatch ||
+      categoryMatch ||
+      taglineMatch
+    );
+  });
+
+
+  if (!matches.length) {
+
+    recipeArea.innerHTML = `
+      <section class="result">
+        <h3>NO MATCH FOUND</h3>
+        <p>Either it isn't in the database yet or you've just invented recipe number 51.</p>
+      </section>
+    `;
+
+    return;
+  }
+
+
+  recipeArea.innerHTML = matches.map(recipe => {
+
+    const nutrition =
+      recipe.calories !== null
+        ? `${recipe.calories} KCAL // ${recipe.protein}G PROTEIN`
+        : `NUTRITION CALCULATING`;
+
+    return `
+      <button
+        class="result"
+        type="button"
+        data-search-recipe="${recipe.id}"
+        style="width:100%; text-align:left; color:inherit;"
+      >
+        <h3>${recipe.name}</h3>
+
+        <div class="meta">
+          <span class="tag">${recipe.time} MIN</span>
+          <span class="tag">${nutrition}</span>
+        </div>
+
+        <p>${recipe.tagline || ""}</p>
+      </button>
+    `;
+  }).join("");
+
+
+  document.querySelectorAll("[data-search-recipe]").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+      const recipe = recipes.find(
+        item => item.id === button.dataset.searchRecipe
+      );
+
+      if (recipe) renderRecipe(recipe);
+    });
+
+  });
+
+});
 <script>
 
 </body>
