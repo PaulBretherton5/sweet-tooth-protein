@@ -379,7 +379,239 @@ const recipes = [
 
     technicalNote:
   "Cooling matters. Put frosting onto a hot loaf and you'll create carrot-cake soup."
+},
+
+{
+  id: "high-protein-chocolate-mousse",
+  name: "High-Protein Chocolate Mousse",
+  tagline: "Looks indulgent. Behaves considerably better.",
+  categories: [
+    "Chocolate Fix",
+    "No Bake",
+    "Protein Monsters",
+    "Quick Fixes"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 4,
+  time: 65,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "400g cottage cheese",
+    "60g cocoa powder",
+    "60g maple syrup or honey",
+    "3 scoops (90g) chocolate whey protein"
+  ],
+
+  method: [
+    "Add the cottage cheese, cocoa powder, maple syrup or honey and whey protein to a blender or food processor.",
+    "Blend thoroughly until completely smooth and creamy.",
+    "Divide into serving bowls or pots.",
+    "Refrigerate for approximately 1 hour before serving."
+  ],
+
+  technicalNote:
+    "Blend longer than you think you need to. Nobody ordered a chocolate mousse with surprise cottage-cheese texture."
+},
+
+{
+  id: "high-protein-snickers-bars",
+  name: "High-Protein Snickers Bars",
+  tagline: "Chocolate, peanut butter and banana. Hard to argue with.",
+  categories: [
+    "Chocolate Fix",
+    "Proper Indulgence",
+    "Cakes & Bites"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 6,
+  time: 45,
+  difficulty: "Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "1 small banana",
+    "1 egg",
+    "40g cocoa powder",
+    "1 tsp baking powder",
+    "150g zero-fat Greek yoghurt",
+    "50g zero-added-sugar peanut butter",
+    "1 scoop (30g) chocolate whey protein",
+    "Melted chocolate for topping",
+    "Chopped peanuts",
+    "Pinch of sea salt"
+  ],
+
+  method: [
+    "Preheat the oven to 180°C.",
+    "Mash the banana until smooth.",
+    "Mix in the egg, cocoa powder and baking powder.",
+    "Transfer to a lined baking dish and bake for approximately 20 minutes.",
+    "Allow the base to cool.",
+    "Mix the Greek yoghurt, peanut butter and chocolate whey protein until smooth.",
+    "Spread the topping over the cooled base.",
+    "Finish with melted chocolate, chopped peanuts and a small pinch of sea salt.",
+    "Refrigerate until firm.",
+    "Cut into 6 bars."
+  ],
+
+  technicalNote:
+    "Let the base cool before adding the topping. Warm brownie and yoghurt topping make an impressive mess, but not an impressive Snickers bar."
+},
+
+{
+  id: "quick-as-oreo-dessert",
+  name: "Quick-As... Oreo Dessert",
+  tagline: "The sweet-tooth emergency service.",
+  categories: [
+    "I Can't Be Arsed",
+    "Quick Fixes",
+    "No Bake",
+    "Chocolate Fix"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 1,
+  time: 3,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "200g zero-fat Greek yoghurt",
+    "1 scoop (30g) vanilla whey protein",
+    "1 Oreo, broken into pieces",
+    "A few additional Oreo crumbs for topping"
+  ],
+
+  method: [
+    "Add the Greek yoghurt and vanilla whey protein to a bowl.",
+    "Whisk or mix thoroughly until completely smooth.",
+    "Break one Oreo into pieces and mix through.",
+    "Transfer to a serving bowl.",
+    "Finish with a few additional Oreo crumbs and serve immediately."
+  ],
+
+  technicalNote:
+    "Three minutes is barely cooking. That is very much the point."
+},
+
+{
+  id: "huge-brownie-brick",
+  name: "Huge Brownie Brick",
+  tagline: "Subtlety was never part of the specification.",
+  categories: [
+    "Chocolate Fix",
+    "Cakes & Bites",
+    "Proper Indulgence"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 6,
+  time: 55,
+  difficulty: "Medium",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "300g zero-fat Greek yoghurt",
+    "60ml almond milk",
+    "40g melted butter",
+    "1 egg",
+    "50g oat flour",
+    "70g sugar substitute",
+    "2 scoops (60g) vanilla whey protein",
+    "1 crushed Oreo",
+    "100g zero-fat Greek yoghurt for frosting",
+    "40g sugar substitute for frosting",
+    "1 scoop (30g) whey protein for frosting",
+    "Crushed Oreo for topping"
+  ],
+
+  method: [
+    "Preheat the oven to 180°C.",
+    "Mix the Greek yoghurt, almond milk, melted butter and egg together in one bowl.",
+    "In a separate bowl, combine the oat flour, sugar substitute and whey protein.",
+    "Combine the wet and dry mixtures.",
+    "Fold through the crushed Oreo.",
+    "Pour into a lined baking dish.",
+    "Bake for approximately 40 minutes.",
+    "Allow to cool completely.",
+    "Mix the Greek yoghurt, sugar substitute and whey protein for the frosting.",
+    "Spread the frosting over the cooled brownie.",
+    "Finish with crushed Oreo.",
+    "Cut into 6 portions."
+  ],
+
+  technicalNote:
+    "Cool it completely before frosting. Otherwise the frosting becomes less 'frosting' and more 'protein yoghurt landslide'."
+},
+
+{
+  id: "protein-stuffed-cake",
+  name: "Protein Stuffed Cake",
+  tagline: "The filling is where this starts showing off.",
+  categories: [
+    "Cakes & Bites",
+    "Chocolate Fix",
+    "Proper Indulgence"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 8,
+  time: 45,
+  difficulty: "Medium",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "210ml almond milk",
+    "200g egg whites",
+    "100g zero-fat Greek yoghurt",
+    "30ml vanilla extract",
+    "50g plain flour",
+    "30g oat flour",
+    "2 scoops (60g) whey protein - vanilla or cookies and cream",
+    "5g baking powder",
+    "Pinch of salt",
+    "3 crushed Oreos",
+    "200g zero-fat Greek yoghurt for filling",
+    "1 scoop (30g) of the same whey protein for filling",
+    "50g sugar-free sweetener",
+    "Small splashes of almond milk as required"
+  ],
+
+  method: [
+    "Preheat the oven to 180°C.",
+    "Mix the almond milk, egg whites, Greek yoghurt and vanilla extract together.",
+    "In a separate bowl, combine the plain flour, oat flour, whey protein, baking powder and salt.",
+    "Add the crushed Oreos.",
+    "Combine the wet and dry ingredients and mix until even.",
+    "Transfer to a lined baking dish.",
+    "Bake for approximately 25 minutes.",
+    "Allow the cake to cool completely.",
+    "Carefully slice the cake horizontally into two layers.",
+    "Mix the Greek yoghurt, whey protein and sweetener for the filling.",
+    "Add small splashes of almond milk until the filling reaches a smooth, spreadable consistency.",
+    "Spread the filling over the bottom cake layer.",
+    "Place the top cake layer back into position.",
+    "Cut into 8 portions."
+  ],
+
+  technicalNote:
+    "The cake needs to be completely cool before you cut it horizontally. Attempting cake surgery while it's warm rarely improves the patient."
 }
+
 ];
 
 
