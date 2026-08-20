@@ -6,263 +6,544 @@
 <title>Sweet Tooth Protein</title>
 
 <style>
-    * {
-        box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b0b;
+    color: #ffffff;
+    padding-bottom: 90px;
+  }
+
+  header {
+    padding: 28px 20px 18px;
+    border-bottom: 1px solid #222;
+    background: #0b0b0b;
+  }
+
+  .brand {
+    max-width: 760px;
+    margin: auto;
+  }
+
+  .brand h1 {
+    margin: 0;
+    font-size: 34px;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: -1px;
+  }
+
+  .highlight {
+    color: #d7ff00;
+  }
+
+  .brand p {
+    margin: 10px 0 0;
+    color: #bdbdbd;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .container {
+    max-width: 760px;
+    margin: auto;
+    padding: 18px;
+  }
+
+  .hero {
+    background: linear-gradient(145deg, #171717, #111111);
+    border: 1px solid #292929;
+    border-radius: 22px;
+    padding: 24px;
+    margin-bottom: 22px;
+  }
+
+  .eyebrow {
+    color: #d7ff00;
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+    margin: 8px 0 8px;
+  }
+
+  .hero p {
+    margin: 0;
+    color: #c8c8c8;
+    line-height: 1.5;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin: 26px 0 12px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .card {
+    background: #171717;
+    border: 1px solid #292929;
+    border-radius: 18px;
+    padding: 16px;
+    min-height: 132px;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    border-color: #d7ff00;
+  }
+
+  .card-icon {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .card h3 {
+    margin: 0 0 6px;
+    font-size: 17px;
+  }
+
+  .card p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #a9a9a9;
+  }
+
+  .accent-card {
+    border: 1px solid #d7ff00;
+  }
+
+  .search-wrap {
+    margin-top: 24px;
+  }
+
+  .search-box {
+    width: 100%;
+    background: #171717;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 14px;
+    padding: 15px;
+    font-size: 16px;
+    outline: none;
+  }
+
+  .search-box:focus {
+    border-color: #d7ff00;
+  }
+
+  .recipe-result {
+    background: #171717;
+    border: 1px solid #292929;
+    border-radius: 18px;
+    padding: 18px;
+    margin-top: 18px;
+  }
+
+  .recipe-result h3 {
+    margin-top: 0;
+    font-size: 22px;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0 16px;
+  }
+
+  .pill {
+    background: #252525;
+    color: #d7ff00;
+    border-radius: 999px;
+    padding: 7px 10px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .recipe-result ul {
+    padding-left: 20px;
+  }
+
+  .recipe-result li {
+    margin-bottom: 7px;
+    color: #dddddd;
+  }
+
+  .tip {
+    margin-top: 16px;
+    background: #111;
+    border-left: 4px solid #d7ff00;
+    padding: 12px 14px;
+    color: #d4d4d4;
+    border-radius: 8px;
+    line-height: 1.45;
+  }
+
+  .bottom-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #101010;
+    border-top: 1px solid #292929;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px 8px 12px;
+  }
+
+  .nav-item {
+    text-align: center;
+    color: #a8a8a8;
+    font-size: 12px;
+  }
+
+  .nav-item span {
+    display: block;
+    font-size: 21px;
+    margin-bottom: 4px;
+  }
+
+  .nav-active {
+    color: #d7ff00;
+  }
+
+  @media (max-width: 520px) {
+    .brand h1 {
+      font-size: 30px;
     }
 
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #f7f3f8;
-        color: #222;
+    .hero h2 {
+      font-size: 24px;
     }
 
-    header {
-        background: #6b2d5c;
-        color: white;
-        text-align: center;
-        padding: 30px 20px;
+    .grid {
+      grid-template-columns: 1fr 1fr;
     }
-
-    header h1 {
-        margin: 0;
-        font-size: 32px;
-    }
-
-    header p {
-        margin: 8px 0 0;
-        font-size: 16px;
-    }
-
-    .container {
-        max-width: 700px;
-        margin: auto;
-        padding: 20px;
-    }
-
-    .question {
-        font-size: 22px;
-        font-weight: bold;
-        margin: 25px 0 15px;
-        text-align: center;
-    }
-
-    .buttons {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
-    }
-
-    button {
-        border: none;
-        border-radius: 14px;
-        padding: 18px 10px;
-        font-size: 16px;
-        font-weight: bold;
-        background: white;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-        cursor: pointer;
-    }
-
-    button:hover {
-        transform: translateY(-2px);
-    }
-
-    .recipe {
-        background: white;
-        border-radius: 18px;
-        padding: 20px;
-        margin-top: 25px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-
-    .recipe h2 {
-        margin-top: 0;
-        color: #6b2d5c;
-    }
-
-    .recipe ul {
-        padding-left: 20px;
-    }
-
-    .tag {
-        display: inline-block;
-        background: #ead7e5;
-        color: #6b2d5c;
-        padding: 6px 10px;
-        border-radius: 20px;
-        margin: 4px;
-        font-size: 13px;
-    }
+  }
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>🍫 Sweet Tooth Protein</h1>
-    <p>High-protein desserts for when the sweet tooth hits.</p>
+  <div class="brand">
+    <h1>SWEET TOOTH <span class="highlight">PROTEIN</span></h1>
+    <p>Simple desserts. Better macros. No lectures.</p>
+  </div>
 </header>
 
 <div class="container">
 
-    <div class="question">
-        What are you in the mood for?
+  <section class="hero">
+    <div class="eyebrow">Sweet craving emergency?</div>
+    <h2>What do you need right now?</h2>
+    <p>Pick your mood and we'll point you towards something worth eating.</p>
+  </section>
+
+  <h2 class="section-title">Choose your situation</h2>
+
+  <div class="grid">
+
+    <div class="card accent-card" onclick="showRecipe('cant')">
+      <div class="card-icon">😂</div>
+      <h3>I Can't Be Arsed</h3>
+      <p>Minimum effort. Maximum chance of dessert.</p>
     </div>
 
-    <div class="buttons">
-        <button onclick="showRecipe('chocolate')">🍫 Chocolate</button>
-        <button onclick="showRecipe('cake')">🍰 Cake</button>
-        <button onclick="showRecipe('quick')">⚡ Quick</button>
-        <button onclick="showRecipe('frozen')">🍦 Frozen</button>
+    <div class="card" onclick="showRecipe('quick')">
+      <div class="card-icon">⚡</div>
+      <h3>I Need It in 15 Mins</h3>
+      <p>Because sometimes waiting is unreasonable.</p>
     </div>
 
-    <div class="question">
-        How much can you be arsed? 😂
+    <div class="card" onclick="showRecipe('chocolate')">
+      <div class="card-icon">🍫</div>
+      <h3>Give Me Chocolate</h3>
+      <p>No explanation required.</p>
     </div>
 
-    <div class="buttons">
-        <button onclick="showRecipe('easy')">😂 Can't be arsed</button>
-        <button onclick="showRecipe('15')">🏃 15 minutes</button>
-        <button onclick="showRecipe('proper')">👨‍🍳 I'm cooking</button>
-        <button onclick="showRecipe('surprise')">🎲 Surprise me</button>
+    <div class="card" onclick="showRecipe('cold')">
+      <div class="card-icon">🍦</div>
+      <h3>Something Cold</h3>
+      <p>Frozen, creamy and far more interesting than ice cubes.</p>
     </div>
 
-    <div id="recipeArea"></div>
+    <div class="card" onclick="showRecipe('chef')">
+      <div class="card-icon">👨‍🍳</div>
+      <h3>For Real Chefs</h3>
+      <p>You've got time, patience and apparently standards.</p>
+    </div>
+
+    <div class="card" onclick="showRecipe('trust')">
+      <div class="card-icon">🤯</div>
+      <h3>Trust the Process</h3>
+      <p>The ingredients sound wrong. The dessert isn't.</p>
+    </div>
+
+    <div class="card" onclick="showRecipe('surprise')">
+      <div class="card-icon">🎲</div>
+      <h3>Surprise Me</h3>
+      <p>Decision fatigue has entered the chat.</p>
+    </div>
+
+    <div class="card" onclick="showRecipe('browse')">
+      <div class="card-icon">🍰</div>
+      <h3>Browse Recipes</h3>
+      <p>Sometimes you just want to have a nosey.</p>
+    </div>
+
+  </div>
+
+  <div class="search-wrap">
+    <h2 class="section-title">Search</h2>
+    <input
+      class="search-box"
+      id="searchInput"
+      type="text"
+      placeholder="Try chocolate, lemon, banana..."
+      oninput="searchRecipes()"
+    >
+  </div>
+
+  <div id="recipeArea"></div>
 
 </div>
 
+<nav class="bottom-nav">
+  <div class="nav-item nav-active">
+    <span>🏠</span>
+    Home
+  </div>
+  <div class="nav-item">
+    <span>🍰</span>
+    Recipes
+  </div>
+  <div class="nav-item">
+    <span>❤️</span>
+    Saved
+  </div>
+  <div class="nav-item">
+    <span>🔎</span>
+    Search
+  </div>
+</nav>
+
 <script>
 
-const recipes = {
+const recipes = [
+  {
+    category: "cant",
+    title: "Mega Quick Protein Brownie",
+    time: "2 mins",
+    effort: "Very easy",
+    tags: ["chocolate", "brownie", "quick"],
+    ingredients: [
+      "1 egg",
+      "100g Greek yoghurt",
+      "20g cocoa powder",
+      "1 scoop whey protein",
+      "20g sugar-free maple syrup"
+    ],
+    method: "Mix everything together until smooth, then microwave for 2 minutes.",
+    tip: "Let it cool for a minute. Your mouth will thank you."
+  },
 
-    chocolate: {
-        title: "🍫 Mega Quick Protein Brownie",
-        ingredients: [
-            "1 egg",
-            "100g Greek yoghurt",
-            "20g cocoa powder",
-            "1 scoop (30g) whey protein",
-            "20g sugar-free maple syrup"
-        ],
-        method: "Mix everything together and microwave for 2 minutes. Enjoy!"
-    },
+  {
+    category: "quick",
+    title: "Lemon Cheesecake Crunch",
+    time: "5 mins",
+    effort: "Very easy",
+    tags: ["lemon", "cheesecake", "quick"],
+    ingredients: [
+      "200g cottage cheese",
+      "Zest of 1/2 lemon",
+      "Juice of 1 lemon",
+      "1 tsp vanilla extract",
+      "1 scoop vanilla whey",
+      "2 digestive biscuits"
+    ],
+    method: "Blend everything except the biscuits until smooth. Tip into a bowl and crush the biscuits over the top.",
+    tip: "This is one of those recipes that looks like you tried harder than you actually did."
+  },
 
-    cake: {
-        title: "🫐 4 Ingredient Blueberry Cake",
-        ingredients: [
-            "4 bananas",
-            "400g zero-fat Greek yoghurt",
-            "4 eggs",
-            "150g blueberries"
-        ],
-        method: "Blend the bananas, yoghurt and eggs. Pour into a lined cake tin, gently mix in the blueberries and bake at 180°C for 45 minutes. Allow to cool before slicing."
-    },
+  {
+    category: "chocolate",
+    title: "High Protein Chocolate Mousse",
+    time: "5 mins + chill",
+    effort: "Easy",
+    tags: ["chocolate", "mousse", "protein"],
+    ingredients: [
+      "400g cottage cheese",
+      "60g cocoa powder",
+      "60g maple syrup or honey",
+      "3 scoops chocolate whey"
+    ],
+    method: "Blend everything until completely smooth, then refrigerate for 1 hour.",
+    tip: "Blend longer than you think you need to. Smooth texture makes the difference."
+  },
 
-    quick: {
-        title: "🍋 Lemon Cheesecake Crunch",
-        ingredients: [
-            "200g cottage cheese",
-            "Zest of ½ lemon",
-            "Juice of 1 lemon",
-            "1 tsp vanilla extract",
-            "1 scoop vanilla whey",
-            "2 digestive biscuits"
-        ],
-        method: "Blend everything except the biscuits until smooth. Transfer to a bowl, crush the biscuits over the top and enjoy."
-    },
+  {
+    category: "cold",
+    title: "Quick Protein Ice Cream",
+    time: "5 mins",
+    effort: "Very easy",
+    tags: ["banana", "ice cream", "cold"],
+    ingredients: [
+      "2 frozen bananas",
+      "200g cottage cheese",
+      "1 scoop protein powder",
+      "Splash of milk"
+    ],
+    method: "Blend everything in a food processor until smooth and creamy. Serve immediately.",
+    tip: "Freeze the ingredients first rather than blending then freezing. It helps prevent icy texture."
+  },
 
-    frozen: {
-        title: "🍓 Easy Protein Sorbet",
-        ingredients: [
-            "400g frozen fruit",
-            "1 scoop clear whey protein",
-            "150ml water"
-        ],
-        method: "Blend everything until smooth and freeze until firm."
-    },
+  {
+    category: "chef",
+    title: "Protein Chocolate Soufflé",
+    time: "15 mins",
+    effort: "For real chefs",
+    tags: ["souffle", "chocolate", "chef"],
+    ingredients: [
+      "5 large egg whites",
+      "1 whole egg",
+      "1 scoop chocolate whey protein",
+      "1 tbsp cocoa powder",
+      "1 tsp coconut oil",
+      "2 tbsp almond milk",
+      "Pinch of salt"
+    ],
+    method: "Whisk the egg whites to soft peaks. Gently fold through the remaining ingredients. Fill ramekins and bake at 190°C for 12-15 minutes.",
+    tip: "Do not batter the air out of the egg whites. You worked for that fluff."
+  },
 
-    easy: {
-        title: "🍫 Mega Quick Protein Brownie",
-        ingredients: [
-            "1 egg",
-            "100g Greek yoghurt",
-            "20g cocoa powder",
-            "1 scoop whey protein",
-            "20g sugar-free maple syrup"
-        ],
-        method: "Mix everything together and microwave for 2 minutes."
-    },
+  {
+    category: "trust",
+    title: "Boiled Egg Chocolate Mousse",
+    time: "5 mins + chill",
+    effort: "Easy",
+    tags: ["chocolate", "egg", "mousse"],
+    ingredients: [
+      "4 hard-boiled eggs",
+      "30g cocoa powder",
+      "120ml milk",
+      "30ml maple syrup",
+      "Pinch of salt",
+      "1 tsp vanilla extract"
+    ],
+    method: "Blitz everything in a food processor until smooth, then chill until set.",
+    tip: "Yes, boiled eggs. No, we're not joking. Trust the process."
+  }
+];
 
-    "15": {
-        title: "🍌 Quick Protein Ice Cream",
-        ingredients: [
-            "2 frozen bananas",
-            "200g cottage cheese",
-            "1 scoop protein powder",
-            "Splash of milk"
-        ],
-        method: "Blend all ingredients in a food processor until smooth and creamy. Serve immediately."
-    },
+function renderRecipe(recipe) {
+  const ingredients = recipe.ingredients
+    .map(item => `<li>${item}</li>`)
+    .join("");
 
-    proper: {
-        title: "🍫 Protein Chocolate Soufflé",
-        ingredients: [
-            "5 large egg whites",
-            "1 large egg",
-            "1 scoop chocolate whey",
-            "1 tbsp cocoa powder",
-            "1 tsp coconut oil",
-            "2 tbsp almond milk",
-            "Pinch of salt"
-        ],
-        method: "Whisk egg whites to soft peaks. Gently fold in the remaining ingredients. Place into soufflé dishes and bake at 190°C for 12–15 minutes."
-    }
+  document.getElementById("recipeArea").innerHTML = `
+    <div class="recipe-result">
+      <h3>${recipe.title}</h3>
 
-};
+      <div class="meta">
+        <span class="pill">⏱ ${recipe.time}</span>
+        <span class="pill">${recipe.effort}</span>
+      </div>
+
+      <h4>Ingredients</h4>
+      <ul>${ingredients}</ul>
+
+      <h4>Method</h4>
+      <p>${recipe.method}</p>
+
+      <div class="tip">
+        <strong>Chef's tip:</strong> ${recipe.tip}
+      </div>
+    </div>
+  `;
+}
 
 function showRecipe(type) {
+  if (type === "surprise") {
+    const random = recipes[Math.floor(Math.random() * recipes.length)];
+    renderRecipe(random);
+    return;
+  }
 
-    let recipe;
-
-    if (type === "surprise") {
-
-        const keys = Object.keys(recipes);
-        const randomKey = keys[Math.floor(Math.random() * keys.length)];
-        recipe = recipes[randomKey];
-
-    } else {
-
-        recipe = recipes[type];
-
-    }
-
-    if (!recipe) return;
-
-    let ingredientsHTML = "";
-
-    recipe.ingredients.forEach(item => {
-        ingredientsHTML += `<li>${item}</li>`;
-    });
-
-    document.getElementById("recipeArea").innerHTML = `
-        <div class="recipe">
-            <h2>${recipe.title}</h2>
-
-            <h3>Ingredients</h3>
-
-            <ul>
-                ${ingredientsHTML}
-            </ul>
-
-            <h3>Method</h3>
-
-            <p>${recipe.method}</p>
+  if (type === "browse") {
+    document.getElementById("recipeArea").innerHTML = recipes.map(recipe => `
+      <div class="recipe-result">
+        <h3>${recipe.title}</h3>
+        <div class="meta">
+          <span class="pill">⏱ ${recipe.time}</span>
+          <span class="pill">${recipe.effort}</span>
         </div>
+        <p>${recipe.method}</p>
+      </div>
+    `).join("");
+    return;
+  }
+
+  const match = recipes.find(recipe => recipe.category === type);
+
+  if (match) {
+    renderRecipe(match);
+  }
+}
+
+function searchRecipes() {
+  const query = document.getElementById("searchInput").value.toLowerCase().trim();
+
+  if (!query) {
+    document.getElementById("recipeArea").innerHTML = "";
+    return;
+  }
+
+  const matches = recipes.filter(recipe => {
+    return (
+      recipe.title.toLowerCase().includes(query) ||
+      recipe.tags.some(tag => tag.includes(query)) ||
+      recipe.ingredients.some(item => item.toLowerCase().includes(query))
+    );
+  });
+
+  if (matches.length === 0) {
+    document.getElementById("recipeArea").innerHTML = `
+      <div class="recipe-result">
+        <h3>No match yet</h3>
+        <p>Either we've not added it yet, or you've invented a new dessert. Both are possible.</p>
+      </div>
     `;
+    return;
+  }
+
+  document.getElementById("recipeArea").innerHTML = matches.map(recipe => `
+    <div class="recipe-result">
+      <h3>${recipe.title}</h3>
+      <div class="meta">
+        <span class="pill">⏱ ${recipe.time}</span>
+        <span class="pill">${recipe.effort}</span>
+      </div>
+      <p>${recipe.method}</p>
+    </div>
+  `).join("");
 }
 
 </script>
-<!-- Sweet Tooth Protein -->
+
 </body>
 </html>
