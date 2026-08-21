@@ -429,14 +429,15 @@ const recipes = [
     "Proper Indulgence",
     "Cakes & Bites"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 232,
+  protein: 13.5,
+  carbs: 14.2,
+  fat: 13.2,
+  servings: 6,
   servings: 6,
   time: 45,
   difficulty: "Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "1 small banana",
