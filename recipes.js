@@ -925,6 +925,224 @@ const recipes = [
 
   technicalNote:
     "Cooling the sweet potato first matters. The second bake matters too. This one earns its place in Trust the Process."
+},
+
+{
+  id: "high-protein-tiramisu",
+  name: "Low-Calorie High-Protein Tiramisu",
+  tagline: "Coffee. Cream. Protein. Italy may have questions.",
+  categories: [
+    "No Bake",
+    "Traditional Style",
+    "Protein Monsters",
+    "Proper Indulgence"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 4,
+  time: 15,
+  difficulty: "Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "2 shots espresso, cooled",
+    "12 unsugared ladyfingers",
+    "300g zero-fat Greek yoghurt",
+    "40g low-fat cream cheese",
+    "1 tbsp vanilla extract",
+    "2 scoops (60g) vanilla whey protein",
+    "Cocoa powder for dusting"
+  ],
+
+  method: [
+    "Make two shots of espresso and allow them to cool completely.",
+    "Briefly soak the ladyfingers in the cooled coffee.",
+    "Arrange the soaked ladyfingers across the bottom of a dish or individual serving glasses.",
+    "Mix the Greek yoghurt, low-fat cream cheese, vanilla extract and vanilla whey until smooth.",
+    "Spread the protein cream evenly over the coffee-soaked ladyfingers.",
+    "Dust lightly with cocoa powder.",
+    "Refrigerate until thoroughly chilled before serving."
+  ],
+
+  technicalNote:
+    "Dip the ladyfingers. Don't drown them. We're making tiramisu, not recovering biscuits from a shipwreck."
+},
+
+{
+  id: "protein-donuts",
+  name: "Protein Donuts",
+  tagline: "Six donuts. Considerably fewer consequences.",
+  categories: [
+    "Cakes & Bites",
+    "Quick Fixes",
+    "Protein Monsters"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 6,
+  time: 20,
+  difficulty: "Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "40g plain flour",
+    "1 tsp powdered peanut butter",
+    "1.5 tsp baking powder",
+    "10g sugar-free sweetener",
+    "80g zero-fat Greek yoghurt",
+    "1 egg",
+    "Strawberry protein yoghurt for topping",
+    "1 scoop whey protein for topping",
+    "20g icing sugar",
+    "Sprinkles"
+  ],
+
+  method: [
+    "Preheat the oven to 180°C.",
+    "Mix the flour, powdered peanut butter, baking powder, sweetener, Greek yoghurt and egg until evenly combined.",
+    "Divide the mixture between six cavities in a donut baking tray. Alternatively, form six small dough shapes by hand.",
+    "Bake for approximately 8 minutes until lightly browned.",
+    "Remove from the oven and allow the donuts to cool completely.",
+    "Mix the strawberry protein yoghurt, whey protein and icing sugar until smooth.",
+    "Coat the cooled donuts with the topping.",
+    "Finish with sprinkles."
+  ],
+
+  technicalNote:
+    "Eight minutes means keep an eye on them. Tiny baked goods can go from 'lightly golden' to 'building material' surprisingly quickly."
+},
+
+{
+  id: "protein-banoffee-pie",
+  name: "Protein Banoffee Pie",
+  tagline: "The ramekin you've been saving finally has a job.",
+  categories: [
+    "No Bake",
+    "Proper Indulgence",
+    "Quick Fixes"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 2,
+  time: 15,
+  difficulty: "Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "25g Biscoff biscuits",
+    "10g melted butter",
+    "1 large banana",
+    "20g Biscoff spread",
+    "350g zero-fat Greek yoghurt",
+    "1 scoop (30g) vanilla whey protein",
+    "1 tsp vanilla extract",
+    "20g sugar substitute"
+  ],
+
+  method: [
+    "Crush the Biscoff biscuits and combine with the melted butter.",
+    "Press the mixture into the bottom of two glass ramekins, reserving a few crumbs for finishing.",
+    "Slice the banana.",
+    "Layer the banana and Biscoff spread over the biscuit base.",
+    "Mix the Greek yoghurt, vanilla whey, vanilla extract and sugar substitute until smooth.",
+    "Spoon the protein cream over the banana and Biscoff layer.",
+    "Finish with additional chopped banana and the reserved Biscoff crumbs."
+  ],
+
+  technicalNote:
+    "Those little glass supermarket dessert pots you've refused to throw away? Your behaviour has finally been vindicated."
+},
+
+{
+  id: "frozen-biscoff-protein-smores",
+  name: "Frozen Biscoff Protein S'mores",
+  tagline: "Build them. Freeze them. Then attack.",
+  categories: [
+    "Something Cold",
+    "No Bake",
+    "Proper Indulgence",
+    "Cakes & Bites"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 10,
+  time: 20,
+  difficulty: "Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "100ml milk",
+    "1 packet Bird's Dream Topping",
+    "1 scoop (30g) vanilla whey protein",
+    "20 Biscoff biscuits",
+    "Chocolate buttons or chocolate for melting and drizzling"
+  ],
+
+  method: [
+    "Mix the milk, Dream Topping and vanilla whey protein until smooth.",
+    "Arrange 10 Biscoff biscuits in a lined tray.",
+    "Melt the chocolate gently.",
+    "Drizzle the melted chocolate over the 10 biscuits.",
+    "Spread the protein topping mixture evenly over the biscuits.",
+    "Position the remaining 10 biscuits directly above the biscuits underneath to create 10 sandwiches.",
+    "Place the entire tray in the freezer until completely firm.",
+    "Once frozen, cut between each biscuit to separate the mixture into 10 individual s'mores sandwiches."
+  ],
+
+  technicalNote:
+    "Freeze before cutting. We learned this for a reason. Cutting first turns a neat dessert into an unnecessarily complicated reconstruction project."
+},
+
+{
+  id: "protein-bounty-bars",
+  name: "Protein Bounty Bars",
+  tagline: "Coconut and dark chocolate doing what they do best.",
+  categories: [
+    "Something Cold",
+    "No Bake",
+    "Chocolate Fix",
+    "Proper Indulgence"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 12,
+  time: 25,
+  difficulty: "Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "2 scoops (60g) vanilla whey protein",
+    "150g desiccated coconut",
+    "400g zero-fat Greek yoghurt",
+    "25ml honey",
+    "300g dark chocolate"
+  ],
+
+  method: [
+    "Mix the vanilla whey, desiccated coconut, Greek yoghurt and honey until thoroughly combined.",
+    "Press or shape the mixture into a freezer-safe container.",
+    "Freeze until firm enough to cut cleanly.",
+    "Remove from the freezer and cut into 12 bars.",
+    "Melt the dark chocolate gently using a bain-marie.",
+    "To make the bain-marie, place the chocolate in a heatproof bowl over a saucepan containing a small amount of gently simmering water. Do not allow the bottom of the bowl to touch the water.",
+    "Stir until the chocolate is smooth, then remove from the heat.",
+    "Dip each frozen coconut bar into the melted chocolate until coated.",
+    "Transfer to a parchment-lined tray.",
+    "Refrigerate until the chocolate shell has completely set."
+  ],
+
+  technicalNote:
+    "Keep water away from the chocolate. Even a small amount can make melted chocolate seize, which is the technical term for 'this was going brilliantly thirty seconds ago'."
 }
 
 ];
