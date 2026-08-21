@@ -164,14 +164,14 @@ const recipes = [
       "Chocolate Fix",
       "Traditional Style"
     ],
-    calories: null,
-    protein: null,
-    carbs: null,
-    fat: null,
+    calories: 318,
+    protein: 48,
+    carbs: 9,
+    fat: 10, 
     servings: 2,
     time: 25,
     difficulty: "Advanced",
-    nutritionStatus: "pending",
+    nutritionStatus: "estimated,
 
     ingredients: [
       "5 large egg whites",
