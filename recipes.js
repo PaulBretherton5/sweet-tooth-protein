@@ -88,14 +88,14 @@ const recipes = [
       "Something Cold",
       "No Bake"
     ],
-    calories: null,
-    protein: null,
-    carbs: null,
-    fat: null,
+    calories: 241,
+    protein: 23,
+    carbs: 33,
+    fat: 3.1,
     servings: 1,
     time: 5,
     difficulty: "Very Easy",
-    nutritionStatus: "pending",
+    nutritionStatus: "estimated",
 
     ingredients: [
       "2 frozen bananas",
