@@ -1770,6 +1770,121 @@ const recipes = [
 
   technicalNote:
     "The smooth texture is everything here. Blend thoroughly enough that nobody eating it has any reason to suspect scrambled eggs were involved."
+},
+
+{
+  id: "protein-cloud",
+  name: "Protein Cloud",
+  tagline: "Looks like a cloud. Eats like dessert. Somehow starts with egg whites.",
+  categories: [
+    "Trust the Process",
+    "Protein Monsters"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 4,
+  time: 20,
+  difficulty: "Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "300ml egg whites",
+    "1 scoop whey protein",
+    "1 tsp vanilla extract"
+  ],
+
+  method: [
+    "Preheat the oven to 170°C.",
+    "Whisk the egg whites until stiff peaks form.",
+    "Gently fold in the whey protein and vanilla extract.",
+    "Transfer to a lined baking dish.",
+    "Bake for approximately 10 minutes.",
+    "Allow to cool slightly before serving."
+  ],
+
+  technicalNote:
+    "Whisk first. Fold second. Stir aggressively and you'll knock out all the air you just worked for."
+},
+
+{
+  id: "classic-protein-cereal",
+  name: "Classic Protein Cereal",
+  tagline: "The non-chocolate version that deserves its own place.",
+  categories: [
+    "Sweet Breakfast",
+    "Meal Prep",
+    "Trust the Process"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 6,
+  time: 45,
+  difficulty: "Medium",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "1 baked sweet potato",
+    "180g rolled oats",
+    "20g butter",
+    "50g honey",
+    "1 tbsp vanilla extract",
+    "Pinch of sea salt"
+  ],
+
+  method: [
+    "Bake the sweet potato until soft.",
+    "Scoop out the flesh.",
+    "Mix with the oats, butter, honey, vanilla and sea salt.",
+    "Press firmly into a baking tray about 1cm thick.",
+    "Bake at 180°C for 20 minutes.",
+    "Break into cereal-sized chunks.",
+    "Return to the oven for another 15 minutes.",
+    "Cool completely before storing in an airtight container."
+  ],
+
+  technicalNote:
+    "Breaking it up halfway through is what turns it into cereal rather than one enormous biscuit."
+},
+
+{
+  id: "no-bake-choc-chip-cheesecake",
+  name: "No-Bake Chocolate Chip Cheesecake",
+  tagline: "Five minutes of effort. One hour of pretending to be patient.",
+  categories: [
+    "Cheesecakes",
+    "No Bake",
+    "Proper Indulgence"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 4,
+  time: 65,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "425g zero-fat Greek yoghurt",
+    "100g low-fat cream cheese",
+    "2 scoops vanilla whey protein",
+    "20g zero-sugar sweetener",
+    "Toppings of your choice"
+  ],
+
+  method: [
+    "Mix the yoghurt, cream cheese, whey and sweetener until smooth.",
+    "Fold through your chosen toppings.",
+    "Transfer to a serving dish.",
+    "Refrigerate for at least 1 hour before serving."
+  ],
+
+  technicalNote:
+    "The fridge does most of the work here. Your main challenge is leaving it alone."
 }
 
 ];
