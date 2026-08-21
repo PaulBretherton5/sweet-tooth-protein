@@ -1885,6 +1885,95 @@ const recipes = [
 
   technicalNote:
     "The fridge does most of the work here. Your main challenge is leaving it alone."
+},
+
+{
+  id: "french-toast-cloud-cake",
+  name: "French Toast Cloud Cake",
+  tagline: "Breakfast disguised as dessert. Dessert disguised as breakfast.",
+  categories: [
+    "Sweet Breakfast",
+    "Traditional Style",
+    "Trust the Process"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 8,
+  time: 70,
+  difficulty: "Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "410g fat-free Greek yoghurt",
+    "5 eggs",
+    "75g cornflour",
+    "Sweet ground cinnamon for topping",
+    "Maple syrup for topping"
+  ],
+
+  method: [
+    "Preheat the oven to 170°C.",
+    "Mix the Greek yoghurt, eggs and cornflour until completely smooth.",
+    "Pour into a lined cake tin.",
+    "Bake for approximately 1 hour.",
+    "Remove from the oven and allow to cool.",
+    "Finish with sweet ground cinnamon and a drizzle of maple syrup."
+  ],
+
+  technicalNote:
+    "Three ingredients become something suspiciously cake-like. This is exactly why Trust the Process exists."
+},
+
+{
+  id: "protein-cinnamon-rolls",
+  name: "Protein Cinnamon Rolls",
+  tagline: "The smell alone justifies making them.",
+  categories: [
+    "For Real Chefs",
+    "Traditional Style",
+    "Proper Indulgence"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 6,
+  time: 45,
+  difficulty: "Medium",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "300g bread flour",
+    "400ml zero-fat Greek yoghurt",
+    "2 tsp baking powder",
+    "50g sugar alternative",
+    "Pinch of salt",
+    "1 egg yolk",
+    "30g melted butter",
+    "30g sweet ground cinnamon",
+    "50g low-fat cream cheese",
+    "1 scoop vanilla whey protein",
+    "Splash of milk",
+    "Splash of vanilla extract"
+  ],
+
+  method: [
+    "Preheat the oven to 180°C.",
+    "Mix the bread flour, Greek yoghurt, baking powder, sugar alternative and salt to form a dough.",
+    "Divide the dough into 6 equal pieces.",
+    "Roll each piece into a sausage shape.",
+    "Brush or coat with the egg yolk and melted butter, then add the cinnamon.",
+    "Roll each piece into a cinnamon-roll shape.",
+    "Bake for approximately 25 minutes.",
+    "Allow the rolls to cool.",
+    "Mix the low-fat cream cheese, vanilla whey, a splash of milk and vanilla extract until smooth.",
+    "Spread the frosting over the cooled cinnamon rolls."
+  ],
+
+  technicalNote:
+    "Cool them before frosting. Otherwise you've invented cinnamon-roll fondue."
 }
 
 ];
