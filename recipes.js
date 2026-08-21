@@ -344,14 +344,14 @@ const recipes = [
       "Cakes",
       "Proper Indulgence"
     ],
-    calories: null,
-    protein: null,
-    carbs: null,
-    fat: null,
+    calories: 215,
+    protein: 14,
+    carbs: 21,
+    fat: 8.5,
     servings: 8,
     time: 60,
-    difficulty: "Medium",
-    nutritionStatus: "pending",
+    difficulty: "Easy",
+    nutritionStatus: "estimated",
 
     ingredients: [
       "1 egg",
