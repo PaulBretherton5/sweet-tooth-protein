@@ -171,7 +171,7 @@ const recipes = [
     servings: 2,
     time: 25,
     difficulty: "Advanced",
-    nutritionStatus: "estimated,
+    nutritionStatus: "estimated",
 
     ingredients: [
       "5 large egg whites",
