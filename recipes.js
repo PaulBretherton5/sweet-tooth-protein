@@ -1974,6 +1974,178 @@ const recipes = [
 
   technicalNote:
     "Cool them before frosting. Otherwise you've invented cinnamon-roll fondue."
+},
+
+{
+  id: "protein-pancake-bowls",
+  name: "Protein Pancake Bowls",
+  tagline: "All the pancake. None of the standing at the hob flipping things.",
+  categories: [
+    "Sweet Breakfast",
+    "Quick Fixes",
+    "Protein Monsters"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 1,
+  time: 35,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "1 egg",
+    "50g zero-fat Greek yoghurt",
+    "35g oat flour",
+    "1 tsp baking powder",
+    "1 scoop (30g) vanilla whey protein",
+    "80ml milk",
+    "Toppings of your choice"
+  ],
+
+  toppingIdeas: [
+    "Blueberries, flaked almonds and honey",
+    "Chocolate chips and maple syrup",
+    "Banana, walnuts and maple syrup"
+  ],
+
+  method: [
+    "Preheat the oven to 180°C.",
+    "Mix the egg, Greek yoghurt, oat flour, baking powder, vanilla whey and milk until smooth.",
+    "Pour the batter into an oven-safe bowl.",
+    "Add your chosen toppings.",
+    "Bake for approximately 30 minutes.",
+    "Allow to cool slightly before eating."
+  ],
+
+  technicalNote:
+    "Basically pancakes for people who can't be bothered flipping pancakes. We fully support this."
+},
+
+{
+  id: "protein-cookie-dough",
+  name: "Protein Cookie Dough",
+  tagline: "No oven. No waiting. Consider this dangerous information.",
+  categories: [
+    "No Bake",
+    "Quick Fixes",
+    "I Can't Be Arsed",
+    "Chocolate Fix"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 2,
+  time: 5,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "2 scoops whey protein - any flavour",
+    "30g smooth low-sugar peanut butter",
+    "30g sugar-free syrup",
+    "50ml milk",
+    "30g chocolate chips"
+  ],
+
+  method: [
+    "Add the whey protein and peanut butter to a bowl.",
+    "Add the sugar-free syrup and milk.",
+    "Mix very thoroughly until a thick cookie-dough consistency forms.",
+    "Fold through the chocolate chips.",
+    "Eat immediately or refrigerate for a firmer texture."
+  ],
+
+  technicalNote:
+    "Mix it properly before deciding it needs more liquid. Protein powder has a habit of looking hopeless approximately eight seconds before becoming cookie dough."
+},
+
+{
+  id: "overnight-protein-oats",
+  name: "Overnight Protein Oats",
+  tagline: "Tomorrow's breakfast sorted before tomorrow gets a chance to cause problems.",
+  categories: [
+    "Sweet Breakfast",
+    "Meal Prep",
+    "No Bake",
+    "Protein Monsters"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 1,
+  time: 5,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "60g rolled oats",
+    "1 scoop (30g) whey protein",
+    "120ml almond milk",
+    "1 scoop zero-fat Greek yoghurt",
+    "Toppings of your choice"
+  ],
+
+  toppingIdeas: [
+    "Blueberries and cinnamon",
+    "Raspberries and honey",
+    "Strawberries and chocolate chips",
+    "Banana and maple syrup"
+  ],
+
+  method: [
+    "Add the oats and whey protein to a glass container.",
+    "Pour in the almond milk and mix thoroughly.",
+    "Spoon the Greek yoghurt over the top.",
+    "Add your chosen toppings.",
+    "Cover and refrigerate overnight.",
+    "Stir before eating if preferred."
+  ],
+
+  technicalNote:
+    "Five minutes tonight saves making breakfast tomorrow morning. Future you owes current you a favour."
+},
+
+{
+  id: "super-easy-protein-cookies",
+  name: "Super Easy Protein Cookies",
+  tagline: "Three ingredients before the chocolate chips. We're barely cooking at this point.",
+  categories: [
+    "Cakes & Bites",
+    "Quick Fixes",
+    "I Can't Be Arsed",
+    "Chocolate Fix"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 8,
+  time: 15,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "2 bananas",
+    "1 scoop whey protein",
+    "Handful of chocolate chips"
+  ],
+
+  method: [
+    "Preheat the oven to 180°C.",
+    "Mash the bananas thoroughly.",
+    "Add the whey protein and mix until combined.",
+    "Fold through the chocolate chips.",
+    "Divide into 8 portions and shape into cookies on a lined baking tray.",
+    "Bake for approximately 10 minutes.",
+    "Allow to cool slightly before serving."
+  ],
+
+  technicalNote:
+    "If you've got bananas, whey and chocolate chips, apparently you've got cookies. Nobody needs to make this more complicated."
 }
 
 ];
