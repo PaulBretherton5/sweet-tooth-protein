@@ -788,64 +788,7 @@ const recipes = [
 },
 
 {
-  id: "protein-stuffed-cake",
-  name: "Protein Stuffed Cake",
-  tagline: "The filling is where this starts showing off.",
-  categories: [
-    "Cakes & Bites",
-    "Chocolate Fix",
-    "Proper Indulgence",
-    "Protein Monsters"
-  ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
-  servings: 8,
-  time: 45,
-  difficulty: "Medium",
-  nutritionStatus: "pending",
-
-  ingredients: [
-    "210ml almond milk",
-    "200g egg whites",
-    "100g zero-fat Greek yoghurt",
-    "30ml vanilla extract",
-    "50g plain flour",
-    "30g oat flour",
-    "2 scoops (60g) whey protein - vanilla or cookies and cream",
-    "5g baking powder",
-    "Pinch of salt",
-    "3 crushed Oreos",
-    "200g zero-fat Greek yoghurt for filling",
-    "1 scoop (30g) of the same whey protein for filling",
-    "50g sugar-free sweetener",
-    "Small splashes of almond milk as required"
-  ],
-
-  method: [
-    "Preheat the oven to 180°C.",
-    "Mix the almond milk, egg whites, Greek yoghurt and vanilla extract together.",
-    "In a separate bowl, combine the plain flour, oat flour, whey protein, baking powder and salt.",
-    "Add the crushed Oreos.",
-    "Combine the wet and dry ingredients and mix until even.",
-    "Transfer to a lined baking dish.",
-    "Bake for approximately 25 minutes.",
-    "Allow the cake to cool completely.",
-    "Carefully slice the cake horizontally into two layers.",
-    "Mix the Greek yoghurt, whey protein and sweetener for the filling.",
-    "Add small splashes of almond milk until the filling reaches a smooth, spreadable consistency.",
-    "Spread the filling over the bottom cake layer.",
-    "Place the top cake layer back into position.",
-    "Cut into 8 portions."
-  ],
-
-  technicalNote:
-    "The cake needs to be completely cool before you cut it horizontally. Attempting cake surgery while it's warm rarely improves the patient."
-},
-
-{
-  id: "cakey-frosty-brownie",
+   id: "cakey-frosty-brownie",
   name: "Cakey Frosty Brownie",
   tagline: "Brownie underneath. Protein frosting on top. Sensible decisions all round.",
   categories: [
@@ -871,7 +814,119 @@ const recipes = [
     "2 scoops (60g) whey protein",
     "5g baking powder",
     "50g cocoa powder",
-    "200g zero-fat Greek yoghurt for
+    "200g zero-fat Greek yoghurt for topping",
+    "2 scoops (60g) whey protein for topping"
+  ],
 
+  method: [
+    "Preheat the oven to 180°C.",
+    "Mix the almond milk, egg whites and 200g Greek yoghurt together in one bowl.",
+    "In a separate bowl, combine the sugar substitute, plain flour, whey protein, baking powder and cocoa powder.",
+    "Add the wet mixture to the dry ingredients and mix until evenly combined.",
+    "Pour into a lined baking tray.",
+    "Bake for approximately 35 minutes.",
+    "Remove from the oven and allow to cool completely.",
+    "Mix the remaining 200g Greek yoghurt with the two scoops of whey protein until smooth.",
+    "Spread the protein frosting over the cooled brownie.",
+    "Cut into 6 pieces."
+  ],
+
+  technicalNote:
+    "The brownie must be cool before the frosting goes on. We are making dessert, not warm protein yoghurt with structural problems."
+
+},
+
+{
+  id: "quickest-chocolate-snack-ever",
+  name: "The Quickest Chocolate Snack Ever",
+  tagline: "Four ingredients. One bowl. A very sensible place to start.",
+  categories: [
+    "I Can't Be Arsed",
+    "Quick Fixes",
+    "Chocolate Fix",
+    "Cakes & Bites"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 6,
+  time: 25,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "2 ripe bananas",
+    "2 eggs",
+    "1 scoop (30g) chocolate whey protein"
+  ],
+
+  method: [
+    "Preheat the oven to 180°C.",
+    "Mash the bananas thoroughly in a mixing bowl.",
+    "Add the eggs and chocolate whey protein.",
+    "Mix until evenly combined.",
+    "Transfer the mixture to a lined baking tin.",
+    "Bake for approximately 20 minutes.",
+    "Allow to cool before cutting into portions."
+  ],
+
+  technicalNote:
+    "This is deliberately simple. It's a great starter recipe if your previous baking experience mostly involves opening packets."
+},
+
+{
+  id: "chocolate-protein-cereal",
+  name: "Chocolate Protein Cereal",
+  tagline: "Yes, we're making cereal. No, you don't need a factory.",
+  categories: [
+    "Sweet Breakfast",
+    "Chocolate Fix",
+    "Trust the Process",
+    "Meal Prep"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 6,
+  time: 55,
+  difficulty: "Medium",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "1 whole sweet potato",
+    "180g rolled oats",
+    "1 scoop (30g) chocolate whey protein",
+    "25g cocoa powder",
+    "25g melted butter",
+    "50g honey",
+    "1 tsp vanilla extract",
+    "Pinch of sea salt",
+    "2 tbsp honey for finishing"
+  ],
+
+  method: [
+    "Roast the sweet potato until completely soft.",
+    "Scoop out the flesh, mash it and allow it to cool completely.",
+    "For the best texture, chill the sweet potato in the refrigerator before continuing.",
+    "Preheat the oven to 180°C.",
+    "Mix the cooled sweet potato with the rolled oats, chocolate whey, cocoa powder, melted butter, 50g honey, vanilla and sea salt.",
+    "Spread the mixture very thinly over a lined baking tray.",
+    "Press it down firmly so the mixture is compact.",
+    "Bake for 20 minutes.",
+    "While still warm, break the mixture into cereal-sized pieces using a fork.",
+    "Drizzle approximately 2 tablespoons of honey over the cereal and gently mix it through, avoiding large clumps.",
+    "Spread the pieces back across the tray without pressing them down.",
+    "Return to the oven for another 15 minutes.",
+    "Turn the cereal with a fork every 5 minutes so it crisps evenly.",
+    "Remove from the oven and allow it to cool completely in a glass container before serving with milk."
+  ],
+
+  technicalNote:
+    "Cooling the sweet potato first matters. The second bake matters too. This one earns its place in Trust the Process."
+}
+
+];
   
     
