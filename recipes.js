@@ -49,9 +49,9 @@ const recipes = [
       "I Can't Be Arsed"
     ],
     calories: 437,
-protein: 46,
-carbs: 38,
-fat: 12,
+    protein: 46,
+    carbs: 38,
+    fat: 12,
     servings: 1,
     time: 5,
     difficulty: "Very Easy",
