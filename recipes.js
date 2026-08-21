@@ -479,14 +479,14 @@ const recipes = [
     "No Bake",
     "Chocolate Fix"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 324,
+  protein: 45,
+  carbs: 23,
+  fat: 6.2,
   servings: 1,
-  time: 3,
+  time: 5,
   difficulty: "Very Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "200g zero-fat Greek yoghurt",
