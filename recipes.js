@@ -299,14 +299,14 @@ const recipes = [
       "Traditional Style",
       "Proper Indulgence"
     ],
-    calories: null,
-    protein: null,
-    carbs: null,
-    fat: null,
+    calories: 325,
+    protein: 10.5,
+    carbs: 42.5,
+    fat: 12.8,
     servings: 5,
     time: 30,
     difficulty: "Easy",
-    nutritionStatus: "pending",
+    nutritionStatus: "calculated",
 
     ingredients: [
       "1 scoop (30g) vanilla whey protein",
