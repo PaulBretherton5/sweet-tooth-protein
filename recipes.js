@@ -1143,6 +1143,221 @@ const recipes = [
 
   technicalNote:
     "Keep water away from the chocolate. Even a small amount can make melted chocolate seize, which is the technical term for 'this was going brilliantly thirty seconds ago'."
+},
+
+{
+  id: "high-protein-trifle",
+  name: "Low-Cal High-Protein Trifle",
+  tagline: "A proper trifle without needing to write off the rest of the day.",
+  categories: [
+    "Traditional Style",
+    "Something Cold",
+    "Protein Monsters",
+    "Proper Indulgence"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 4,
+  time: 20,
+  difficulty: "Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "1 packet zero-calorie powdered jelly",
+    "Frozen chopped fruit",
+    "400g zero-fat Greek yoghurt",
+    "2 scoops (60g) whey protein",
+    "1/2 packet zero-sugar custard powder",
+    "Sprinkles"
+  ],
+
+  method: [
+    "Prepare the zero-calorie jelly according to the packet instructions.",
+    "Divide the jelly mixture between four serving bowls or glasses.",
+    "Add chopped frozen fruit to each portion.",
+    "Refrigerate until the jelly has completely set.",
+    "Mix the Greek yoghurt and whey protein until smooth.",
+    "Divide this protein mixture equally between two bowls.",
+    "Add the zero-sugar custard powder to one half and mix thoroughly.",
+    "Add sprinkles to the other half.",
+    "Layer the custard mixture over the set jelly and fruit.",
+    "Finish with the sprinkle mixture on top.",
+    "Return to the refrigerator until ready to serve."
+  ],
+
+  technicalNote:
+    "Avoid fresh pineapple in the jelly. It contains enzymes that can interfere with setting. Delicious fruit. Terrible team player."
+},
+
+{
+  id: "mega-quick-protein-apple-crumble",
+  name: "Mega Quick Protein Apple Crumble",
+  tagline: "Apple crumble without waiting for Sunday dinner.",
+  categories: [
+    "Quick Fixes",
+    "Traditional Style",
+    "I Can't Be Arsed",
+    "Sweet Breakfast"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 2,
+  time: 10,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "1 apple",
+    "Ground cinnamon",
+    "1 scoop (30g) whey protein of choice",
+    "50g rolled oats",
+    "Milk, added gradually as required",
+    "Whipped cream for serving - optional"
+  ],
+
+  method: [
+    "Cut the apple in half and remove the core from each half.",
+    "Sprinkle both apple halves generously with cinnamon.",
+    "Mix the whey protein and rolled oats in a bowl.",
+    "Add milk a little at a time until the mixture forms a soft dough.",
+    "Add another sprinkle of cinnamon.",
+    "Divide the oat mixture between the two apple halves and press it over the top.",
+    "Air fry at 200°C for approximately 5 to 6 minutes.",
+    "Serve immediately, with whipped cream if desired."
+  ],
+
+  technicalNote:
+    "Add the milk slowly. You can always add more. Removing milk from protein-and-oat cement is considerably more advanced."
+},
+
+{
+  id: "chocolate-peanut-butter-balls",
+  name: "Chocolate Peanut Butter Balls",
+  tagline: "Three ingredients. Two minutes of effort. Dangerous information.",
+  categories: [
+    "Quick Fixes",
+    "Chocolate Fix",
+    "No Bake",
+    "Cakes & Bites",
+    "I Can't Be Arsed"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 10,
+  time: 10,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "100g powdered peanut butter",
+    "130g unsweetened apple sauce",
+    "70g dark chocolate"
+  ],
+
+  method: [
+    "Mix the powdered peanut butter and apple sauce until a soft dough forms.",
+    "Divide the mixture into 10 bite-sized portions.",
+    "Roll each portion between your hands to form a ball.",
+    "Melt the dark chocolate gently using a bain-marie.",
+    "Dip each peanut butter ball into the melted chocolate.",
+    "Transfer to a parchment-lined plate or tray.",
+    "Refrigerate until the chocolate has set."
+  ],
+
+  technicalNote:
+    "Not everything needs twelve ingredients and a motivational speech. Sometimes peanut butter and chocolate can handle the situation themselves."
+},
+
+{
+  id: "super-easy-chocolate-banana-brownie",
+  name: "Super Easy Chocolate Banana Brownie",
+  tagline: "Throw it together. Bake it. Pretend you worked harder.",
+  categories: [
+    "Chocolate Fix",
+    "Cakes & Bites",
+    "I Can't Be Arsed",
+    "Quick Fixes"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 8,
+  time: 70,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "4 bananas",
+    "4 eggs",
+    "25g cocoa powder",
+    "1 scoop (30g) chocolate whey protein",
+    "200g zero-fat Greek yoghurt",
+    "40g honey"
+  ],
+
+  method: [
+    "Preheat the oven to 190°C.",
+    "Mash the bananas thoroughly.",
+    "Add the eggs, cocoa powder, chocolate whey, Greek yoghurt and honey.",
+    "Mix until evenly combined.",
+    "Pour the mixture into a parchment-lined loaf-style tin.",
+    "Bake for approximately 60 minutes, or until cooked through.",
+    "Allow to cool before removing from the tin and portioning."
+  ],
+
+  technicalNote:
+    "This is deliberately simple. Toppings can make it fancy later. The base recipe has one job: be easy and taste good."
+},
+
+{
+  id: "cookie-dough-ice-cream-bars",
+  name: "Cookie Dough Ice Cream Bars",
+  tagline: "Cookie dough outside. Ice cream inside. We appear to have lost control.",
+  categories: [
+    "Something Cold",
+    "No Bake",
+    "Proper Indulgence",
+    "Cakes & Bites"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 8,
+  time: 25,
+  difficulty: "Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "70g almond flour",
+    "130g oat flour",
+    "100ml maple syrup",
+    "150g powdered peanut butter",
+    "40g chocolate chips",
+    "Sugar-free ice cream, enough to create the centre layer"
+  ],
+
+  method: [
+    "Mix the almond flour, oat flour, maple syrup, powdered peanut butter and chocolate chips until a firm cookie dough forms.",
+    "Line two tins of equal size.",
+    "Divide the dough equally between the tins.",
+    "Press each portion firmly into an even layer approximately 2 inches deep.",
+    "Use one dough layer as the base.",
+    "Spread an even layer of sugar-free ice cream over the base.",
+    "Carefully place the second cookie dough layer on top.",
+    "Freeze until completely firm.",
+    "Remove from the freezer and cut into 8 individual bars."
+  ],
+
+  technicalNote:
+    "Make both dough layers in matching tins. Future you will be extremely grateful when the top actually fits the bottom."
 }
 
 ];
