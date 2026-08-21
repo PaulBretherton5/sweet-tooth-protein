@@ -48,14 +48,14 @@ const recipes = [
       "No Bake",
       "I Can't Be Arsed"
     ],
-    calories: null,
-    protein: null,
-    carbs: null,
-    fat: null,
+    calories: 437,
+protein: 46,
+carbs: 38,
+fat: 12,
     servings: 1,
     time: 5,
     difficulty: "Very Easy",
-    nutritionStatus: "pending",
+    nutritionStatus: "estimated",
 
     ingredients: [
       "200g cottage cheese",
