@@ -1358,6 +1358,211 @@ const recipes = [
 
   technicalNote:
     "Make both dough layers in matching tins. Future you will be extremely grateful when the top actually fits the bottom."
+},
+
+{
+  id: "four-ingredient-blueberry-cake",
+  name: "4-Ingredient Blueberry Cake",
+  tagline: "Four ingredients. Almost suspiciously easy.",
+  categories: [
+    "Cakes & Bites",
+    "Quick Fixes",
+    "Sweet Breakfast",
+    "I Can't Be Arsed"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 8,
+  time: 55,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "4 bananas",
+    "400g zero-fat Greek yoghurt",
+    "4 eggs",
+    "150g fresh or frozen blueberries"
+  ],
+
+  method: [
+    "Preheat the oven to 180°C.",
+    "Mash or blend the bananas, Greek yoghurt and eggs until smooth.",
+    "Line a cake tin with parchment paper.",
+    "Pour the mixture into the tin.",
+    "Add the blueberries and gently fold them through.",
+    "Bake for approximately 45 minutes.",
+    "Allow to cool completely before cutting into slices."
+  ],
+
+  technicalNote:
+    "Blending gives a smoother texture, but mashing works perfectly well if washing a blender feels like an unreasonable request."
+},
+
+{
+  id: "easy-protein-sorbet",
+  name: "Easy Protein Sorbet",
+  tagline: "Cold, fruity and almost embarrassingly simple.",
+  categories: [
+    "Something Cold",
+    "Quick Fixes",
+    "No Bake",
+    "I Can't Be Arsed"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 4,
+  time: 10,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "400g frozen fruit - raspberries and strawberries work particularly well",
+    "1 scoop clear whey protein",
+    "150ml water"
+  ],
+
+  method: [
+    "Add the frozen fruit, clear whey protein and water to a blender or food processor.",
+    "Blend until completely smooth.",
+    "Transfer to a freezer-safe container.",
+    "Freeze until firm enough to scoop.",
+    "Allow to soften briefly before serving if required."
+  ],
+
+  technicalNote:
+    "Frozen fruit does most of the heavy lifting here. One of the better examples of laziness being rewarded."
+},
+
+{
+  id: "quick-protein-ice-cream",
+  name: "Quick Protein Ice Cream",
+  tagline: "Freeze first. Blend second. That's the whole trick.",
+  categories: [
+    "Something Cold",
+    "Quick Fixes",
+    "No Bake",
+    "Protein Monsters"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 2,
+  time: 5,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "2 frozen bananas",
+    "200g cottage cheese",
+    "1 scoop protein powder",
+    "Splash of milk"
+  ],
+
+  method: [
+    "Add the frozen bananas, cottage cheese and protein powder to a food processor.",
+    "Blend until smooth and creamy.",
+    "Add only enough milk to help the mixture reach the correct consistency.",
+    "Serve immediately."
+  ],
+
+  technicalNote:
+    "Freeze the ingredients before blending. Blending first and freezing afterwards creates more ice crystals unless you've got an ice-cream machine."
+},
+
+{
+  id: "italian-protein-mousse",
+  name: "Italian Protein Mousse",
+  tagline: "More restaurant dessert than protein pudding.",
+  categories: [
+    "For Real Chefs",
+    "Chocolate Fix",
+    "Traditional Style",
+    "Proper Indulgence"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 6,
+  time: 25,
+  difficulty: "Advanced",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "180g dark chocolate",
+    "5 eggs, separated",
+    "60g salted butter",
+    "2 scoops (60g) chocolate whey protein",
+    "1 tsp sweet ground cinnamon",
+    "Fresh berries for serving"
+  ],
+
+  method: [
+    "Melt the dark chocolate gently using a bain-marie.",
+    "Remove from the heat and allow it to cool slightly.",
+    "Slowly stir in the chocolate whey protein, five egg yolks and cinnamon.",
+    "In a separate clean bowl, whisk the five egg whites until stiff peaks form.",
+    "Gently fold one third of the egg whites into the chocolate mixture.",
+    "Repeat twice more until all the egg white has been carefully incorporated.",
+    "Do not beat the mixture.",
+    "Divide between serving glasses.",
+    "Cover and refrigerate for approximately 4 hours.",
+    "Serve with fresh berries."
+  ],
+
+  technicalNote:
+    "Fold the egg whites in gently and in stages. You worked hard to trap all that air. Beating it back out would be an impressive waste of effort."
+},
+
+{
+  id: "easiest-protein-pancakes",
+  name: "The Easiest Protein Pancakes",
+  tagline: "Blend. Pour. Flip. Try not to make them the size of a dinner plate.",
+  categories: [
+    "Sweet Breakfast",
+    "Quick Fixes",
+    "Protein Monsters",
+    "I Can't Be Arsed"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 2,
+  time: 15,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "1 banana",
+    "75g rolled oats",
+    "3 eggs",
+    "50ml milk",
+    "2 scoops whey protein of your choice",
+    "1 tbsp baking powder",
+    "Butter for the pan",
+    "Toppings of your choice"
+  ],
+
+  method: [
+    "Add the banana, oats, eggs, milk, whey protein and baking powder to a blender.",
+    "Blend until completely smooth.",
+    "Heat a frying pan and add a small amount of butter.",
+    "Pour the batter slowly into the centre of the pan.",
+    "Aim for pancakes approximately 4 inches across.",
+    "Cook until ready to flip.",
+    "Flip and cook the second side.",
+    "Repeat with the remaining batter.",
+    "Serve with your choice of toppings."
+  ],
+
+  technicalNote:
+    "Keep them around 4 inches wide. Giant pancakes sound impressive until you try to flip one and redecorate the hob."
 }
 
 ];
