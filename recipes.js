@@ -1563,6 +1563,213 @@ const recipes = [
 
   technicalNote:
     "Keep them around 4 inches wide. Giant pancakes sound impressive until you try to flip one and redecorate the hob."
+},
+
+{
+  id: "high-protein-chocolate-cheesecake",
+  name: "High-Protein Chocolate Cheesecake",
+  tagline: "A serious cheesecake that just happens to bring a ridiculous amount of protein.",
+  categories: [
+    "Cheesecakes",
+    "Chocolate Fix",
+    "Proper Indulgence",
+    "Protein Monsters"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 8,
+  time: 240,
+  difficulty: "Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "450g low-fat cream cheese",
+    "450g low-fat cottage cheese",
+    "4 eggs",
+    "2 scoops (60g) chocolate whey protein",
+    "100g cocoa powder",
+    "Pinch of sea salt",
+    "Melted dark chocolate for drizzling"
+  ],
+
+  method: [
+    "Blend the cream cheese and cottage cheese until completely smooth.",
+    "Add the eggs, chocolate whey protein, cocoa powder and sea salt.",
+    "Blend again until evenly combined.",
+    "Pour into a lined cake tin.",
+    "Bake until set, then allow to cool completely.",
+    "Refrigerate until thoroughly chilled and firm.",
+    "Finish with a drizzle of melted dark chocolate before serving."
+  ],
+
+  technicalNote:
+    "Because this recipe contains whole eggs, it needs to be cooked before chilling. Refrigeration sets cheesecake. It does not cook eggs."
+},
+
+{
+  id: "birthday-cake-dough-bites",
+  name: "Birthday Cake Dough Bites",
+  tagline: "Birthday optional. Sprinkles compulsory.",
+  categories: [
+    "Cakes & Bites",
+    "Quick Fixes",
+    "I Can't Be Arsed"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 8,
+  time: 15,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "225g self-raising flour",
+    "1 scoop (30g) vanilla whey protein",
+    "300g Greek yoghurt",
+    "Sprinkles"
+  ],
+
+  method: [
+    "Mix the self-raising flour, vanilla whey and Greek yoghurt until a soft dough forms.",
+    "Fold through the sprinkles.",
+    "Divide the dough into 8 portions.",
+    "Roll each portion into a ball.",
+    "Place in the air fryer with space between each bite.",
+    "Air fry for approximately 10 minutes until lightly golden and cooked through."
+  ],
+
+  technicalNote:
+    "If the dough feels sticky, slightly damp hands make shaping considerably easier than arguing with it."
+},
+
+{
+  id: "yoghurt-cake",
+  name: "Yoghurt Cake",
+  tagline: "Four main ingredients doing considerably more than expected.",
+  categories: [
+    "Cakes & Bites",
+    "Trust the Process",
+    "Traditional Style"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 8,
+  time: 40,
+  difficulty: "Very Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "650g natural yoghurt",
+    "4 eggs",
+    "75g cornflour",
+    "2 tsp vanilla extract",
+    "Fresh berries for topping",
+    "Honey for drizzling"
+  ],
+
+  method: [
+    "Preheat the oven to 180°C.",
+    "Add the yoghurt, eggs, cornflour and vanilla extract to a bowl.",
+    "Mix until completely smooth and batter-like.",
+    "Pour into a lined cake tin.",
+    "Bake for approximately 30 minutes until set.",
+    "Allow to cool.",
+    "Finish with fresh berries and a drizzle of honey."
+  ],
+
+  technicalNote:
+    "The berries and honey are finishing options, so we'll eventually calculate the base cake first and let the topping calculator do the rest."
+},
+
+{
+  id: "best-protein-pancakes",
+  name: "The Best Protein Pancakes",
+  tagline: "The slightly more serious pancake for when you're actually prepared to use a frying pan.",
+  categories: [
+    "Sweet Breakfast",
+    "Protein Monsters",
+    "Traditional Style"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 2,
+  time: 15,
+  difficulty: "Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "200g cottage cheese",
+    "3 eggs",
+    "70ml milk",
+    "2 tsp vanilla extract",
+    "25g melted butter",
+    "1 tsp baking powder",
+    "1 scoop (30g) whey protein",
+    "Pinch of salt"
+  ],
+
+  method: [
+    "Add all ingredients to a blender or mixing bowl.",
+    "Blend or mix until you have a smooth pancake batter.",
+    "Heat a frying pan over a medium heat.",
+    "Add a small amount of butter if required.",
+    "Pour in enough batter to make manageable pancakes.",
+    "Cook until the underside is set and lightly golden.",
+    "Flip and cook the second side.",
+    "Repeat until all the batter is used.",
+    "Serve with your choice of toppings."
+  ],
+
+  technicalNote:
+    "Your original instruction was essentially 'make them in a pan'. Technically correct. We've expanded it slightly for people who require more emotional support from a pancake recipe."
+},
+
+{
+  id: "protein-creme-brulee",
+  name: "Protein Crème Brûlée",
+  tagline: "Scrambled eggs have absolutely no right turning into this.",
+  categories: [
+    "Trust the Process",
+    "Traditional Style",
+    "Protein Monsters",
+    "For Real Chefs"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 2,
+  time: 15,
+  difficulty: "Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "4 cooked scrambled eggs",
+    "120ml milk",
+    "2 scoops (60g) vanilla whey protein",
+    "Brown sugar for the caramelised topping"
+  ],
+
+  method: [
+    "Allow the cooked scrambled eggs to cool slightly.",
+    "Add the eggs, milk and vanilla whey protein to a blender.",
+    "Blend until completely smooth and creamy.",
+    "Divide between serving bowls or ramekins.",
+    "Sprinkle a thin, even layer of brown sugar over each portion.",
+    "Caramelise the sugar using a kitchen blowtorch or place briefly under a hot grill.",
+    "Serve once the sugar has formed a crisp golden shell."
+  ],
+
+  technicalNote:
+    "The smooth texture is everything here. Blend thoroughly enough that nobody eating it has any reason to suspect scrambled eggs were involved."
 }
 
 ];
