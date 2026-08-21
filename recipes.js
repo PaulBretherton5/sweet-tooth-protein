@@ -785,9 +785,93 @@ const recipes = [
 
   technicalNote:
     "Cool it completely before frosting. Otherwise the frosting becomes less 'frosting' and more 'protein yoghurt landslide'."
-}
+},
 
-];
+{
+  id: "protein-stuffed-cake",
+  name: "Protein Stuffed Cake",
+  tagline: "The filling is where this starts showing off.",
+  categories: [
+    "Cakes & Bites",
+    "Chocolate Fix",
+    "Proper Indulgence",
+    "Protein Monsters"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 8,
+  time: 45,
+  difficulty: "Medium",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "210ml almond milk",
+    "200g egg whites",
+    "100g zero-fat Greek yoghurt",
+    "30ml vanilla extract",
+    "50g plain flour",
+    "30g oat flour",
+    "2 scoops (60g) whey protein - vanilla or cookies and cream",
+    "5g baking powder",
+    "Pinch of salt",
+    "3 crushed Oreos",
+    "200g zero-fat Greek yoghurt for filling",
+    "1 scoop (30g) of the same whey protein for filling",
+    "50g sugar-free sweetener",
+    "Small splashes of almond milk as required"
+  ],
+
+  method: [
+    "Preheat the oven to 180°C.",
+    "Mix the almond milk, egg whites, Greek yoghurt and vanilla extract together.",
+    "In a separate bowl, combine the plain flour, oat flour, whey protein, baking powder and salt.",
+    "Add the crushed Oreos.",
+    "Combine the wet and dry ingredients and mix until even.",
+    "Transfer to a lined baking dish.",
+    "Bake for approximately 25 minutes.",
+    "Allow the cake to cool completely.",
+    "Carefully slice the cake horizontally into two layers.",
+    "Mix the Greek yoghurt, whey protein and sweetener for the filling.",
+    "Add small splashes of almond milk until the filling reaches a smooth, spreadable consistency.",
+    "Spread the filling over the bottom cake layer.",
+    "Place the top cake layer back into position.",
+    "Cut into 8 portions."
+  ],
+
+  technicalNote:
+    "The cake needs to be completely cool before you cut it horizontally. Attempting cake surgery while it's warm rarely improves the patient."
+},
+
+{
+  id: "cakey-frosty-brownie",
+  name: "Cakey Frosty Brownie",
+  tagline: "Brownie underneath. Protein frosting on top. Sensible decisions all round.",
+  categories: [
+    "Chocolate Fix",
+    "Cakes & Bites",
+    "Protein Monsters"
+  ],
+  calories: null,
+  protein: null,
+  carbs: null,
+  fat: null,
+  servings: 6,
+  time: 50,
+  difficulty: "Easy",
+  nutritionStatus: "pending",
+
+  ingredients: [
+    "200ml almond milk",
+    "200g egg whites",
+    "200g zero-fat Greek yoghurt",
+    "120g sugar substitute",
+    "75g plain flour",
+    "2 scoops (60g) whey protein",
+    "5g baking powder",
+    "50g cocoa powder",
+    "200g zero-fat Greek yoghurt for
 
   
     
