@@ -249,14 +249,15 @@ const recipes = [
       "For Real Chefs",
       "Proper Indulgence"
     ],
-    calories: null,
-    protein: null,
-    carbs: null,
-    fat: null,
+    calories: 208,
+    protein: 13,
+    carbs: 33,
+    fat: 3.3,
+    servings: 6,
     servings: 6,
     time: 55,
     difficulty: "Advanced",
-    nutritionStatus: "pending",
+    nutritionStatus: "estimated",
 
     ingredients: [
       "150g pitted dates",
