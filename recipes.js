@@ -208,14 +208,15 @@ const recipes = [
       "Something Cold",
       "Chocolate Fix"
     ],
-    calories: null,
-    protein: null,
-    carbs: null,
-    fat: null,
+    calories: 304,
+    protein: 20,
+    carbs: 48,
+    fat: 3.5,
+    servings: 2,
     servings: 2,
     time: 10,
     difficulty: "Easy",
-    nutritionStatus: "pending",
+    nutritionStatus: "estimated",
 
     ingredients: [
       "1 whole baked sweet potato",
