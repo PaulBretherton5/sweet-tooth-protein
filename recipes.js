@@ -125,14 +125,14 @@ const recipes = [
       "Chocolate Fix",
       "No Bake"
     ],
-    calories: null,
-    protein: null,
-    carbs: null,
-    fat: null,
+    calories: 220,
+    protein: 17,
+    carbs: 12,
+    fat: 12.5,
     servings: 2,
     time: 10,
     difficulty: "Easy",
-    nutritionStatus: "pending",
+    nutritionStatus: "estimated",
 
     ingredients: [
       "4 hard-boiled eggs",
