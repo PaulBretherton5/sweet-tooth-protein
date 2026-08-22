@@ -626,14 +626,14 @@ const recipes = [
     "Protein Monsters",
     "Quick Fixes"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 295,
+  protein: 32,
+  carbs: 27,
+  fat: 7,
   servings: 4,
   time: 65,
   difficulty: "Very Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "400g cottage cheese",
