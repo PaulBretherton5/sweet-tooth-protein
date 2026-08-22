@@ -434,7 +434,6 @@ const recipes = [
   carbs: 14.2,
   fat: 13.2,
   servings: 6,
-  servings: 6,
   time: 45,
   difficulty: "Easy",
   nutritionStatus: "estimated",
@@ -650,55 +649,11 @@ const recipes = [
   ],
 
   technicalNote:
-    "Blend it longer than you think. Nobody ordered chocolate mousse with surprise cottage-cheese texture."
+    "Blend it ou think. Nobody ordered chocolate mousse with surprise cottage-cheese texture."
 },
 
 {
-  id: "high-protein-snickers-bars",
-  name: "High-Protein Snickers Bars",
-  tagline: "Chocolate, peanut butter and banana. Hard to argue with.",
-  categories: [
-    "Chocolate Fix",
-    "Proper Indulgence",
-    "Cakes & Bites"
-  ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
-  servings: 6,
-  time: 45,
-  difficulty: "Easy",
-  nutritionStatus: "pending",
-
-  ingredients: [
-    "1 small banana",
-    "1 egg",
-    "40g cocoa powder",
-    "1 tsp baking powder",
-    "150g zero-fat Greek yoghurt",
-    "50g smooth peanut butter",
-    "1 scoop (30g) chocolate whey protein",
-    "Melted dark chocolate for topping",
-    "Chopped peanuts",
-    "Pinch of sea salt"
-  ],
-
-  method: [
-    "Preheat the oven to 180°C.",
-    "Mash the banana until smooth.",
-    "Mix in the egg, cocoa powder and baking powder.",
-    "Transfer to a lined baking dish and bake for approximately 20 minutes.",
-    "Allow the base to cool completely.",
-    "Mix the Greek yoghurt, peanut butter and chocolate whey until smooth.",
-    "Spread over the cooled base.",
-    "Finish with melted dark chocolate, chopped peanuts and a small pinch of sea salt.",
-    "Refrigerate until firm, then cut into 6 bars."
-  ],
-
-  technicalNote:
-    "Let the base cool before adding the topping. Warm brownie and yoghurt make an impressive mess, but not an impressive Snickers bar."
-},
+  id
 
 {
   id: "quick-as-oreo-dessert",
