@@ -568,14 +568,14 @@ const recipes = [
     "Chocolate Fix",
     "Proper Indulgence"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 154,
+  protein: 15,
+  carbs: 16,
+  fat: 3.3,
   servings: 8,
   time: 45,
   difficulty: "Medium",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "210ml almond milk",
