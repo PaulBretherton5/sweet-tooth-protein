@@ -1860,14 +1860,14 @@ ingredients: [
     "Traditional Style",
     "Proper Indulgence"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 314,
+  protein: 15.3,
+  carbs: 43.5,
+  fat: 8.5,
   servings: 6,
   time: 45,
   difficulty: "Medium",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "300g bread flour",
@@ -1879,9 +1879,9 @@ ingredients: [
     "30g melted butter",
     "30g sweet ground cinnamon",
     "50g low-fat cream cheese",
-    "1 scoop vanilla whey protein",
-    "Splash of milk",
-    "Splash of vanilla extract"
+    "1 scoop (30g) vanilla whey protein",
+    "30ml milk",
+    "1 tsp vanilla extract"
   ],
 
   method: [
