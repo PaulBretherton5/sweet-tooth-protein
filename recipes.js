@@ -703,14 +703,14 @@ const recipes = [
     "Cakes & Bites",
     "Proper Indulgence"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 238,
+  protein: 19,
+  carbs: 23,
+  fat: 8,
   servings: 6,
   time: 55,
   difficulty: "Medium",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "300g zero-fat Greek yoghurt",
