@@ -1578,22 +1578,23 @@ ingredients: [
     "Trust the Process",
     "Traditional Style"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  
+  calories: 150,
+  protein: 9,
+  carbs: 20,
+  fat: 4,
   servings: 8,
   time: 40,
   difficulty: "Very Easy",
-  nutritionStatus: "pending",
-
+  nutritionStatus: "estimated",
+    
   ingredients: [
     "650g natural yoghurt",
     "4 eggs",
     "75g cornflour",
     "2 tsp vanilla extract",
-    "Fresh berries for topping",
-    "Honey for drizzling"
+    "100g fresh berries for topping",
+    "20g honey for drizzling"
   ],
 
   method: [
