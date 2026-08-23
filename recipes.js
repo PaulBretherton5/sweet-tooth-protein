@@ -1540,20 +1540,20 @@ ingredients: [
     "Quick Fixes",
     "I Can't Be Arsed"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 155,
+  protein: 8,
+  carbs: 27,
+  fat: 1.5,
   servings: 8,
   time: 15,
   difficulty: "Very Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "225g self-raising flour",
     "1 scoop (30g) vanilla whey protein",
     "300g Greek yoghurt",
-    "Sprinkles"
+    "20g sprinkles"
   ],
 
   method: [
