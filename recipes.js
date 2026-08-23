@@ -1028,15 +1028,15 @@ const recipes = [
     "Proper Indulgence",
     "Cakes & Bites"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
-  servings: 10,
-  time: 20,
-  difficulty: "Easy",
-  nutritionStatus: "pending",
-
+  
+  calories: 184,
+protein: 5.1,
+carbs: 23.8,
+fat: 7.7,
+servings: 10,
+time: 20,
+difficulty: "Easy",
+nutritionStatus: "estimated",
   ingredients: [
     "100ml milk",
     "1 packet Bird's Dream Topping",
@@ -1070,14 +1070,14 @@ const recipes = [
     "Chocolate Fix",
     "Proper Indulgence"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 269,
+  protein: 11.0,
+  carbs: 17.5,
+  fat: 17.5,
   servings: 12,
   time: 25,
   difficulty: "Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "2 scoops (60g) vanilla whey protein",
