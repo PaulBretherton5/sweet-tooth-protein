@@ -805,14 +805,14 @@ const recipes = [
     "Chocolate Fix",
     "Cakes & Bites"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 91,
+  protein: 7,
+  carbs: 11,
+  fat: 2.1,
   servings: 6,
   time: 25,
   difficulty: "Very Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "2 ripe bananas",
