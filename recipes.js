@@ -938,15 +938,15 @@ const recipes = [
     "Quick Fixes",
     "Protein Monsters"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  
+  calories: 115,
+  protein: 9.5,
+  carbs: 15.5,
+  fat: 2.0,
   servings: 6,
   time: 20,
   difficulty: "Easy",
-  nutritionStatus: "pending",
-
+  nutritionStatus: "estimated",
   ingredients: [
     "40g plain flour",
     "1 tsp powdered peanut butter",
