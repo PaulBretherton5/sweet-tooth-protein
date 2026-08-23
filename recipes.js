@@ -1160,21 +1160,21 @@ nutritionStatus: "estimated",
     "I Can't Be Arsed",
     "Sweet Breakfast"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 250,
+  protein: 20.0,
+  carbs: 34.0,
+  fat: 4.0,
   servings: 2,
   time: 10,
   difficulty: "Very Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "1 apple",
     "Ground cinnamon",
     "1 scoop (30g) whey protein of choice",
     "50g rolled oats",
-    "Milk, added gradually as required",
+    "30ml milk",
     "Whipped cream for serving - optional"
   ],
 
