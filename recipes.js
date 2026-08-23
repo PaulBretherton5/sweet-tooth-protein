@@ -1666,20 +1666,20 @@ ingredients: [
     "Protein Monsters",
     "For Real Chefs"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  
+  calories: 340,
+  protein: 37,
+  carbs: 17,
+  fat: 14,
   servings: 2,
   time: 15,
   difficulty: "Easy",
-  nutritionStatus: "pending",
-
+  nutritionStatus: "estimated",
   ingredients: [
     "4 cooked scrambled eggs",
     "120ml milk",
     "2 scoops (60g) vanilla whey protein",
-    "Brown sugar for the caramelised topping"
+    "20g brown sugar for the caramelised topping"
   ],
 
   method: [
