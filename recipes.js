@@ -1407,15 +1407,15 @@ ingredients: [
     "Traditional Style",
     "Proper Indulgence"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  
+  calories: 350,
+  protein: 15,
+  carbs: 15,
+  fat: 25,
   servings: 6,
   time: 25,
   difficulty: "Advanced",
-  nutritionStatus: "pending",
-
+  nutritionStatus: "estimated",
   ingredients: [
     "180g dark chocolate",
     "5 eggs, separated",
