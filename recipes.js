@@ -1243,15 +1243,15 @@ nutritionStatus: "estimated",
     "I Can't Be Arsed",
     "Quick Fixes"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  
+  calories: 143,
+  protein: 8.5,
+  carbs: 21.2,
+  fat: 3.5,
   servings: 8,
   time: 70,
   difficulty: "Very Easy",
-  nutritionStatus: "pending",
-
+  nutritionStatus: "estimated",
   ingredients: [
     "4 bananas",
     "4 eggs",
