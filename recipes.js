@@ -1997,21 +1997,21 @@ ingredients: [
     "No Bake",
     "Protein Monsters"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 436,
+  protein: 40.5,
+  carbs: 48.0,
+  fat: 8.0,
   servings: 1,
   time: 5,
   difficulty: "Very Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "60g rolled oats",
     "1 scoop (30g) whey protein",
     "120ml almond milk",
-    "1 scoop zero-fat Greek yoghurt",
-    "Toppings of your choice"
+    "100g zero-fat Greek yoghurt",
+    "Toppings of your choice - macros not included"
   ],
 
   toppingIdeas: [
@@ -2044,19 +2044,21 @@ ingredients: [
     "I Can't Be Arsed",
     "Chocolate Fix"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 64,
+  protein: 3.6,
+  carbs: 9.9,
+  fat: 1.6,
   servings: 8,
   time: 15,
   difficulty: "Very Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
-    "2 bananas",
-    "1 scoop whey protein",
-    "Handful of chocolate chips"
+    ingredients: [
+  "2 bananas",
+  "1 scoop (30g) whey protein",
+  "40g chocolate chips"
+],
   ],
 
   method: [
