@@ -844,14 +844,14 @@ const recipes = [
     "Trust the Process",
     "Meal Prep"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 253,
+  protein: 8.5,
+  carbs: 40.5,
+  fat: 6.7,
   servings: 6,
   time: 55,
   difficulty: "Medium",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "1 whole sweet potato",
