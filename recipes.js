@@ -1620,14 +1620,14 @@ ingredients: [
     "Protein Monsters",
     "Traditional Style"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 400,
+  protein: 38,
+  carbs: 11,
+  fat: 22,
   servings: 2,
   time: 15,
   difficulty: "Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "200g cottage cheese",
