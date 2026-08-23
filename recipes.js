@@ -1910,14 +1910,14 @@ ingredients: [
     "Quick Fixes",
     "Protein Monsters"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 385,
+  protein: 38.5,
+  carbs: 36.5,
+  fat: 9.5,
   servings: 1,
   time: 35,
   difficulty: "Very Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "1 egg",
