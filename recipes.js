@@ -1294,14 +1294,15 @@ nutritionStatus: "estimated",
   time: 25,
   difficulty: "Easy",
   nutritionStatus: "estimated",
-  ingredients: [
-    "70g almond flour",
-    "130g oat flour",
-    "100ml maple syrup",
-    "150g powdered peanut butter",
-    "40g chocolate chips",
-  ],"300g sugar-free/light ice cream",
-
+  
+ingredients: [
+  "70g almond flour",
+  "130g oat flour",
+  "100ml maple syrup",
+  "150g powdered peanut butter",
+  "40g chocolate chips",
+  "300g sugar-free/light ice cream",
+],
   method: [
     "Mix the almond flour, oat flour, maple syrup, powdered peanut butter and chocolate chips until a firm cookie dough forms.",
     "Line two tins of equal size.",
