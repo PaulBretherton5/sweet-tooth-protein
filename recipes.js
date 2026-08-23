@@ -1329,15 +1329,15 @@ ingredients: [
     "Sweet Breakfast",
     "I Can't Be Arsed"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  
+  calories: 109,
+  protein: 6.6,
+  carbs: 15.8,
+  fat: 2.7,
   servings: 8,
   time: 55,
   difficulty: "Very Easy",
-  nutritionStatus: "pending",
-
+  nutritionStatus: "estimated",
   ingredients: [
     "4 bananas",
     "400g zero-fat Greek yoghurt",
