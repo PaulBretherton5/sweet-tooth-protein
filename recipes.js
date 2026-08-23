@@ -1394,43 +1394,7 @@ ingredients: [
 
   technicalNote:
     "Frozen fruit does most of the heavy lifting here. One of the better examples of laziness being rewarded."
-},
 
-{
-  id: "quick-protein-ice-cream",
-  name: "Quick Protein Ice Cream",
-  tagline: "Freeze first. Blend second. That's the whole trick.",
-  categories: [
-    "Something Cold",
-    "Quick Fixes",
-    "No Bake",
-    "Protein Monsters"
-  ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
-  servings: 2,
-  time: 5,
-  difficulty: "Very Easy",
-  nutritionStatus: "pending",
-
-  ingredients: [
-    "2 frozen bananas",
-    "200g cottage cheese",
-    "1 scoop protein powder",
-    "Splash of milk"
-  ],
-
-  method: [
-    "Add the frozen bananas, cottage cheese and protein powder to a food processor.",
-    "Blend until smooth and creamy.",
-    "Add only enough milk to help the mixture reach the correct consistency.",
-    "Serve immediately."
-  ],
-
-  technicalNote:
-    "Freeze the ingredients before blending. Blending first and freezing afterwards creates more ice crystals unless you've got an ice-cream machine."
 },
 
 {
