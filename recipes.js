@@ -1704,14 +1704,14 @@ ingredients: [
     "Trust the Process",
     "Protein Monsters"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 70,
+  protein: 14,
+  carbs: 2,
+  fat: 0.5,
   servings: 4,
   time: 20,
   difficulty: "Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "300ml egg whites",
