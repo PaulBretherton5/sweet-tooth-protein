@@ -1369,18 +1369,18 @@ ingredients: [
     "No Bake",
     "I Can't Be Arsed"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  
+  calories: 75,
+  protein: 6.4,
+  carbs: 11.2,
+  fat: 0.5,
   servings: 4,
   time: 10,
   difficulty: "Very Easy",
-  nutritionStatus: "pending",
-
+  nutritionStatus: "estimated",
   ingredients: [
     "400g frozen fruit - raspberries and strawberries work particularly well",
-    "1 scoop clear whey protein",
+    "1 scoop (30g) clear whey protein",
     "150ml water"
   ],
 
