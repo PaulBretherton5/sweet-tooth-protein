@@ -1821,14 +1821,14 @@ ingredients: [
     "Traditional Style",
     "Trust the Process"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 103,
+  protein: 8.7,
+  carbs: 10.3,
+  fat: 3.1,
   servings: 8,
   time: 70,
   difficulty: "Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "410g fat-free Greek yoghurt",
