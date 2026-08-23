@@ -1958,17 +1958,17 @@ ingredients: [
     "I Can't Be Arsed",
     "Chocolate Fix"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 349,
+  protein: 31.5,
+  carbs: 27.0,
+  fat: 12.5,
   servings: 2,
   time: 5,
   difficulty: "Very Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
-    "2 scoops whey protein - any flavour",
+    "2 scoops (60g) whey protein - any flavour",
     "30g smooth low-sugar peanut butter",
     "30g sugar-free syrup",
     "50ml milk",
