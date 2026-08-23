@@ -1498,14 +1498,14 @@ ingredients: [
     "Proper Indulgence",
     "Protein Monsters"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 285,
+  protein: 24,
+  carbs: 17,
+  fat: 14,
   servings: 8,
   time: 240,
   difficulty: "Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "450g low-fat cream cheese",
@@ -1514,7 +1514,7 @@ ingredients: [
     "2 scoops (60g) chocolate whey protein",
     "100g cocoa powder",
     "Pinch of sea salt",
-    "Melted dark chocolate for drizzling"
+    "100g 70% dark chocolate, melted for drizzling"
   ],
 
   method: [
