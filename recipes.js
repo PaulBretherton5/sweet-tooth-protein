@@ -984,14 +984,14 @@ const recipes = [
     "Proper Indulgence",
     "Quick Fixes"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 390,
+  protein: 23.5,
+  carbs: 48.0,
+  fat: 12.5,
   servings: 2,
   time: 15,
   difficulty: "Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "25g Biscoff biscuits",
