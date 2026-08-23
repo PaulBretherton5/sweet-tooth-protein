@@ -1784,19 +1784,19 @@ ingredients: [
     "No Bake",
     "Proper Indulgence"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 184,
+  protein: 24.3,
+  carbs: 11.2,
+  fat: 4.4,
   servings: 4,
   time: 65,
   difficulty: "Very Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "425g zero-fat Greek yoghurt",
     "100g low-fat cream cheese",
-    "2 scoops vanilla whey protein",
+    "2 scoops (60g) vanilla whey protein",
     "20g zero-sugar sweetener",
     "Toppings of your choice"
   ],
