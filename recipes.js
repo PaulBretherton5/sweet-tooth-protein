@@ -1285,23 +1285,22 @@ nutritionStatus: "estimated",
     "Proper Indulgence",
     "Cakes & Bites"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  
+  calories: 245,
+  protein: 12.5,
+  carbs: 28.5,
+  fat: 9.5,
   servings: 8,
   time: 25,
   difficulty: "Easy",
-  nutritionStatus: "pending",
-
+  nutritionStatus: "estimated",
   ingredients: [
     "70g almond flour",
     "130g oat flour",
     "100ml maple syrup",
     "150g powdered peanut butter",
     "40g chocolate chips",
-    "Sugar-free ice cream, enough to create the centre layer"
-  ],
+  ],"300g sugar-free/light ice cream",
 
   method: [
     "Mix the almond flour, oat flour, maple syrup, powdered peanut butter and chocolate chips until a firm cookie dough forms.",
