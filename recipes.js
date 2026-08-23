@@ -649,10 +649,11 @@ const recipes = [
   ],
 
   technicalNote:
-    "Blend it ou think. Nobody ordered chocolate mousse with surprise cottage-cheese texture."
+    
 },
+  "Blend it longer than you think. Nobody ordered a chocolate mousse with surprise cottage-cheese texture."
 
-{
+
   id
 
 {
@@ -665,14 +666,14 @@ const recipes = [
     "No Bake",
     "Chocolate Fix"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 244,
+  protein: 30,
+  carbs: 20,
+  fat: 4.5,
   servings: 1,
   time: 3,
   difficulty: "Very Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "200g zero-fat Greek yoghurt",
