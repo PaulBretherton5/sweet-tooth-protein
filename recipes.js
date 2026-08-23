@@ -896,14 +896,14 @@ const recipes = [
     "Protein Monsters",
     "Proper Indulgence"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 260,
+  protein: 23.5,
+  carbs: 32.5,
+  fat: 4.0,
   servings: 4,
   time: 15,
   difficulty: "Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "2 shots espresso, cooled",
