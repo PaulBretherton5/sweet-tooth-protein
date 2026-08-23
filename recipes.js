@@ -1452,21 +1452,21 @@ ingredients: [
     "Protein Monsters",
     "I Can't Be Arsed"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 510,
+  protein: 42,
+  carbs: 52,
+  fat: 15,
   servings: 2,
   time: 15,
   difficulty: "Very Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "1 banana",
     "75g rolled oats",
     "3 eggs",
     "50ml milk",
-    "2 scoops whey protein of your choice",
+    "2 scoops (60g) whey protein of your choice",
     "1 tbsp baking powder",
     "Butter for the pan",
     "Toppings of your choice"
