@@ -755,14 +755,14 @@ const recipes = [
     "Cakes & Bites",
     "Protein Monsters"
   ],
-  calories: null,
-  protein: null,
-  carbs: null,
-  fat: null,
+  calories: 203,
+  protein: 24,
+  carbs: 21,
+  fat: 2.5,
   servings: 6,
   time: 50,
   difficulty: "Easy",
-  nutritionStatus: "pending",
+  nutritionStatus: "estimated",
 
   ingredients: [
     "200ml almond milk",
