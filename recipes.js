@@ -253,7 +253,6 @@ const recipes = [
     carbs: 33,
     fat: 3.3,
     servings: 6,
-    servings: 6,
     time: 55,
     difficulty: "Advanced",
     nutritionStatus: "estimated",
