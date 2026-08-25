@@ -614,43 +614,6 @@ const recipes = [
     },
 
 
-{
-  id: "quick-as-oreo-dessert",
-  name: "Quick-As... Oreo Dessert",
-  tagline: "The sweet-tooth emergency service.",
-  categories: [
-    "I Can't Be Arsed",
-    "Quick Fixes",
-    "No Bake",
-    "Chocolate Fix"
-  ],
-  calories: 244,
-  protein: 30,
-  carbs: 20,
-  fat: 4.5,
-  servings: 1,
-  time: 3,
-  difficulty: "Very Easy",
-  nutritionStatus: "estimated",
-
-  ingredients: [
-    "200g zero-fat Greek yoghurt",
-    "1 scoop (30g) vanilla whey protein",
-    "1 Oreo, broken into pieces",
-    "A few additional Oreo crumbs for topping"
-  ],
-
-  method: [
-    "Add the Greek yoghurt and vanilla whey protein to a bowl.",
-    "Whisk or mix thoroughly until completely smooth.",
-    "Break one Oreo into pieces and mix through.",
-    "Transfer to a serving bowl.",
-    "Finish with a few additional Oreo crumbs and serve immediately."
-  ],
-
-  technicalNote:
-    "Three minutes is barely cooking. That is very much the point."
-},
 
 {
   id: "huge-brownie-brick",
