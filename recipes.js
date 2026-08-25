@@ -1922,13 +1922,12 @@ ingredients: [
   difficulty: "Very Easy",
   nutritionStatus: "estimated",
 
+  
   ingredients: [
-    ingredients: [
-  "2 bananas",
-  "1 scoop (30g) whey protein",
-  "40g chocolate chips"
+    "2 bananas",
+    "1 scoop (30g) whey protein",
+    "40g chocolate chips"
 ],
-  ],
 
   method: [
     "Preheat the oven to 180°C.",
