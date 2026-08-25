@@ -613,46 +613,6 @@ const recipes = [
 
     },
 
-{
-  id: "high-protein-chocolate-mousse",
-  name: "High-Protein Chocolate Mousse",
-  tagline: "Looks indulgent. Behaves considerably better.",
-  categories: [
-    "Chocolate Fix",
-    "No Bake",
-    "Protein Monsters",
-    "Quick Fixes"
-  ],
-  calories: 295,
-  protein: 32,
-  carbs: 27,
-  fat: 7,
-  servings: 4,
-  time: 65,
-  difficulty: "Very Easy",
-  nutritionStatus: "estimated",
-
-  ingredients: [
-    "400g cottage cheese",
-    "60g cocoa powder",
-    "60g maple syrup or honey",
-    "3 scoops (90g) chocolate whey protein"
-  ],
-
-  method: [
-    "Add the cottage cheese, cocoa powder, maple syrup or honey and whey protein to a blender.",
-    "Blend until completely smooth and creamy.",
-    "Divide between four serving glasses or pots.",
-    "Refrigerate for approximately 1 hour before serving."
-  ],
-
-  technicalNote:
-    
-},
-  "Blend it longer than you think. Nobody ordered a chocolate mousse with surprise cottage-cheese texture."
-
-
-  id
 
 {
   id: "quick-as-oreo-dessert",
