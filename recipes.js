@@ -616,58 +616,6 @@ const recipes = [
 
 
 {
-  id: "huge-brownie-brick",
-  name: "Huge Brownie Brick",
-  tagline: "Subtlety was never part of the specification.",
-  categories: [
-    "Chocolate Fix",
-    "Cakes & Bites",
-    "Proper Indulgence"
-  ],
-  calories: 238,
-  protein: 19,
-  carbs: 23,
-  fat: 8,
-  servings: 6,
-  time: 55,
-  difficulty: "Medium",
-  nutritionStatus: "estimated",
-
-  ingredients: [
-    "300g zero-fat Greek yoghurt",
-    "60ml almond milk",
-    "40g melted butter",
-    "1 egg",
-    "50g oat flour",
-    "70g sugar substitute",
-    "2 scoops (60g) vanilla whey protein",
-    "1 crushed Oreo",
-    "100g zero-fat Greek yoghurt for frosting",
-    "40g sugar substitute for frosting",
-    "1 scoop (30g) whey protein for frosting",
-    "Crushed Oreo for topping"
-  ],
-
-  method: [
-    "Preheat the oven to 180°C.",
-    "Mix the Greek yoghurt, almond milk, melted butter and egg together in one bowl.",
-    "In a separate bowl, combine the oat flour, sugar substitute and whey protein.",
-    "Combine the wet and dry mixtures.",
-    "Fold through the crushed Oreo.",
-    "Pour into a lined baking dish.",
-    "Bake for approximately 40 minutes.",
-    "Allow to cool completely.",
-    "Mix the Greek yoghurt, sugar substitute and whey protein for the frosting.",
-    "Spread the frosting over the cooled brownie.",
-    "Finish with crushed Oreo.",
-    "Cut into 6 portions."
-  ],
-
-  technicalNote:
-    "Cool it completely before frosting. Otherwise the frosting becomes less 'frosting' and more 'protein yoghurt landslide'."
-},
-
-{
    id: "cakey-frosty-brownie",
   name: "Cakey Frosty Brownie",
   tagline: "Brownie underneath. Protein frosting on top. Sensible decisions all round.",
