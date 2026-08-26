@@ -584,7 +584,17 @@ function showRecipe(type) {
     return;
   }
 
-  renderRecipe(matches[0]);
+  const previousId = recipeArea.dataset.lastRecipeId;
+
+let choices = matches.filter(recipe => recipe.id !== previousId);
+
+if (!choices.length) choices = matches;
+
+const recipe = choices[Math.floor(Math.random() * choices.length)];
+
+recipeArea.dataset.lastRecipeId = recipe.id;
+
+renderRecipe(recipe);
 }
 
 
