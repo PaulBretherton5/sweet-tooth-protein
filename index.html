@@ -435,16 +435,6 @@ body{
 <div class="nav-item" data-nav="saved"><span></span>Saved</div>
 <div class="nav-item" data-nav="search"><span></span>Search</div>
 </nav>
-<script>
-window.onerror = function(message, source, line, column) {
-  document.body.insertAdjacentHTML(
-    "afterbegin",
-    "<div style='background:#b00020;color:white;padding:15px;font-size:16px;position:relative;z-index:99999'>" +
-    "ERROR: " + message + " — line " + line + ":" + column +
-    "</div>"
-  );
-};
-</script>
   <script src="recipes.js?v=50"></script>
 <script>
 
