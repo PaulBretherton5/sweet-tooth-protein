@@ -479,16 +479,50 @@ document.querySelectorAll(".nav-item").forEach(item => {
       searchInput.focus();
     }
 
-    if (target === "saved") {
-      recipeArea.innerHTML = `
-        <section class="result">
-          <h3>SAVED RECIPES</h3>
-          <p>Your saved recipes will appear here.</p>
-        </section>
-      `;
-      recipeArea.scrollIntoView({ behavior: "smooth" });
-    }
+    
+if (target === "saved") {
 
+  const savedIds =
+    JSON.parse(localStorage.getItem("savedRecipes") || "[]");
+
+  const savedRecipes =
+    recipes.filter(recipe => savedIds.includes(recipe.id));
+
+  if (!savedRecipes.length) {
+    recipeArea.innerHTML = `
+      <section class="result">
+        <h3>SAVED RECIPES</h3>
+        <p>You haven't saved any recipes yet.</p>
+      </section>
+    `;
+  } else {
+
+    recipeArea.innerHTML = savedRecipes.map(recipe => `
+      <button
+        class="result"
+        type="button"
+        data-saved-recipe="${recipe.id}"
+        style="width:100%; text-align:left; color:inherit; margin-bottom:12px;"
+      >
+        <h3>${recipe.name}</h3>
+        <p>${recipe.tagline || ""}</p>
+      </button>
+    `).join("");
+
+    document.querySelectorAll("[data-saved-recipe]").forEach(button => {
+      button.addEventListener("click", () => {
+
+        const recipe = recipes.find(
+          item => item.id === button.dataset.savedRecipe
+        );
+
+        if (recipe) renderRecipe(recipe);
+      });
+    });
+  }
+
+  recipeArea.scrollIntoView({ behavior: "smooth" });
+}
   });
 }); 
 
