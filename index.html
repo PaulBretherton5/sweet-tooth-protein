@@ -446,8 +446,49 @@ window.onerror = function(message, source, line, column) {
 <script>
 
 
-const recipeArea=document.getElementById("recipeArea");
-const searchInput=document.getElementById("searchInput");
+const recipeArea = document.getElementById("recipeArea");
+const searchInput = document.getElementById("searchInput");
+
+document.querySelectorAll(".nav-item").forEach(item => {
+  item.addEventListener("click", () => {
+
+    document.querySelectorAll(".nav-item").forEach(nav =>
+      nav.classList.remove("active")
+    );
+
+    item.classList.add("active");
+
+    const target = item.dataset.nav;
+
+    if (target === "home") {
+      recipeArea.innerHTML = "";
+      searchInput.value = "";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    if (target === "recipes") {
+      showRecipe("browse");
+      recipeArea.scrollIntoView({ behavior: "smooth" });
+    }
+
+    if (target === "search") {
+      searchInput.scrollIntoView({ behavior: "smooth", block: "center" });
+      searchInput.focus();
+    }
+
+    if (target === "saved") {
+      recipeArea.innerHTML = `
+        <section class="result">
+          <h3>SAVED RECIPES</h3>
+          <p>Your saved recipes will appear here.</p>
+        </section>
+      `;
+      recipeArea.scrollIntoView({ behavior: "smooth" });
+    }
+
+  });
+}); 
+
 
 function nutritionValue(value, suffix) {
   if (value === null || value === undefined) {
