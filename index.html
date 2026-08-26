@@ -522,8 +522,17 @@ const categoryMap = {
 function showRecipe(type) {
 
   if (type === "surprise") {
-    const random = recipes[Math.floor(Math.random() * recipes.length)];
-    renderRecipe(random);
+    const previousId = recipeArea.dataset.lastRecipeId;
+
+let choices = recipes.filter(recipe => recipe.id !== previousId);
+
+if (!choices.length) choices = recipes;
+
+const random = choices[Math.floor(Math.random() * choices.length)];
+
+recipeArea.dataset.lastRecipeId = random.id;
+
+renderRecipe(random);
     return;
   }
 
