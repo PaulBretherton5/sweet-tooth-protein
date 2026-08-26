@@ -487,7 +487,12 @@ if (target === "saved") {
     `;
   } else {
 
-    recipeArea.innerHTML = savedRecipes.map(recipe => `
+   recipeArea.innerHTML = `
+  <section class="result">
+    <h3>SAVED RECIPES</h3>
+    <p>${savedRecipes.length} ${savedRecipes.length === 1 ? "recipe" : "recipes"} saved</p>
+  </section>
+` + savedRecipes.map(recipe => ` 
       <button
         class="result"
         type="button"
