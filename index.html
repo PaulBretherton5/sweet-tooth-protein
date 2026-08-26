@@ -548,9 +548,46 @@ function renderRecipe(recipe) {
         <strong>Technical note:</strong> ${recipe.technicalNote || ""}
       </div>
 
-    </section>
-  `;
-}
+            <button
+          id="saveRecipeButton"
+          type="button"
+          style="width:100%; margin-top:18px; padding:14px; border:1px solid var(--acid); background:#111; color:#fff; font-weight:800;"
+        >
+          SAVE RECIPE
+        </button>
+
+      </section>
+    `;
+
+    const saveButton = document.getElementById("saveRecipeButton");
+
+    const savedIds =
+      JSON.parse(localStorage.getItem("savedRecipes") || "[]");
+
+    const isSaved = savedIds.includes(recipe.id);
+
+    saveButton.textContent =
+      isSaved ? "REMOVE FROM SAVED" : "SAVE RECIPE";
+
+    saveButton.addEventListener("click", () => {
+
+      let current =
+        JSON.parse(localStorage.getItem("savedRecipes") || "[]");
+
+      if (current.includes(recipe.id)) {
+        current = current.filter(id => id !== recipe.id);
+      } else {
+        current.push(recipe.id);
+      }
+
+      localStorage.setItem(
+        "savedRecipes",
+        JSON.stringify(current)
+      );
+
+      renderRecipe(recipe);
+    });
+  }
 
 
 const categoryMap = {
