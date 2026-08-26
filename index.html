@@ -498,7 +498,18 @@ if (target === "saved") {
         <p>${recipe.tagline || ""}</p>
       </button>
     `).join("");
-
+recipeArea.insertAdjacentHTML(
+  "beforeend",
+  `
+    <button
+      id="clearSavedButton"
+      type="button"
+      style="width:100%; margin-top:12px; padding:14px; border:1px solid var(--acid); background:#111; color:#fff; font-weight:800;"
+    >
+      CLEAR ALL SAVED
+    </button>
+  `
+);
     document.querySelectorAll("[data-saved-recipe]").forEach(button => {
       button.addEventListener("click", () => {
 
@@ -509,6 +520,25 @@ if (target === "saved") {
         if (recipe) renderRecipe(recipe);
       });
     });
+    const clearSavedButton =
+  document.getElementById("clearSavedButton");
+
+clearSavedButton.addEventListener("click", () => {
+
+  const confirmed =
+    confirm("Remove all saved recipes?");
+
+  if (!confirmed) return;
+
+  localStorage.removeItem("savedRecipes");
+
+  recipeArea.innerHTML = `
+    <section class="result">
+      <h3>SAVED RECIPES</h3>
+      <p>You haven't saved any recipes yet.</p>
+    </section>
+  `;
+});
   }
 
   recipeArea.scrollIntoView({ behavior: "smooth" });
