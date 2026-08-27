@@ -499,8 +499,14 @@ if (target === "saved") {
         data-saved-recipe="${recipe.id}"
         style="width:100%; text-align:left; color:inherit; margin-bottom:12px;"
       >
-        <h3>${recipe.name}</h3>
-        <p>${recipe.tagline || ""}</p>
+       <h3>${recipe.name}</h3>
+<p>${recipe.tagline || ""}</p>
+
+<div class="meta">
+  <span class="tag">${recipe.time} MIN</span>
+  <span class="tag">${nutritionValue(recipe.calories, " KCAL")}</span>
+  <span class="tag">${nutritionValue(recipe.protein, "G PROTEIN")}</span>
+</div> 
       </button>
     `).join("");
 recipeArea.insertAdjacentHTML(
