@@ -339,13 +339,13 @@ const recipes = [
     tagline: "Carrots technically make this a vegetable. We checked absolutely nothing.",
     categories: [
       "Traditional Style",
-      "Cakes",
+      "Cakes & Bites",
       "Proper Indulgence"
     ],
-    calories: 130,
-    protein: 10,
-    carbs: 13,
-    fat: 5.5,
+    calories: 167,
+    protein: 12.5,
+    carbs: 12.5,
+    fat: 7,
     servings: 8,
     time: 60,
     difficulty: "Easy",
@@ -364,7 +364,12 @@ const recipes = [
       "10g baking powder",
       "10g ground cinnamon",
       "100g sugar substitute",
-      "Pinch of salt"
+      "Pinch of salt",
+      "100g low-fat cream cheese for frosting",
+"1 scoop (30g) vanilla whey protein for frosting",
+"20ml vanilla extract for frosting",
+"2g ground allspice for frosting",
+"75g sugar alternative for frosting"
     ],
 
     method: [
@@ -374,7 +379,9 @@ const recipes = [
       "Add the dry ingredients to the wet ingredients and mix until evenly combined.",
       "Transfer to a lined loaf tin.",
       "Bake for approximately 45 minutes.",
-      "Allow the loaf to cool completely before frosting."
+      "Allow the loaf to cool completely before frosting.",
+      "Mix the low-fat cream cheese, vanilla whey, vanilla extract, allspice and sugar alternative until smooth.",
+"Spread the frosting over the completely cooled loaf."
     ],
 
     technicalNote:
