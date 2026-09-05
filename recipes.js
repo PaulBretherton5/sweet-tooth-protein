@@ -990,22 +990,22 @@ nutritionStatus: "estimated",
     "Protein Monsters",
     "Proper Indulgence"
   ],
-  calories: 160,
-  protein: 19.5,
-  carbs: 17.0,
-  fat: 1.0,
-  servings: 4,
+  calories: 183,
+protein: 23.2,
+carbs: 17.8,
+fat: 2.6,
+servings: 4,
   time: 20,
   difficulty: "Easy",
   nutritionStatus: "estimated",
 
   ingredients: [
     "1 packet zero-calorie powdered jelly",
-    "Frozen chopped fruit",
+    "200g frozen mixed berries",
     "400g zero-fat Greek yoghurt",
     "2 scoops (60g) whey protein",
-    "1/2 packet zero-sugar custard powder",
-    "Sprinkles"
+    "37.5g Bird's Instant Custard Powder",
+    "Sprinkles - optional, not included in nutrition"
   ],
 
   method: [
@@ -1015,10 +1015,10 @@ nutritionStatus: "estimated",
     "Refrigerate until the jelly has completely set.",
     "Mix the Greek yoghurt and whey protein until smooth.",
     "Divide this protein mixture equally between two bowls.",
-    "Add the zero-sugar custard powder to one half and mix thoroughly.",
-    "Add sprinkles to the other half.",
+    "Add the Bird's Instant Custard Powder to one half and mix thoroughly.",
+    "If using, add sprinkles to the other half.",
     "Layer the custard mixture over the set jelly and fruit.",
-    "Finish with the sprinkle mixture on top.",
+    "If using sprinkles, finish with the sprinkle mixture on top.",
     "Return to the refrigerator until ready to serve."
   ],
 
