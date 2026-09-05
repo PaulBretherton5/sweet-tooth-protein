@@ -1284,21 +1284,21 @@ ingredients: [
     "Proper Indulgence"
   ],
   
-  calories: 350,
-  protein: 15,
-  carbs: 15,
-  fat: 25,
+  calories: 280,
+protein: 15.5,
+carbs: 15.5,
+fat: 17.5,
   servings: 6,
   time: 25,
   difficulty: "Advanced",
   nutritionStatus: "estimated",
   ingredients: [
     "180g dark chocolate",
-    "5 eggs, separated",
-    "60g salted butter",
+    "5 pasteurised eggs, separated",
+    
     "2 scoops (60g) chocolate whey protein",
     "1 tsp sweet ground cinnamon",
-    "Fresh berries for serving"
+    "Fresh berries for serving - optional, not included in nutrition"
   ],
 
   method: [
