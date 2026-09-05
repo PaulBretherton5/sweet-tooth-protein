@@ -1457,11 +1457,11 @@ fat: 17.5,
     "Traditional Style"
   ],
   
-  calories: 150,
-  protein: 9,
-  carbs: 20,
-  fat: 4,
-  servings: 8,
+  calories: 136,
+protein: 7.6,
+carbs: 13.8,
+fat: 5.4,
+servings: 8,
   time: 40,
   difficulty: "Very Easy",
   nutritionStatus: "estimated",
@@ -1471,8 +1471,8 @@ fat: 17.5,
     "4 eggs",
     "75g cornflour",
     "2 tsp vanilla extract",
-    "100g fresh berries for topping",
-    "20g honey for drizzling"
+    "100g fresh berries for topping - optional, not included in nutrition",
+"20g honey for drizzling - optional, not included in nutrition"
   ],
 
   method: [
@@ -1482,11 +1482,11 @@ fat: 17.5,
     "Pour into a lined cake tin.",
     "Bake for approximately 30 minutes until set.",
     "Allow to cool.",
-    "Finish with fresh berries and a drizzle of honey."
+    "If using, finish with fresh berries and a drizzle of honey."
   ],
 
   technicalNote:
-    "The berries and honey are finishing options, so we'll eventually calculate the base cake first and let the topping calculator do the rest."
+  "The displayed nutrition is for the base cake only. Berries and honey are optional toppings and are not included."
 },
 
 {
