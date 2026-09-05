@@ -1394,11 +1394,13 @@ fat: 17.5,
   ],
 
   method: [
+    "Preheat the oven to 170°C.",
     "Blend the cream cheese and cottage cheese until completely smooth.",
     "Add the eggs, chocolate whey protein, cocoa powder and sea salt.",
     "Blend again until evenly combined.",
     "Pour into a lined cake tin.",
-    "Bake until set, then allow to cool completely.",
+    "Bake for approximately 45 to 55 minutes, until the edges are set but the centre still has a slight wobble.",
+"Allow to cool completely at room temperature.",
     "Refrigerate until thoroughly chilled and firm.",
     "Finish with a drizzle of melted dark chocolate before serving."
   ],
