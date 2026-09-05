@@ -684,7 +684,19 @@ renderRecipe(random);
 
   if (type === "browse") {
 
-    recipeArea.innerHTML = recipes.map(recipe => {
+    recipeArea.innerHTML = `
+  <section class="result">
+    <h3>BROWSE RECIPES</h3>
+
+    <div class="meta">
+      <button class="tag browse-filter" data-filter="all">ALL</button>
+      <button class="tag browse-filter" data-filter="quick">UNDER 15 MIN</button>
+      <button class="tag browse-filter" data-filter="protein">HIGHEST PROTEIN</button>
+      <button class="tag browse-filter" data-filter="calories">LOWEST CALORIES</button>
+      <button class="tag browse-filter" data-filter="chocolate">CHOCOLATE</button>
+    </div>
+  </section>
+` + recipes.map(recipe => {
 
       const nutrition =
         recipe.calories !== null
@@ -716,7 +728,88 @@ renderRecipe(random);
         if (recipe) renderRecipe(recipe);
       });
     });
+document.querySelectorAll(".browse-filter").forEach(filterButton => {
+  filterButton.addEventListener("click", () => {
 
+    const filter = filterButton.dataset.filter;
+
+    const cards =
+      Array.from(recipeArea.querySelectorAll("[data-recipe-id]"));
+
+    if (
+      filter === "all" ||
+      filter === "quick" ||
+      filter === "chocolate"
+    ) {
+      cards.sort((a, b) =>
+        recipes.findIndex(item => item.id === a.dataset.recipeId) -
+        recipes.findIndex(item => item.id === b.dataset.recipeId)
+      );
+    }
+
+    if (filter === "protein") {
+      cards.sort((a, b) => {
+
+        const recipeA =
+          recipes.find(item => item.id === a.dataset.recipeId);
+
+        const recipeB =
+          recipes.find(item => item.id === b.dataset.recipeId);
+
+        const aProtein = Number(recipeA?.protein);
+        const bProtein = Number(recipeB?.protein);
+
+        return (Number.isFinite(bProtein) ? bProtein : -Infinity) -
+          (Number.isFinite(aProtein) ? aProtein : -Infinity);
+      });
+    }
+
+    if (filter === "calories") {
+      cards.sort((a, b) => {
+
+        const recipeA =
+          recipes.find(item => item.id === a.dataset.recipeId);
+
+        const recipeB =
+          recipes.find(item => item.id === b.dataset.recipeId);
+
+        const aCalories = Number(recipeA?.calories);
+        const bCalories = Number(recipeB?.calories);
+
+        return (Number.isFinite(aCalories) ? aCalories : Infinity) -
+          (Number.isFinite(bCalories) ? bCalories : Infinity);
+      });
+    }
+
+    cards.forEach(card => recipeArea.appendChild(card));
+
+    cards.forEach(card => {
+
+      const recipe =
+        recipes.find(item => item.id === card.dataset.recipeId);
+
+      let show = true;
+
+      if (filter === "quick") {
+        show = Number(recipe?.time) <= 15;
+      }
+
+      if (filter === "chocolate") {
+        const text = [
+          recipe?.name || "",
+          recipe?.tagline || "",
+          ...(recipe?.categories || []),
+          ...(recipe?.ingredients || [])
+        ].join(" ").toLowerCase();
+
+        show = text.includes("chocolate");
+      }
+
+      card.style.display = show ? "" : "none";
+    });
+
+  });
+});
     return;
   }
 
