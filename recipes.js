@@ -1051,7 +1051,7 @@ nutritionStatus: "estimated",
     "1 scoop (30g) whey protein of choice",
     "50g rolled oats",
     "30ml milk",
-    "Whipped cream for serving - optional"
+    "Whipped cream for serving - optional, not included in nutrition"
   ],
 
   method: [
@@ -1344,8 +1344,8 @@ fat: 17.5,
     "50ml milk",
     "2 scoops (60g) whey protein of your choice",
     "1 tbsp baking powder",
-    "Butter for the pan",
-    "Toppings of your choice"
+    "Butter for the pan - small amount, not included in nutrition",
+    "Toppings of your choice - optional, not included in nutrition"
   ],
 
   method: [
@@ -1522,12 +1522,12 @@ fat: 17.5,
     "Add all ingredients to a blender or mixing bowl.",
     "Blend or mix until you have a smooth pancake batter.",
     "Heat a frying pan over a medium heat.",
-    "Add a small amount of butter if required.",
+    "Add a small amount of butter if required - not included in nutrition.",
     "Pour in enough batter to make manageable pancakes.",
     "Cook until the underside is set and lightly golden.",
     "Flip and cook the second side.",
     "Repeat until all the batter is used.",
-    "Serve with your choice of toppings."
+    "Serve with your choice of optional toppings - not included in nutrition."
   ],
 
   technicalNote:
@@ -1713,7 +1713,7 @@ fat: 17.5,
     "5 eggs",
     "75g cornflour",
     "Sweet ground cinnamon for topping",
-    "Maple syrup for topping"
+    "Maple syrup for topping - optional, not included in nutrition"
   ],
 
   method: [
