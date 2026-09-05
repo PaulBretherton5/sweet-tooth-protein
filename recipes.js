@@ -674,7 +674,7 @@ const recipes = [
 {
   id: "quickest-chocolate-snack-ever",
   name: "The Quickest Chocolate Snack Ever",
-  tagline: "Four ingredients. One bowl. A very sensible place to start.",
+  tagline: "Three ingredients. One bowl. A very sensible place to start.",
   categories: [
     "I Can't Be Arsed",
     "Quick Fixes",
@@ -1662,10 +1662,10 @@ fat: 17.5,
     "No Bake",
     "Proper Indulgence"
   ],
-  calories: 184,
-  protein: 24.3,
-  carbs: 11.2,
-  fat: 4.4,
+  calories: 234,
+  protein: 24.8,
+  carbs: 16.7,
+  fat: 7.2,
   servings: 4,
   time: 65,
   difficulty: "Very Easy",
@@ -1676,12 +1676,12 @@ fat: 17.5,
     "100g low-fat cream cheese",
     "2 scoops (60g) vanilla whey protein",
     "20g zero-sugar sweetener",
-    "Toppings of your choice"
+    "40g chocolate chips"
   ],
 
   method: [
     "Mix the yoghurt, cream cheese, whey and sweetener until smooth.",
-    "Fold through your chosen toppings.",
+    "Fold the chocolate chips through the cheesecake mixture.",
     "Transfer to a serving dish.",
     "Refrigerate for at least 1 hour before serving."
   ],
