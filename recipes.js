@@ -1545,19 +1545,19 @@ servings: 8,
     "For Real Chefs"
   ],
   
-  calories: 340,
-  protein: 37,
-  carbs: 17,
-  fat: 14,
-  servings: 2,
+  calories: 331,
+protein: 38.7,
+carbs: 16.6,
+fat: 12.6,
+servings: 2,
   time: 15,
   difficulty: "Easy",
   nutritionStatus: "estimated",
   ingredients: [
-    "4 cooked scrambled eggs",
-    "120ml milk",
-    "2 scoops (60g) vanilla whey protein",
-    "20g brown sugar for the caramelised topping"
+    "4 large eggs, scrambled without added butter or oil",
+"120ml semi-skimmed milk",
+"2 scoops (60g) vanilla whey protein",
+"20g brown sugar for the caramelised topping"
   ],
 
   method: [
@@ -1593,7 +1593,7 @@ servings: 8,
 
   ingredients: [
     "300ml egg whites",
-    "1 scoop whey protein",
+    "1 scoop (30g) whey protein",
     "1 tsp vanilla extract"
   ],
 
@@ -1631,7 +1631,7 @@ servings: 8,
   ingredients: [
     "250g baked sweet potato flesh",
    "180g rolled oats",
-    "2 scoops (60g) Vanilla Whey Protein",
+    "2 scoops (60g) vanilla whey protein",
    "20g butter",
    "50g honey",
    "1 tbsp vanilla extract",
