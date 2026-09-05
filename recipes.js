@@ -910,6 +910,8 @@ protein: 4.3,
 carbs: 19.5,
 fat: 7.9,
 servings: 10,
+time: 20,
+difficulty: "Easy",
 nutritionStatus: "estimated",
   ingredients: [
     "100ml milk",
@@ -917,7 +919,7 @@ nutritionStatus: "estimated",
     "1 scoop (30g) vanilla whey protein",
     
 "20 Biscoff biscuits",
-"100g chocolate for melting and drizzling"
+"100g milk chocolate for melting and drizzling"
 ],
   method: [
     "Mix the milk, Dream Topping and vanilla whey protein until smooth.",
