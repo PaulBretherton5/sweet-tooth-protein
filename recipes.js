@@ -464,7 +464,7 @@ const recipes = [
     "Allow the base to cool.",
     "Mix the Greek yoghurt, peanut butter and chocolate whey protein until smooth.",
     "Spread the topping over the cooled base.",
-    "Finish with melted chocolate, chopped peanuts and a small pinch of sea salt.",
+    "If using, finish with melted chocolate, chopped peanuts and a small pinch of sea salt.",
     "Refrigerate until firm.",
     "Cut into 6 bars."
   ],
@@ -1804,20 +1804,21 @@ fat: 17.5,
     "1 tsp baking powder",
     "1 scoop (30g) vanilla whey protein",
     "80ml milk",
-    "Toppings of your choice"
+    "Toppings of your choice - optional, not included in nutrition"
   ],
 
   toppingIdeas: [
-    "Blueberries, flaked almonds and honey",
-    "Chocolate chips and maple syrup",
-    "Banana, walnuts and maple syrup"
-  ],
+  "Blueberries, flaked almonds and honey - not included in nutrition",
+  "Chocolate chips and maple syrup - not included in nutrition",
+  "Banana, walnuts and maple syrup - not included in nutrition"
+],
+
 
   method: [
     "Preheat the oven to 180°C.",
     "Mix the egg, Greek yoghurt, oat flour, baking powder, vanilla whey and milk until smooth.",
     "Pour the batter into an oven-safe bowl.",
-    "Add your chosen toppings.",
+    "Add your chosen optional toppings.",
     "Bake for approximately 30 minutes.",
     "Allow to cool slightly before eating."
   ],
