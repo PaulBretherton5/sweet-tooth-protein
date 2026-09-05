@@ -451,8 +451,8 @@ const recipes = [
     "150g zero-fat Greek yoghurt",
     "50g zero-added-sugar peanut butter",
     "1 scoop (30g) chocolate whey protein",
-    "Melted chocolate for topping",
-    "Chopped peanuts",
+    "Melted chocolate for topping - optional, not included in nutrition",
+"Chopped peanuts - optional, not included in nutrition",
     "Pinch of sea salt"
   ],
 
@@ -830,10 +830,10 @@ const recipes = [
     "10g sugar-free sweetener",
     "80g zero-fat Greek yoghurt",
     "1 egg",
-    "Strawberry protein yoghurt for topping",
+    "Strawberry protein yoghurt for topping - amount to taste, not included in nutrition",
     "1 scoop whey protein for topping",
     "20g icing sugar",
-    "Sprinkles"
+    "Sprinkles - optional, not included in nutrition"
   ],
 
   method: [
@@ -905,22 +905,20 @@ const recipes = [
     "Cakes & Bites"
   ],
   
-  calories: 184,
-protein: 5.1,
-carbs: 23.8,
-fat: 7.7,
+  calories: 166,
+protein: 4.3,
+carbs: 19.5,
+fat: 7.9,
 servings: 10,
-time: 20,
-difficulty: "Easy",
 nutritionStatus: "estimated",
   ingredients: [
     "100ml milk",
     "1 packet Bird's Dream Topping",
     "1 scoop (30g) vanilla whey protein",
-    "20 Biscoff biscuits",
-    "Chocolate buttons or chocolate for melting and drizzling"
-  ],
-
+    
+"20 Biscoff biscuits",
+"100g chocolate for melting and drizzling"
+],
   method: [
     "Mix the milk, Dream Topping and vanilla whey protein until smooth.",
     "Arrange 10 Biscoff biscuits in a lined tray.",
