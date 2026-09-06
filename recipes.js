@@ -1916,7 +1916,7 @@ servings: 2,
 {
   id: "super-easy-protein-cookies",
   name: "Super Easy Protein Cookies",
-  tagline: "Three ingredients before the chocolate chips. We're barely cooking at this point.",
+  tagline:tagline: "Three ingredients. That's it. We're barely cooking at this point.", 
   categories: [
     "Cakes & Bites",
     "Quick Fixes",
