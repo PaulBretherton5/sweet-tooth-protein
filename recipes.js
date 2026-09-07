@@ -887,7 +887,7 @@ const recipes = [
     "Layer the banana and Biscoff spread over the biscuit base.",
     "Mix the Greek yoghurt, vanilla whey, vanilla extract and sugar substitute until smooth.",
     "Spoon the protein cream over the banana and Biscoff layer.",
-    "Finish with additional chopped banana and the reserved Biscoff crumbs."
+   "Finish with some of the reserved banana and the reserved Biscoff crumbs." 
   ],
 
   technicalNote:
@@ -1722,7 +1722,7 @@ servings: 2,
     "Pour into a lined cake tin.",
     "Bake for approximately 1 hour.",
     "Remove from the oven and allow to cool.",
-    "Finish with sweet ground cinnamon and a drizzle of maple syrup."
+    "If using, finish with sweet ground cinnamon and a drizzle of maple syrup."
   ],
 
   technicalNote:
