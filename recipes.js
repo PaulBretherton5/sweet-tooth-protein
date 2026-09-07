@@ -312,7 +312,7 @@ const recipes = [
       "30g rolled oats",
       "1 whole egg",
       "55ml almond milk",
-      "Sugar-free marmalade",
+      "Sugar-free marmalade - amount to taste, not included in nutrition",8
       "100g dark chocolate"
     ],
 
@@ -496,7 +496,7 @@ const recipes = [
     "200g zero-fat Greek yoghurt",
     "1 scoop (30g) vanilla whey protein",
     "1 Oreo, broken into pieces",
-    "A few additional Oreo crumbs for topping"
+    "A few additional Oreo crumbs for topping - optional, not included in nutrition"
   ],
 
   method: [
@@ -541,7 +541,7 @@ const recipes = [
     "100g zero-fat Greek yoghurt for frosting",
     "40g sugar substitute for frosting",
     "1 scoop (30g) whey protein for frosting",
-    "Crushed Oreo for topping"
+   "Crushed Oreo for topping - optional, not included in nutrition" 
   ],
 
   method: [
@@ -831,7 +831,7 @@ const recipes = [
     "80g zero-fat Greek yoghurt",
     "1 egg",
     "Strawberry protein yoghurt for topping - amount to taste, not included in nutrition",
-    "1 scoop whey protein for topping",
+    "1 scoop (30g) whey protein for topping",
     "20g icing sugar",
     "Sprinkles - optional, not included in nutrition"
   ],
@@ -1749,7 +1749,7 @@ servings: 2,
 
   ingredients: [
     "300g bread flour",
-    "400ml zero-fat Greek yoghurt",
+    "400g zero-fat Greek yoghurt",
     "2 tsp baking powder",
     "50g sugar alternative",
     "Pinch of salt",
@@ -1916,7 +1916,7 @@ servings: 2,
 {
   id: "super-easy-protein-cookies",
   name: "Super Easy Protein Cookies",
-  tagline:tagline: "Three ingredients. That's it. We're barely cooking at this point.", 
+  tagline:"Three ingredients. That's it. We're barely cooking at this point.", 
   categories: [
     "Cakes & Bites",
     "Quick Fixes",
