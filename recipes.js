@@ -1890,21 +1890,21 @@ servings: 2,
     "1 scoop (30g) whey protein",
     "120ml almond milk",
     "100g zero-fat Greek yoghurt",
-    "Toppings of your choice - macros not included"
+    "Toppings of your choice - optional, not included in nutrition"
   ],
 
   toppingIdeas: [
-    "Blueberries and cinnamon",
-    "Raspberries and honey",
-    "Strawberries and chocolate chips",
-    "Banana and maple syrup"
-  ],
+  "Blueberries and cinnamon - not included in nutrition",
+  "Raspberries and honey - not included in nutrition",
+  "Strawberries and chocolate chips - not included in nutrition",
+  "Banana and maple syrup - not included in nutrition"
+],
 
   method: [
     "Add the oats and whey protein to a glass container.",
     "Pour in the almond milk and mix thoroughly.",
     "Spoon the Greek yoghurt over the top.",
-    "Add your chosen toppings.",
+    "If using, add your chosen toppings.",
     "Cover and refrigerate overnight.",
     "Stir before eating if preferred."
   ],
