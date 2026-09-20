@@ -1755,10 +1755,10 @@ servings: 2,
     "Pinch of salt",
     "1 egg yolk",
     "30g melted butter",
-    "30g sweet ground cinnamon",
+    "10g sweet ground cinnamon",
     "50g low-fat cream cheese",
     "1 scoop (30g) vanilla whey protein",
-    "30ml milk",
+    "30ml semi-skimmed milk",
     "1 tsp vanilla extract"
   ],
 
@@ -1771,7 +1771,7 @@ servings: 2,
     "Roll each piece into a cinnamon-roll shape.",
     "Bake for approximately 25 minutes.",
     "Allow the rolls to cool.",
-    "Mix the low-fat cream cheese, vanilla whey, a splash of milk and vanilla extract until smooth.",
+    "Mix the low-fat cream cheese, vanilla whey, 30ml semi-skimmed milk and vanilla extract until smooth.",
     "Spread the frosting over the cooled cinnamon rolls."
   ],
 
