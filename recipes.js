@@ -1837,28 +1837,28 @@ servings: 2,
     "I Can't Be Arsed",
     "Chocolate Fix"
   ],
-  calories: 349,
-  protein: 31.5,
-  carbs: 27.0,
-  fat: 12.5,
-  servings: 2,
+  calories: 268,
+protein: 31.8,
+carbs: 15.6,
+fat: 8.7,
+servings: 2,
   time: 5,
   difficulty: "Very Easy",
   nutritionStatus: "estimated",
 
   ingredients: [
     "2 scoops (60g) whey protein - any flavour",
-    "30g smooth low-sugar peanut butter",
-    "30g sugar-free syrup",
-    "50ml milk",
-    "30g chocolate chips"
+"30g MyProtein peanut butter powder",
+"30g Skinny Food Co Zero Calorie Golden Syrup",
+"50ml semi-skimmed milk",
+"30g ASDA milk chocolate chips"
   ],
 
   method: [
-    "Add the whey protein and peanut butter to a bowl.",
-    "Add the sugar-free syrup and milk.",
+    "Add the whey protein and peanut butter powder to a bowl.",
+    "Add the zero-calorie golden syrup and semi-skimmed milk.",
     "Mix very thoroughly until a thick cookie-dough consistency forms.",
-    "Fold through the chocolate chips.",
+    "Fold through the milk chocolate chips.",
     "Eat immediately or refrigerate for a firmer texture."
   ],
 
