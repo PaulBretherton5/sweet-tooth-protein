@@ -312,7 +312,7 @@ const recipes = [
       "30g rolled oats",
       "1 whole egg",
       "55ml almond milk",
-      "Sugar-free marmalade - amount to taste, not included in nutrition",8
+      "Sugar-free marmalade - amount to taste, not included in nutrition",
       "100g dark chocolate"
     ],
 
