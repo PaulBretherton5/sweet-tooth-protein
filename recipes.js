@@ -685,7 +685,6 @@ readyTime: 75,
   "Chocolate Fix",
   "Cakes & Bites"
 ],
-  ],
   calories: 91,
   protein: 7,
   carbs: 11,
