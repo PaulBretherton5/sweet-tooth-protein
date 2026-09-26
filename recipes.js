@@ -681,10 +681,10 @@ readyTime: 75,
   name: "The Quickest Chocolate Snack Ever",
   tagline: "Three ingredients. One bowl. A very sensible place to start.",
   categories: [
-    "I Can't Be Arsed",
-    "Quick Fixes",
-    "Chocolate Fix",
-    "Cakes & Bites"
+  "I Can't Be Arsed",
+  "Chocolate Fix",
+  "Cakes & Bites"
+],
   ],
   calories: 91,
   protein: 7,
@@ -818,7 +818,6 @@ readyTime: 75,
   tagline: "Six donuts. Considerably fewer consequences.",
   categories: [
     "Cakes & Bites",
-    "Quick Fixes",
     "Protein Monsters"
   ],
   
@@ -1127,8 +1126,7 @@ readyTime: 30,
   categories: [
     "Chocolate Fix",
     "Cakes & Bites",
-    "I Can't Be Arsed",
-    "Quick Fixes"
+    "I Can't Be Arsed"
   ],
   
   calories: 143,
@@ -1213,7 +1211,6 @@ ingredients: [
   tagline: "Four ingredients. Almost suspiciously easy.",
   categories: [
     "Cakes & Bites",
-    "Quick Fixes",
     "Sweet Breakfast",
     "I Can't Be Arsed"
   ],
@@ -1801,7 +1798,6 @@ fat: 8.4,
   tagline: "All the pancake. None of the standing at the hob flipping things.",
   categories: [
     "Sweet Breakfast",
-    "Quick Fixes",
     "Protein Monsters"
   ],
   calories: 385,
