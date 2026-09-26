@@ -364,7 +364,7 @@ body{
 
     <button class="mode" data-type="quick">
       <div class="mode-number">02 // FAST RESPONSE</div>
-      <h3 class="mode-title">15 Minutes or Less</h3>
+      <h3 class="mode-title">Under 15 Minutes</h3>
       <p class="mode-copy">For cravings with absolutely no patience.</p>
       <div class="corner"></div>
     </button>
@@ -791,7 +791,7 @@ document.querySelectorAll(".browse-filter").forEach(filterButton => {
       let show = true;
 
       if (filter === "quick") {
-        show = Number(recipe?.time) <= 15;
+        show = Number(recipe?.time) <15;
       }
 
       if (filter === "chocolate") {
@@ -818,9 +818,11 @@ document.querySelectorAll(".browse-filter").forEach(filterButton => {
 
   if (!category) return;
 
-  const matches = recipes.filter(recipe =>
-    recipe.categories.includes(category)
-  );
+  const matches = type === "quick"
+  ? recipes.filter(recipe => Number(recipe?.time) < 15)
+  : recipes.filter(recipe =>
+      recipe.categories.includes(category)
+    );
 
   if (!matches.length) {
     recipeArea.innerHTML = `
