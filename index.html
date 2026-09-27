@@ -503,7 +503,11 @@ if (target === "saved") {
 <p>${recipe.tagline || ""}</p>
 
 <div class="meta">
-  <span class="tag">${recipe.time} MIN</span>
+  ${recipe.readyTime
+  ? `<span class="tag">${recipe.time} MIN MAKE TIME</span>
+     <span class="tag">READY IN ${recipe.readyTime} MIN</span>`
+  : `<span class="tag">${recipe.time} MIN</span>`
+}
   <span class="tag">${nutritionValue(recipe.calories, " KCAL")}</span>
   <span class="tag">${nutritionValue(recipe.protein, "G PROTEIN")}</span>
 </div> 
