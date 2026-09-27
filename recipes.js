@@ -1963,8 +1963,260 @@ readyTime: 480,
 
   technicalNote:
     "If you've got bananas, whey and chocolate chips, apparently you've got cookies. Nobody needs to make this more complicated."
-}
+},
+{
+  id: "fudge-brownie-cheesecake-bars",
+  name: "Fudge Brownie Cheesecake Bars",
+  tagline: "Brownie base. Cheesecake middle. Fudge on top. Completely reasonable.",
+  categories: [
+    "Cheesecakes",
+    "Chocolate Fix",
+    "No Bake",
+    "Proper Indulgence"
+  ],
+  calories: 457,
+  protein: 19.7,
+  carbs: 30.4,
+  fat: 33.5,
+  servings: 5,
+  time: 20,
+  readyTime: 120,
+  difficulty: "Easy",
+  nutritionStatus: "estimated",
 
+  ingredients: [
+    "180g almond flour",
+    "40g cocoa powder",
+    "2 tbsp maple syrup",
+    "45g melted butter",
+    "50ml almond milk",
+    "1 tsp vanilla extract",
+    "250g light cream cheese",
+    "1 scoop (30g) vanilla whey protein",
+    "Zest of 1/4 lemon",
+    "Squeeze of lemon juice",
+    "40g cocoa powder for the fudge topping",
+    "2 tbsp maple syrup for the fudge topping",
+    "Splash of almond milk for the fudge topping"
+  ],
+
+  method: [
+    "Mix the almond flour, 40g cocoa powder, maple syrup, melted butter, almond milk and vanilla extract until thoroughly combined.",
+    "Press the mixture firmly into a parchment-lined loaf-style tin.",
+    "Freeze for approximately 20 to 30 minutes.",
+    "While the base is setting, add the light cream cheese, vanilla whey protein, lemon zest and lemon juice to a bowl.",
+    "Whisk until completely smooth.",
+    "Spread the cheesecake mixture evenly over the chilled brownie base.",
+    "Return to the freezer for approximately 45 minutes.",
+    "Mix the remaining 40g cocoa powder and 2 tablespoons of maple syrup in a bowl.",
+    "Add a small splash of almond milk and mix until a smooth fudge-sauce consistency forms.",
+    "Pour the fudge topping evenly over the cheesecake layer.",
+    "Transfer to the refrigerator for approximately 30 minutes.",
+    "Remove from the tin and cut into 5 individual bars."
+  ],
+
+  technicalNote:
+    "Press the brownie base down firmly before freezing. A solid foundation is useful in desserts as well as most other areas of life."
+},
+{
+  id: "protein-custard-tarts",
+  name: "Protein Custard Tarts",
+  tagline: "Proper custard tarts with considerably more protein involved.",
+  categories: [
+    "Traditional Style",
+    "For Real Chefs",
+    "Proper Indulgence"
+  ],
+  calories: 276,
+  protein: 12.8,
+  carbs: 24.2,
+  fat: 14.4,
+  servings: 8,
+  time: 45,
+  difficulty: "Advanced",
+  nutritionStatus: "estimated",
+
+  ingredients: [
+    "5 egg yolks",
+    "100ml semi-skimmed milk",
+    "2 scoops (60g) vanilla whey protein",
+    "30g plain flour",
+    "50g sugar substitute",
+    "400ml semi-skimmed milk",
+    "1 cinnamon stick",
+    "320g ready-rolled puff pastry",
+    "Grated nutmeg for topping"
+  ],
+
+  method: [
+    "Preheat the oven to 180°C.",
+    "Add the egg yolks, 100ml milk, vanilla whey protein, plain flour and sugar substitute to a bowl.",
+    "Whisk until completely smooth.",
+    "Add the remaining 400ml milk and cinnamon stick to a saucepan.",
+    "Warm gently until hot but do not allow the milk to boil.",
+    "Remove the pan from the heat and discard the cinnamon stick.",
+    "While continuously whisking the egg-yolk mixture, slowly pour in the warm milk.",
+    "Pour the combined mixture back into the saucepan.",
+    "Cook over a low heat while stirring continuously until the custard becomes thick, roughly the consistency of a very thick milkshake.",
+    "Remove the custard from the heat.",
+    "Roll the puff pastry out thinly and cut into 8 pieces large enough to line the tart moulds.",
+    "Press the pastry into the moulds and fill each case with custard.",
+    "Finish each tart with a small amount of grated nutmeg.",
+    "Bake at 180°C for approximately 20 minutes.",
+    "Allow to cool slightly before removing from the moulds."
+  ],
+
+  technicalNote:
+    "Add the warm milk slowly while whisking. Pour it in too quickly and you'll be making protein scrambled eggs rather than custard."
+},
+  {
+  id: "chocolate-cinnamon-rolls",
+  name: "Chocolate Cinnamon Rolls",
+  tagline: "Cinnamon rolls decided chocolate wasn't optional.",
+  categories: [
+    "Chocolate Fix",
+    "Traditional Style",
+    "Proper Indulgence",
+    "Cakes & Bites"
+  ],
+  calories: 312,
+  protein: 14.1,
+  carbs: 36,
+  fat: 12.2,
+  servings: 6,
+  time: 55,
+  difficulty: "Medium",
+  nutritionStatus: "estimated",
+
+  ingredients: [
+    "170g plain flour",
+    "2 tsp baking powder",
+    "200g zero-fat Greek yoghurt",
+    "50g crushed Maltesers",
+    "Pinch of salt",
+    "50g butter",
+    "40g crushed Maltesers for the filling",
+    "60g brown sugar substitute",
+    "20g sweet ground cinnamon",
+    "100g zero-fat Greek yoghurt for frosting",
+    "50g low-fat cream cheese for frosting",
+    "1 scoop (30g) vanilla whey protein for frosting",
+    "1 tsp vanilla extract for frosting"
+  ],
+
+  method: [
+    "Preheat the oven to 180°C.",
+    "Mix the flour, baking powder, Greek yoghurt, 50g crushed Maltesers and salt until a dough forms.",
+    "If the dough is very firm, add a small splash of water.",
+    "Roll the dough into a thin square or rectangle.",
+    "Mix the butter, remaining 40g crushed Maltesers, brown sugar substitute and cinnamon together.",
+    "Spread the filling evenly over the rolled dough.",
+    "Roll the dough up as tightly as possible.",
+    "Cut into 6 equal slices.",
+    "Place each slice cut-side up on a lined baking tray.",
+    "Bake at 180°C for approximately 35 minutes.",
+    "Allow the rolls to cool slightly.",
+    "Mix the Greek yoghurt, low-fat cream cheese, vanilla whey protein and vanilla extract until smooth.",
+    "Spread the frosting over the slightly cooled rolls."
+  ],
+
+  technicalNote:
+    "Roll the dough tightly before slicing. A loose roll becomes six cinnamon spirals with commitment issues."
+  },
+  {
+  id: "home-made-protein-bars",
+  name: "Home Made Protein Bars",
+  tagline: "Protein bars without paying protein-bar prices.",
+  categories: [
+    "Cakes & Bites",
+    "No Bake",
+    "Chocolate Fix",
+    "Meal Prep"
+  ],
+  calories: 370,
+  protein: 21,
+  carbs: 36,
+  fat: 16,
+  servings: 4,
+  time: 10,
+  readyTime: 70,
+  difficulty: "Very Easy",
+  nutritionStatus: "estimated",
+
+  ingredients: [
+    "90g rolled oats",
+    "2 scoops (60g) vanilla whey protein",
+    "35g peanut butter powder",
+    "20g smooth low-sugar peanut butter",
+    "60ml water",
+    "Pinch of salt",
+    "15ml honey",
+    "80g dark chocolate"
+  ],
+
+  method: [
+    "Add the rolled oats, vanilla whey protein and peanut butter powder to a bowl.",
+    "Add the smooth peanut butter, water, salt and honey.",
+    "Mix thoroughly until a thick, even mixture forms.",
+    "Press the mixture firmly into a lined tray or container.",
+    "Melt the dark chocolate gently.",
+    "Drizzle or spread the melted chocolate evenly over the top.",
+    "Refrigerate for approximately 1 hour until firm.",
+    "Remove from the tray and cut into 4 individual bars."
+  ],
+
+  technicalNote:
+    "Press the mixture down firmly before chilling. Loose protein bar mixture has a habit of becoming expensive granola."
+  },
+  {
+  id: "light-lemon-meringue-dessert",
+  name: "Light Lemon Meringue Dessert",
+  tagline: "Light, sharp and ridiculously high in protein.",
+  categories: [
+    "Traditional Style",
+    "Protein Monsters",
+    "Trust the Process"
+  ],
+  calories: 205,
+  protein: 34,
+  carbs: 8,
+  fat: 3.5,
+  servings: 2,
+  time: 20,
+  readyTime: 45,
+  difficulty: "Medium",
+  nutritionStatus: "estimated",
+
+  ingredients: [
+    "225g egg whites",
+    "1 tsp cornflour",
+    "1 tsp vanilla extract",
+    "25g sugar substitute",
+    "1 scoop (30g) vanilla whey protein",
+    "150g zero-fat Greek yoghurt",
+    "50g low-fat cream cheese",
+    "Zest of 1/2 lemon",
+    "Squeeze of lemon juice"
+  ],
+
+  method: [
+    "Preheat the oven to 200°C.",
+    "Add the egg whites, cornflour, vanilla extract and sugar substitute to a clean mixing bowl.",
+    "Whisk until soft peaks form.",
+    "Reserve approximately 1 tablespoon of the meringue mixture for the filling.",
+    "Spread the remaining meringue evenly onto a parchment-lined baking tray.",
+    "Bake for approximately 8 to 10 minutes.",
+    "Turn the oven off, open the oven door and allow the meringue to begin cooling inside the oven.",
+    "Add the vanilla whey protein, Greek yoghurt, low-fat cream cheese, lemon zest, lemon juice and reserved tablespoon of meringue to a bowl.",
+    "Mix until completely smooth.",
+    "Spread the lemon filling evenly over the cooled flat meringue.",
+    "Carefully roll the meringue up like a tortilla or roulade.",
+    "Cut into 2 equal portions and serve."
+  ],
+
+  technicalNote:
+    "Letting the meringue begin cooling in the switched-off oven helps it stay lighter and reduces the chance of it collapsing."
+  }
 ];
   
     
