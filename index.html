@@ -717,7 +717,11 @@ renderRecipe(random);
           <h3>${recipe.name}</h3>
 
           <div class="meta">
-            <span class="tag">${recipe.time} MIN</span>
+            ${recipe.readyTime
+  ? `<span class="tag">${recipe.time} MIN MAKE TIME</span>
+     <span class="tag">READY IN ${recipe.readyTime} MIN</span>`
+  : `<span class="tag">${recipe.time} MIN</span>`
+}
             <span class="tag">${nutrition}</span>
           </div>
 
