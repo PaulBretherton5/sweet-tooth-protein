@@ -1,4 +1,4 @@
-8<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -435,7 +435,7 @@ body{
 <div class="nav-item" data-nav="saved"><span></span>Saved</div>
 <div class="nav-item" data-nav="search"><span></span>Search</div>
 </nav>
-  <script src="recipes.js?v=50"></script>
+  <script src="recipes.js?v=51"></script>
 <script>
 
 
@@ -803,8 +803,8 @@ document.querySelectorAll(".browse-filter").forEach(filterButton => {
       let show = true;
 
       if (filter === "quick") {
-        show = Number(recipe?.time) <15;
-      }
+  show = Number(recipe?.readyTime ?? recipe?.time) < 15;
+}
 
       if (filter === "chocolate") {
         const text = [
@@ -831,7 +831,9 @@ document.querySelectorAll(".browse-filter").forEach(filterButton => {
   if (!category) return;
 
   const matches = type === "quick"
-  ? recipes.filter(recipe => Number(recipe?.time) < 15)
+  ? recipes.filter(recipe =>
+      Number(recipe?.readyTime ?? recipe?.time) < 15
+    )
   : recipes.filter(recipe =>
       recipe.categories.includes(category)
     );
