@@ -582,7 +582,14 @@ function renderRecipe(recipe) {
   const categories = recipe.categories
     .map(category => `<span class="tag">${category}</span>`)
     .join("");
-
+const toppingIdeas = recipe.toppingIdeas?.length
+  ? `
+      <h4>Topping Ideas</h4>
+      <ul>
+        ${recipe.toppingIdeas.map(item => `<li>${item}</li>`).join("")}
+      </ul>
+    `
+  : "";
   recipeArea.innerHTML = `
     <section class="result">
 
@@ -613,7 +620,7 @@ function renderRecipe(recipe) {
 
       <h4>Ingredients</h4>
       <ul>${ingredients}</ul>
-
+${toppingIdeas}
       <h4>Method</h4>
       <ul>${method}</ul>
 
